@@ -1,0 +1,109 @@
+\contentsline {chapter}{Table des mati\IeC {\`e}res}{1}
+\contentsline {chapter}{Table des figures}{3}
+\contentsline {chapter}{Table des codes}{5}
+\contentsline {chapter}{R\IeC {\'e}sum\IeC {\'e}}{6}
+\contentsline {chapter}{\numberline {1}Probl\IeC {\`e}mes non lin\IeC {\'e}aires I}{7}
+\contentsline {section}{\numberline {1.1}Introduction}{7}
+\contentsline {section}{\numberline {1.2}La dichotomie ou bissection}{8}
+\contentsline {subsubsection}{Th\IeC {\'e}orie}{8}
+\contentsline {subsubsection}{Application}{8}
+\contentsline {section}{\numberline {1.3}La m\IeC {\'e}thode de point fixe}{10}
+\contentsline {subsubsection}{Th\IeC {\'e}orie}{10}
+\contentsline {subsubsection}{Application}{10}
+\contentsline {section}{\numberline {1.4}La m\IeC {\'e}thode de Newton appliqu\IeC {\'e}e \IeC {\`a} $n=1$}{12}
+\contentsline {subsubsection}{Th\IeC {\'e}orie}{12}
+\contentsline {subsubsection}{Application}{12}
+\contentsline {section}{\numberline {1.5}La m\IeC {\'e}thode de la s\IeC {\'e}cante}{14}
+\contentsline {subsubsection}{Th\IeC {\'e}orie}{14}
+\contentsline {subsubsection}{Application}{14}
+\contentsline {section}{\numberline {1.6}Pour $n>1$ : La m\IeC {\'e}thode de Newton}{16}
+\contentsline {subsection}{\numberline {1.6.1}Th\IeC {\'e}orie}{16}
+\contentsline {subsection}{\numberline {1.6.2}Fonction \textit {fsolve}}{16}
+\contentsline {subsection}{\numberline {1.6.3}Application 1 : le GPS}{17}
+\contentsline {subsubsection}{\IeC {\'E}nonce et passage en forme standard}{17}
+\contentsline {subsubsection}{M\IeC {\'e}thode 1}{17}
+\contentsline {subsubsection}{M\IeC {\'e}thode 2}{18}
+\contentsline {subsubsection}{M\IeC {\'e}thode 3}{19}
+\contentsline {subsubsection}{Bilan}{20}
+\contentsline {subsection}{\numberline {1.6.4}Application 2 : la cin\IeC {\'e}matique invers\IeC {\'e}e}{20}
+\contentsline {subsubsection}{\IeC {\'E}nonce et passage en forme standard}{20}
+\contentsline {subsubsection}{Calcul de la Jacobienne}{20}
+\contentsline {subsubsection}{R\IeC {\'e}solution}{21}
+\contentsline {subsubsection}{Code fourni pour un rendu graphique}{21}
+\contentsline {subsubsection}{Affichage}{22}
+\contentsline {chapter}{\numberline {2}Fractales}{23}
+\contentsline {section}{\numberline {2.1}Introduction}{23}
+\contentsline {section}{\numberline {2.2}Dimension de Hausdorff}{24}
+\contentsline {section}{\numberline {2.3}Ensemble de Cantor}{24}
+\contentsline {subsection}{\numberline {2.3.1}Th\IeC {\'e}orie}{24}
+\contentsline {subsubsection}{Pr\IeC {\'e}sentation}{24}
+\contentsline {subsubsection}{D\IeC {\'e}finition algorithmique}{24}
+\contentsline {subsubsection}{Remarques}{24}
+\contentsline {subsubsection}{Dimension de l'ensemble de Cantor}{25}
+\contentsline {subsection}{\numberline {2.3.2}Application dans \textit {Scilab} (m\IeC {\'e}thode r\IeC {\'e}cursive)}{25}
+\contentsline {subsection}{\numberline {2.3.3}Application dans \textit {Scilab} (m\IeC {\'e}thode it\IeC {\'e}rative)}{26}
+\contentsline {section}{\numberline {2.4}Triangle de Sierpinski}{28}
+\contentsline {subsection}{\numberline {2.4.1}Th\IeC {\'e}orie}{28}
+\contentsline {subsubsection}{Pr\IeC {\'e}sentation}{28}
+\contentsline {subsubsection}{D\IeC {\'e}finition algorithmique}{28}
+\contentsline {subsubsection}{Dimension du Triangle de Sierpinski}{28}
+\contentsline {subsection}{\numberline {2.4.2}Application dans \textit {Scilab} (m\IeC {\'e}thode r\IeC {\'e}cursive)}{29}
+\contentsline {subsection}{\numberline {2.4.3}Application dans \textit {Scilab} (m\IeC {\'e}thode it\IeC {\'e}rative)}{30}
+\contentsline {subsection}{\numberline {2.4.4}Variante : le tapis de Sierpinski}{31}
+\contentsline {section}{\numberline {2.5}Flocon de neige de Von Koch}{34}
+\contentsline {subsection}{\numberline {2.5.1}Th\IeC {\'e}orie}{34}
+\contentsline {subsubsection}{Pr\IeC {\'e}sentation}{34}
+\contentsline {subsubsection}{D\IeC {\'e}finition algorithmique}{35}
+\contentsline {subsubsection}{Remarques}{35}
+\contentsline {subsubsection}{Dimension du Flocon de Von Koch}{35}
+\contentsline {subsection}{\numberline {2.5.2}Application dans \textit {Scilab} (m\IeC {\'e}thode r\IeC {\'e}cursive)}{36}
+\contentsline {subsection}{\numberline {2.5.3}Application dans \textit {Scilab} (m\IeC {\'e}thode it\IeC {\'e}rative)}{37}
+\contentsline {section}{\numberline {2.6}Foug\IeC {\`e}re de Barnsley}{39}
+\contentsline {subsection}{\numberline {2.6.1}Th\IeC {\'e}orie}{39}
+\contentsline {subsubsection}{Pr\IeC {\'e}sentation}{39}
+\contentsline {subsubsection}{D\IeC {\'e}finition}{39}
+\contentsline {subsection}{\numberline {2.6.2}Application dans \textit {Scilab}}{40}
+\contentsline {section}{\numberline {2.7}Ensemble de Julia}{41}
+\contentsline {subsection}{\numberline {2.7.1}Th\IeC {\'e}orie}{41}
+\contentsline {subsubsection}{Pr\IeC {\'e}sentation}{41}
+\contentsline {subsubsection}{D\IeC {\'e}finition}{41}
+\contentsline {subsection}{\numberline {2.7.2}Application dans \textit {Scilab}}{42}
+\contentsline {section}{\numberline {2.8}Ensemble de Mandelbrot}{43}
+\contentsline {subsection}{\numberline {2.8.1}Th\IeC {\'e}orie}{43}
+\contentsline {subsubsection}{Pr\IeC {\'e}sentation}{43}
+\contentsline {subsubsection}{D\IeC {\'e}finition}{43}
+\contentsline {subsection}{\numberline {2.8.2}Application dans \textit {Scilab}}{43}
+\contentsline {chapter}{\numberline {3}\IeC {\'E}quations diff\IeC {\'e}rentielles}{45}
+\contentsline {section}{\numberline {3.1}Introduction}{45}
+\contentsline {section}{\numberline {3.2}Id\IeC {\'e}e, stabilit\IeC {\'e}, consistance et ordre d'un sch\IeC {\'e}ma num\IeC {\'e}rique}{46}
+\contentsline {subsection}{\numberline {3.2.1}Id\IeC {\'e}e}{46}
+\contentsline {subsection}{\numberline {3.2.2}Stabilit\IeC {\'e} d'un sch\IeC {\'e}ma num\IeC {\'e}rique}{46}
+\contentsline {subsubsection}{D\IeC {\'e}finition}{46}
+\contentsline {subsubsection}{Th\IeC {\'e}or\IeC {\`e}me}{46}
+\contentsline {subsection}{\numberline {3.2.3}Consistance d'un sch\IeC {\'e}ma num\IeC {\'e}rique}{46}
+\contentsline {subsubsection}{D\IeC {\'e}finition}{46}
+\contentsline {subsection}{\numberline {3.2.4}Ordre d'un sch\IeC {\'e}ma num\IeC {\'e}rique}{46}
+\contentsline {subsubsection}{D\IeC {\'e}finition}{46}
+\contentsline {section}{\numberline {3.3}Sch\IeC {\'e}ma d'Euler}{47}
+\contentsline {subsection}{\numberline {3.3.1}Th\IeC {\'e}orie}{47}
+\contentsline {subsubsection}{D\IeC {\'e}finition}{47}
+\contentsline {subsubsection}{Propri\IeC {\'e}t\IeC {\'e}s}{47}
+\contentsline {subsection}{\numberline {3.3.2}Application dans \textit {Scilab}}{48}
+\contentsline {section}{\numberline {3.4}Sch\IeC {\'e}ma du point milieu}{49}
+\contentsline {subsection}{\numberline {3.4.1}Th\IeC {\'e}orie}{49}
+\contentsline {subsubsection}{D\IeC {\'e}finition}{49}
+\contentsline {subsubsection}{Propri\IeC {\'e}t\IeC {\'e}s}{49}
+\contentsline {subsection}{\numberline {3.4.2}Application dans \textit {Scilab}}{50}
+\contentsline {section}{\numberline {3.5}Sch\IeC {\'e}ma d'Euler-Cauchy}{51}
+\contentsline {subsection}{\numberline {3.5.1}Th\IeC {\'e}orie}{51}
+\contentsline {subsubsection}{D\IeC {\'e}finition}{51}
+\contentsline {subsubsection}{Propri\IeC {\'e}t\IeC {\'e}s}{51}
+\contentsline {subsection}{\numberline {3.5.2}Application dans \textit {Scilab}}{52}
+\contentsline {section}{\numberline {3.6}Sch\IeC {\'e}ma de Runge-Kutta}{53}
+\contentsline {subsection}{\numberline {3.6.1}Th\IeC {\'e}orie}{53}
+\contentsline {subsubsection}{Propri\IeC {\'e}t\IeC {\'e}s}{53}
+\contentsline {subsection}{\numberline {3.6.2}Application dans \textit {Scilab}}{53}
+\contentsline {section}{\numberline {3.7}Application : mise en \IeC {\'e}vidence de l'ordre de chaque sch\IeC {\'e}ma}{55}
+\contentsline {section}{\numberline {3.8}Fonction \textit {ode}}{59}
+\contentsline {section}{\numberline {3.9}Application concr\IeC {\`e}te : le pendule}{59}
+\contentsline {section}{\numberline {3.10}Application concr\IeC {\`e}te : la m\IeC {\'e}canique c\IeC {\'e}leste}{61}

@@ -1,0 +1,29 @@
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1.1}{\ignorespaces Dichotomie}}{8}
+\contentsline {table}{\numberline {1.2}{\ignorespaces Point fixe}}{10}
+\contentsline {table}{\numberline {1.3}{\ignorespaces Newton (appliqu\IeC {\'e}e \IeC {\`a} $n=1$)}}{12}
+\contentsline {table}{\numberline {1.4}{\ignorespaces S\IeC {\'e}cante}}{14}
+\contentsline {table}{\numberline {1.5}{\ignorespaces GPS (M\IeC {\'e}thode 1)}}{17}
+\contentsline {table}{\numberline {1.6}{\ignorespaces GPS (M\IeC {\'e}thode 2)}}{18}
+\contentsline {table}{\numberline {1.7}{\ignorespaces GPS (M\IeC {\'e}thode 3)}}{19}
+\contentsline {table}{\numberline {1.8}{\ignorespaces Cin\IeC {\'e}matique invers\IeC {\'e}e (code principal)}}{21}
+\contentsline {table}{\numberline {1.9}{\ignorespaces Cin\IeC {\'e}matique invers\IeC {\'e}e (code graphique)}}{21}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Ensemble de Cantor (m\IeC {\'e}thode r\IeC {\'e}cursive)}}{25}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Ensemble de Cantor (m\IeC {\'e}thode it\IeC {\'e}rative)}}{27}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Triangle de Sierpinski (m\IeC {\'e}thode r\IeC {\'e}cursive)}}{29}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Triangle de Sierpinski (m\IeC {\'e}thode it\IeC {\'e}rative)}}{30}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Tapis de Sierpinski (m\IeC {\'e}thode r\IeC {\'e}cursive)}}{32}
+\contentsline {table}{\numberline {2.6}{\ignorespaces Tapis de Sierpinski (m\IeC {\'e}thode it\IeC {\'e}rative)}}{33}
+\contentsline {table}{\numberline {2.7}{\ignorespaces Courbe de Von Koch (m\IeC {\'e}thode r\IeC {\'e}cursive)}}{36}
+\contentsline {table}{\numberline {2.8}{\ignorespaces Flocon de Von Koch (m\IeC {\'e}thode it\IeC {\'e}rative)}}{38}
+\contentsline {table}{\numberline {2.9}{\ignorespaces Foug\IeC {\`e}re de Barnsley}}{40}
+\contentsline {table}{\numberline {2.10}{\ignorespaces Ensemble de Julia}}{42}
+\contentsline {table}{\numberline {2.11}{\ignorespaces Ensemble de Mandelbrot}}{43}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Sch\IeC {\'e}ma d'Euler}}{48}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Sch\IeC {\'e}ma du point milieu}}{50}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Sch\IeC {\'e}ma d'Euler-Cauchy}}{52}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Sch\IeC {\'e}ma de Runge-Kutta}}{54}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Ordre des sch\IeC {\'e}mas}}{56}
+\contentsline {table}{\numberline {3.6}{\ignorespaces R\IeC {\'e}solution du probl\IeC {\`e}me du pendule}}{60}
