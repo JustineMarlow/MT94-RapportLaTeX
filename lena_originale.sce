@@ -1,0 +1,9 @@
+n=512;
+funcprot(0);
+l=read('/home/marlow/scilab/TD7/lena.csv',512,512);
+lena=l';
+x=[1:512];
+y=[512:-1:1];
+xset('colormap',graycolormap(256));
+grayplot(x,y,lena);
+set(gca(),'isoview','on');

@@ -1720,4 +1720,267 @@ On obtient alors l'affichage \ref{aff_pendule}.
 
 \section{Application concrète : la mécanique céleste}
 
+\chapter{Valeurs propres}
+\section{Introduction}
+
+\newpage
+\section{Base théorique}
+\subsection{Rappels d'algèbre linéaire}
+\noindent On a le théorème (\ref{symetrique}) :\\
+\textbf{Théorème :}
+\begin{equation}
+\label{symetrique}
+\begin{array}{l}
+A \in \mathcal{M}_{n,n}(\mathbb{R}) \text{ est une matrice symétrique} \\
+\Leftrightarrow \exists P \text{ orthogonale et } D \text{ diagonale} \in \mathcal{M}_{n,n} \text{ telles que } A=PDP^T \\
+\text{avec } D = \left( \begin{array}{ccc} \lambda_1 & & 0 \\ 0 & \ddots & 0 \\ 0 & & \lambda_n \end{array} \right) \text{et } \lambda_1, \cdots, \lambda_n \text{ les valeurs propres de A}
+\end{array}
+\end{equation}
+Ce théorème, très pratique, ne peut toutefois s'appliquer que sur des matrices carrées et symétriques. Dés lors, que faire lorsqu'on est confronté à des matrices qui ne respectent pas ces conditions ?
+
+\subsection{La décomposition SVD (\textit{Singular Value Decomposition})}
+\noindent Considérons $A \in \mathcal{M}_{m,n}(\mathbb{R})$ avec $m\geq n$ (la matrice possède plus de lignes que de colonnes). On a alors le théorème (\ref{svd}) :\\
+\textbf{Théorème :}
+\begin{equation}
+\label{svd}
+\begin{array}{l}
+\text{Pour toute matrice } A \in \mathcal{M}_{m,n}(\mathbb{R}), \\
+\exists\ U \in \mathcal{M}_{m,m}(\mathbb{R}) \text{ et } V \text{ orthogonales } \in \mathcal{M}_{N,n}(\mathbb{R})\\
+\text{et } \Sigma \text{ une matrice de la forme }
+\Sigma = \left( \begin{array}{ccc} \sigma_1 & & 0 \\ 0 & \ddots & 0 \\ 0 & & \sigma_n \\ & 0 & \end{array} \right) \in \mathcal{M}_{m,n}(\mathbb{R})\\
+\text{telles que } A=U\Sigma V^T
+\end{array}
+\end{equation}
+\\
+\textbf{Idée de la preuve :} \\
+$AA^T$ ($\in \mathcal{M}_{m,m}(\mathbb{R})$) et $A^TA$ ($\in \mathcal{M}_{n,n}(\mathbb{R})$) sont des matrices symétriques.\\
+Donc, d'après le théorème (\ref{symetrique}) elles admettent des décompositions :\\
+$A^TA=PD_1P^T$ et $AA^T=QD_2Q^T$\\
+Supposons le théorème :
+$A^TA = V\Sigma^T \underbrace{U^T U}_I \ \Sigma V^T = V\Sigma^T\Sigma V^T$\\
+Par identification, $\sigma_i^2$ sont les valeurs propres de $A^TA$ et V est la matrice de passage orthogonale associée.\\
+De même, U est la matrice de passage orthogonale associée à $AA^T$.\\
+$\sigma_i^2 \text{ valeur propre de } A^TA \Longrightarrow \sigma_i = \pm \sqrt{\text{valeur propre de } A^TA}$\\
+Si on veut que $\Sigma$ soit unique, il suffit donc d'imposer $\sigma_i\geq 0$.\\
+Ainsi $A=U\Sigma V^T$ avec $\Sigma = \left( \begin{array}{ccc} \sigma_1 & & 0 \\ 0 & \ddots & 0 \\ 0 & & \sigma_n \\ & 0 & \end{array} \right) \text{ et } \sigma_i\geq 0 \ \forall i=1,\cdots,n$
+
+\subsection{Rang et noyau de $A \in \mathcal{M}_{m,n}(\mathbb{R})$}
+\noindent $A=U\Sigma V^T \Rightarrow AV=U\Sigma$. Notons $V=[V_1 \cdots V_n]$ et $U=[U_1 \cdots U_m]$\\
+On a donc $A[V_1 \cdots V_n]=[U_1 \cdots U_m]\left( \begin{array}{ccc} \sigma_1 & & 0 \\ 0 & \ddots & 0 \\ 0 & & \sigma_n \\ & 0 & \end{array} \right) \Rightarrow AV_i=\sigma_iU_i, \ \forall i=1,\cdots n$\\
+Soit $r$ le nombre de valeurs propres singulières non nulles : $\sigma_{r+1}=\cdots=\sigma_n=0$\\
+On a donc $\left\lbrace
+\begin{array}{l}
+AV_i=\sigma_iU_i \ \ \text{si } 1\leq i \leq r\\
+AV_i=0 \ \ \ \ \ \ \text{si } r+1\leq i \leq n
+\end{array}\right.$\\
+Donc, par définition de $Ker(A)$, $Im(A)$ et la formule du rang :\\
+$Ker(A)=vect\left\lbrace V_{r+1},\cdots,V_n \right\rbrace$, $Im(A)=vect\left\lbrace U_1,\cdots,U_r\right\rbrace$, $rang(A)=r$
+
+\newpage
+\section{Application}
+\subsection{La compression d'images}
+Une image, constituée de $m$ lignes et $n$ colonnes de pixels peut-être représentée par une matrice $A = (a_{ij}) \in \mathcal{M}_{m,n}(\mathbb{R})$ avec la valeur de $a_{ij}$ représentant le niveau de gris du pixel $(i,j)$.\\
+Ainsi nous nous sommes intéressée à un cas d'école de la compression d'image : celle de la photo de Lena, une \textit{playmate} prise dans un numéro du magazine \textit{Playboy}.
+\begin{figure}[H]
+\centering
+\caption{Image originale Lena}
+\includegraphics[width=4.5cm]{lena.png}
+\end{figure}
+
+On implémente dans \textit{Scilab} le code \ref{lena_originale} afin de récupérer depuis un fichier .csv la matrice de Lena en niveaux de gris, on obtient l'affichage (\ref{originale}).
+\begin{table}[H]
+\caption{Lena : Récupération et affichage de l'image originale}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{lena_originale.sce}
+\label{lena_originale}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Image originale Lena en niveaux de gris (obtenue grâce à la matrice)}
+\includegraphics[width=9.5cm]{lena_originale.png}
+\label{originale}
+\end{figure}
+
+La matrice $lena$ que nous venons de créer et de remplir possède donc 512 colonnes et 512 lignes, elle occupe une place en mémoire absolument colossale. C'est pourquoi nous nous intéressons à sa compression. \\
+\indent Comme nous l'avons précédemment vu, nous n'avons pas besoin de toutes les valeurs de $\sigma_i$ pour construire l'image. En effet, pour un seuil $\epsilon>0$ donné, on a $|\sigma_m|<\epsilon$ pour $m\geq k+1$, avec $k<<512$. On remplace donc A par $A_k$ pour différentes valeurs de $k$ (on prendra ici 10, 20 et 30). \\ \\
+
+On implémente ainsi dans \textit{Scilab} le code \ref{lena} qui nous donne l'affichage (\ref{compression}).
+\begin{table}[H]
+\caption{Lena : Compression de l'image}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{lena.sce}
+\label{lena}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Différentes compressions de l'image et erreur associée}
+\includegraphics[width=\textwidth]{lena_pg1.png}
+\label{compression}
+\end{figure}
+
+\newpage
+\subsection{Le PageRank}
+Pour détailler et expliquer la méthode du PageRank, il apparaît pertinent de s'intéresser à un exemple très simple de configurations de pages internet (figure (\ref{config1})). Cette configuration ne comprend que 3 pages notées $P_1$, $P_2$ et $P_3$ telles que :\\
+\begin{minipage}[c]{.40\linewidth}
+\begin{itemize}
+\item la page $P_1$ a un lien vers $P_2$ et $P_3$
+\item la page $P_2$ a un lien vers $P_1$
+\item la page $P_3$ a un lien vers $P_1$
+\end{itemize}
+\end{minipage} \hfill
+\begin{minipage}[c]{.58\linewidth}
+\begin{figure}[H]
+\centering
+\caption{PageRank : configuration 1}
+\includegraphics[width=6cm]{config1.png}
+\label{config1}
+\end{figure}
+\end{minipage}\\
+
+On se demande donc : laquelle des trois pages a le plus d'importance ? Autrement dit, laquelle est la plus pertinente ?\\ \\
+
+\indent On peut dans un premier temps poser les suites suivantes :
+\begin{itemize}
+\item $p_n$ la probabilité d'être sur $P_1$ au bout de $n$ clics
+\item $q_n$ la probabilité d'être sur $P_2$ au bout de $n$ clics
+\item $r_n$ la probabilité d'être sur $P_3$ au bout de $n$ clics
+\end{itemize}
+Notons $G=(g_{ij})$ la matrice définie
+$\left\lbrace
+\begin{array}{l}
+g_{ii}=0  \\
+g_{ij}=1 \text{ si } j \text{ pointe sur } i \\
+\end{array}\right. $\\
+Notons $H=(h_{ij})$ la matrice définie
+$\left\lbrace
+\begin{array}{l}
+h_{ij}= \frac{g_{ii}}{c_j} \text{ avec } c_j=\sum^3_{i=1} g_{ij} \text{ si } c_j \ne 0 \\
+h_{ij}= \frac{1}{3} \text{ sinon} \\
+\end{array}\right. $ \\ \\
+
+Afin d'élaborer un premier modèle dit naïf : l'internaute clique sur le lien d'une page et s'y dirige selon les probabilités :
+\begin{equation}
+\left( \begin{array}{c} p_{n+1} \\ q_{n+1} \\ r_{n+1} \end{array} \right)
+= \underbrace{\left( \begin{array}{ccc} 0 & 1 & 1 \\ \frac{1}{2} & 0 & 0 \\ \frac{1}{2} & 0 & 0 \end{array} \right)}_H
+\left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)
+\label{naif}
+\end{equation}
+Posons $A=\left( \begin{array}{ccc} 0 & 1 & 1 \\ \frac{1}{2} & 0 & 0 \\ \frac{1}{2} & 0 & 0 \end{array} \right)$, supposons que $n\longrightarrow +\infty$, si $\left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)\longrightarrow C$ alors on a $C=AC$\\
+Donc $C$ est le vecteur propre de $A$ associée à la valeur propre 1.\\ \\
+
+\indent Or dans notre exemple, on a $\left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)=A^n\left( \begin{array}{c} p_{0} \\ q_{0} \\ r_{0} \end{array} \right)=A^n\left( \begin{array}{c} \frac{1}{3} \\ \frac{1}{3} \\ \frac{1}{3} \end{array} \right)$ diverge lorsque $n\longrightarrow +\infty$\\
+En effet, $A$ a trois valeurs propres distinctes : $\lambda_1=1$, $\lambda_2=-1$ et $\lambda_3<1$, donc $|\lambda_1|=|\lambda_2|=1$\\
+$A$ possède donc deux valeurs propres dominantes, donc il est normal que la suite diverge. Le modèle naïf (\ref{naif}) ne permet donc pas de déterminer le PageRank de notre configuration très simple.\\ \\
+
+\newpage
+\indent Il est donc indispensable de modifier le modèle. Pour celà, nous allons introduire une part de hasard : on suppose que l'internaute peut à tout moment réactualiser sa recherche et accéder à n'importe quelle autre page aléatoirement (de manière équiprobable).\\
+Soit $A_n$ cet événement, notons $\alpha =P(A_n)$, on a alors, selon la formule des probabilités totales :
+\begin{itemize}
+\item $P(p_{n+1})=P(p_{n+1}|A_n)\times P(A_n) + P(p_{n+1}|\overline{A_n})\times P(\overline{A_n}) = \alpha \times \frac{1}{3} + (1-\alpha)(q_n+r_n)$
+\item $P(q_{n+1})=P(q_{n+1}|A_n)\times P(A_n) + P(q_{n+1}|\overline{A_n})\times P(\overline{A_n}) = \alpha \times \frac{1}{3} + (1-\alpha) p_n\times \frac{1}{2}$
+\item $P(r_{n+1})=P(r_{n+1}|A_n)\times P(A_n) + P(r_{n+1}|\overline{A_n})\times P(\overline{A_n}) = \alpha \times \frac{1}{3} + (1-\alpha) p_n\times \frac{1}{2}$
+\end{itemize}
+d'où $\left( \begin{array}{c} p_{n+1} \\ q_{n+1} \\ r_{n+1} \end{array} \right)= \left[ \alpha \times \frac{1}{3} \left( \begin{array}{c} 1 \\ 1 \\ 1 \end{array} \right) + (1-\alpha) \left( \begin{array}{ccc} 0 & 1 & 1 \\ \frac{1}{2} & 0 & 0 \\ \frac{1}{2} & 0 & 0 \end{array} \right) \right] \left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)$\\
+
+\noindent Par ailleurs, on a $p_n+q_n+r_n$ = 1\\
+Donc $\left( \begin{array}{c} 1 \\ 1 \\ 1 \end{array} \right) =
+\left( \begin{array}{ccc} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{array} \right)\left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)
+= ee^T\left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)$ avec $e=(1,1,1)^T$\\ \\
+
+Finalement, avec $p=1-\alpha$, on a le modèle :
+\begin{equation}
+\left( \begin{array}{c} p_{n+1} \\ q_{n+1} \\ r_{n+1} \end{array} \right)
+= \underbrace{\left[p \left( \begin{array}{ccc} 0 & 1 & 1 \\ \frac{1}{2} & 0 & 0 \\ \frac{1}{2} & 0 & 0 \end{array} \right)
++ (1-p)\times \frac{1}{3}ee^T \right]}_A
+\left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)
+\label{modele}
+\end{equation}
+La matrice $A$ admet donc comme unique valeur propre dominante et comme valeur propre simple $\lambda=1$. On peut ainsi lui appliquer la méthode de la puissance afin de déterminer $x$ tel que $x=Ax$, $x$ sera alors le PageRank de la configuration.\\ \\
+
+La configuration 1 décrite dans la figure (\ref{config1}) constitue un exemple très simple. Ainsi, pour étoffer notre étude, on appliquera donc également la méthode aux configurations plus complexes suivantes. On définira leur modèle respectif de manière analogue à celui de la configuration 1 (modèle (\ref{modele})).
+\begin{figure}[H]
+\caption{PageRank : configurations 2 à 5}
+   \begin{minipage}[c]{.48\linewidth}
+   \begin{figure}[H]
+   \includegraphics[width=\textwidth]{config2.png}
+   \end{figure}
+   \end{minipage} \hfill
+   \begin{minipage}[c]{.48\linewidth}
+   \includegraphics[width=\textwidth]{config3.png}
+   \end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+   \begin{minipage}[c]{.48\linewidth}
+   \begin{figure}[H]
+   \includegraphics[width=\textwidth]{config4.png}
+   \end{figure}
+   \end{minipage} \hfill
+   \begin{minipage}[c]{.48\linewidth}
+   \includegraphics[width=\textwidth]{config5.png}
+   \end{minipage}
+\end{figure}
+
+On implémente ainsi dans \textit{Scilab} le code \ref{pagerank}.
+\begin{table}[H]
+\caption{Détermination du PageRank d'un ensemble de page internet}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{pagerank.sce}
+\label{pagerank}
+\end{tabular}
+\end{table}
+On obtient ainsi les vecteurs associés aux différentes configurations :\\
+\textbf{Configuration 1 :}
+\begin{verbatim}
+    0.4864865  
+    0.2567568  
+    0.2567568
+\end{verbatim}
+
+\noindent \textbf{Configuration 2 :}
+\begin{verbatim}
+    0.01875    
+    0.0571505  
+    0.0267188  
+    0.0673279  
+    0.1284873  
+    0.2056777  
+    0.1866015  
+    0.3092864
+\end{verbatim}
+
+\noindent \textbf{Configuration 3 :}
+\begin{verbatim}
+    0.2    
+    0.2    
+    0.285  
+    0.285  
+    0.03  
+\end{verbatim}
+
+\noindent \textbf{Configuration 5 :}
+\begin{verbatim}
+    0.0311925  
+    0.0303093  
+    0.0248910  
+    0.0148315  
+    0.0498646  
+    0.0483295  
+    0.0515047  
+    0.0170525  
+    0.0735929  
+    0.0984108  
+    0.1149669  
+    0.0774520  
+    0.1184380  
+    0.1166532  
+    0.1325107
+\end{verbatim} 
+
+
+
 \end{document}
