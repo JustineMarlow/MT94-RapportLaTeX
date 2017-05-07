@@ -84,6 +84,7 @@
 \contentsline {subsubsection}{D\IeC {\'e}finition}{46}
 \contentsline {subsection}{\numberline {3.2.4}Ordre d'un sch\IeC {\'e}ma num\IeC {\'e}rique}{46}
 \contentsline {subsubsection}{D\IeC {\'e}finition}{46}
+\contentsline {subsubsection}{Autre d\IeC {\'e}finition}{46}
 \contentsline {section}{\numberline {3.3}Sch\IeC {\'e}ma d'Euler}{47}
 \contentsline {subsection}{\numberline {3.3.1}Th\IeC {\'e}orie}{47}
 \contentsline {subsubsection}{D\IeC {\'e}finition}{47}
@@ -94,16 +95,26 @@
 \contentsline {subsubsection}{D\IeC {\'e}finition}{49}
 \contentsline {subsubsection}{Propri\IeC {\'e}t\IeC {\'e}s}{49}
 \contentsline {subsection}{\numberline {3.4.2}Application dans \textit {Scilab}}{50}
-\contentsline {section}{\numberline {3.5}Sch\IeC {\'e}ma d'Euler-Cauchy}{51}
-\contentsline {subsection}{\numberline {3.5.1}Th\IeC {\'e}orie}{51}
-\contentsline {subsubsection}{D\IeC {\'e}finition}{51}
-\contentsline {subsubsection}{Propri\IeC {\'e}t\IeC {\'e}s}{51}
-\contentsline {subsection}{\numberline {3.5.2}Application dans \textit {Scilab}}{52}
-\contentsline {section}{\numberline {3.6}Sch\IeC {\'e}ma de Runge-Kutta}{53}
-\contentsline {subsection}{\numberline {3.6.1}Th\IeC {\'e}orie}{53}
-\contentsline {subsubsection}{Propri\IeC {\'e}t\IeC {\'e}s}{53}
-\contentsline {subsection}{\numberline {3.6.2}Application dans \textit {Scilab}}{53}
-\contentsline {section}{\numberline {3.7}Application : mise en \IeC {\'e}vidence de l'ordre de chaque sch\IeC {\'e}ma}{55}
-\contentsline {section}{\numberline {3.8}Fonction \textit {ode}}{59}
-\contentsline {section}{\numberline {3.9}Application concr\IeC {\`e}te : le pendule}{59}
-\contentsline {section}{\numberline {3.10}Application concr\IeC {\`e}te : la m\IeC {\'e}canique c\IeC {\'e}leste}{61}
+\contentsline {section}{\numberline {3.5}Sch\IeC {\'e}ma d'Euler-Cauchy}{52}
+\contentsline {subsection}{\numberline {3.5.1}Th\IeC {\'e}orie}{52}
+\contentsline {subsubsection}{D\IeC {\'e}finition}{52}
+\contentsline {subsubsection}{Propri\IeC {\'e}t\IeC {\'e}s}{52}
+\contentsline {subsection}{\numberline {3.5.2}Application dans \textit {Scilab}}{53}
+\contentsline {section}{\numberline {3.6}Sch\IeC {\'e}ma de Runge-Kutta}{54}
+\contentsline {subsection}{\numberline {3.6.1}Th\IeC {\'e}orie}{54}
+\contentsline {subsubsection}{Propri\IeC {\'e}t\IeC {\'e}s}{54}
+\contentsline {subsection}{\numberline {3.6.2}Application dans \textit {Scilab}}{54}
+\contentsline {section}{\numberline {3.7}Application : mise en \IeC {\'e}vidence de l'ordre de chaque sch\IeC {\'e}ma}{56}
+\contentsline {section}{\numberline {3.8}Fonction \textit {ode}}{60}
+\contentsline {section}{\numberline {3.9}Application concr\IeC {\`e}te : le pendule}{60}
+\contentsline {section}{\numberline {3.10}Application concr\IeC {\`e}te : les syst\IeC {\`e}mes proies / pr\IeC {\'e}dateurs}{62}
+\contentsline {section}{\numberline {3.11}Application concr\IeC {\`e}te : la m\IeC {\'e}canique c\IeC {\'e}leste}{64}
+\contentsline {chapter}{\numberline {4}Valeurs propres}{67}
+\contentsline {section}{\numberline {4.1}Introduction}{67}
+\contentsline {section}{\numberline {4.2}Base th\IeC {\'e}orique}{68}
+\contentsline {subsection}{\numberline {4.2.1}Rappels d'alg\IeC {\`e}bre lin\IeC {\'e}aire}{68}
+\contentsline {subsection}{\numberline {4.2.2}La d\IeC {\'e}composition SVD (\textit {Singular Value Decomposition})}{68}
+\contentsline {subsection}{\numberline {4.2.3}Rang et noyau de $A \in \mathcal {M}_{m,n}(\mathbb {R})$}{68}
+\contentsline {section}{\numberline {4.3}Application}{69}
+\contentsline {subsection}{\numberline {4.3.1}La compression d'images}{69}
+\contentsline {subsection}{\numberline {4.3.2}Le PageRank}{72}

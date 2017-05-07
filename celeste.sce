@@ -3,10 +3,11 @@ function dvdt=celeste(t,v)
     u1_prime=[v(3),v(4)]';
     u2=[v(5),v(6)]';
     u2_prime=[v(7),v(8)]';
-    dvdt=[u1_prime,G*m2*(u2-u1)/(norm(u2-u1))^3,u2_prime,-G*m1*(u2-u1)/(norm(u2-u1))^3];
+    dvdt=[u1_prime,G*m2*(u2-u1)/(norm(u2-u1))^3,
+          u2_prime,-G*m1*(u2-u1)/(norm(u2-u1))^3];
 endfunction
 
-//constantes : données de l'exercice
+//constantes : donnees de l'exercice
 m1=5.975e24;
 m2=7.35e22;
 G=6.67e-11;
@@ -22,29 +23,21 @@ v0=[u1_zero;u1_prime_zero;u2_zero;u2_prime_zero];
 v=ode(v0,0,t,celeste);
 
 clf;
-//tracé des trajectoire
-//plot(v(1,:),v(2,:),'yo',v(5,:),v(6,:),'g+')
+//trace des trajectoires (affichage 1)
+subplot(2,1,1);
+plot(v(1,:),v(2,:),'bo',v(5,:),v(6,:),'ro')
+title("Trajectoires des deux corps",'fontsize',4);
 
 //code animation dynamique trajectoires
-comet(v(1,:),v(2,:),"colors",color("red"));
-comet(v(5,:),v(6,:),"colors",color("blue"));
+//comet(v(1,:),v(2,:),"colors",color("blue"));
+//comet(v(5,:),v(6,:),"colors",color("red"));
 
-//code animation dynamique à chaque instant t
-//x=v([1 5],:);
-//y=v([2 6],:);
-//plot(x(1,1),y(1,1),'.',x(2,1),y(2,1),'.');
-//h=gce();
-//a=gca();
-//a.data_bounds=[min(x) max(x) min(y) max(y)];
-//a.isoview='on';
-//for n=2:length(t)
-//    h.children(1).data=[x(1,n) y(1,n)];
-//    h.children(2).data=[x(2,n) y(2,n)];
-//end
+//coordonnees du centre de gravite
+Gx=((m1*v(1,:)+m2*v(5,:))/(m1+m2));
+Gy=((m1*v(2,:)+m2*v(6,:))/(m1+m2));
 
-//coordonnées du centre de gravité
-//Gx=((m1*v(1,:)+m2*v(5,:))/(m1+m2));
-//Gy=((m1*v(2,:)+m2*v(6,:))/(m1+m2));
-
-//plot(v(1,:)-Gx,v(2,:)-Gy,'r',v(5,:)-Gx,v(6,:)-Gy,'b')
-//comet(v(5,:)-Gx,v(6,:)-Gy,"colors",color("blue"));
+//trace des trajectoires (affichage 2)
+subplot(2,1,2);
+plot(v(1,:)-Gx,v(2,:)-Gy,'bo',v(5,:)-Gx,v(6,:)-Gy,'ro')
+title("Trajectoires des deux corps (centrees sur leur centre de gravite)",
+      'fontsize',4);

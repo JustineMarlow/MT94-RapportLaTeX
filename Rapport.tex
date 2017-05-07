@@ -1345,11 +1345,16 @@ où $C$ est une constante ne dépendant pas de $(u_i)$ et $(v_i)$.
 
 \subsection{Consistance d'un schéma numérique}
 \subsubsection{Définition}
-$\textbf{Le schéma est consistant} \text{ si } \xi(y)=\sum ||y-t_{i+1}-y(t_i)-\Phi(t_i,y(t_i),h)|| \underset{h\rightarrow 0}{\longrightarrow} 0$
+$\textbf{Le schéma est consistant} \text{ si } \xi(y)=\sum ||y-t_{i+1}-y(t_i)-\Phi(t_i,y(t_i),h)|| \underset{h\rightarrow 0}{\longrightarrow} 0$\\
+ou d'une manière équivalente : si $\Phi(t,y,0)=f(t,y)$
 
 \subsection{Ordre d'un schéma numérique}
 \subsubsection{Définition}
 $\textbf{Le schéma est d'ordre p} \text{ si } \exists C > 0, \ \underset{1\leq i \leq N}{max} |y(t_i)-z_i| \leq Ch^p $
+
+\subsubsection{Autre définition}
+$\textbf{Le schéma est d'ordre p} \text{ si l'erreur de consistance locale } T_i = \frac{y(t_{i+1}-y(t_i)}{h}- \Phi(t,y(t_i),h)$\\
+$\text{ est telle que } |T_i|\leq Ch^p$
 
 \newpage
 \section{Schéma d'Euler}
@@ -1410,7 +1415,7 @@ z_0 \text{ donné, } z_0=y_0
 		||e_{i+1}||&\leq&[\frac{M}{2L}(e^T-1)]h\\
 					&\leq&Ch^{\textcolor{red}{\textcircled{\scriptsize 1}}}
 		\end{array}$$
-\indent Ce qui montre que le schéma d'Euleur est d'ordre 1.\\ \\
+\indent Ce qui montre que le schéma d'Euler est d'ordre 1.\\ \\
 
 \subsection{Application dans \textit{Scilab}}
 Comme exemple d'application des différents schémas, nous allons donc considérer une équation différentielle particulière que nous sommes capable de résoudre analytiquement. Ainsi, nous pourrons comparer la valeur obtenue par approximation avec la solution exacte. On considère ainsi l'équation différentielle (\ref{exemple_equa_diff}).
@@ -1471,7 +1476,43 @@ z_0 \text{ donné, } z_0=y_0
 %\end{array}\right.$
 
 \subsubsection{Propriétés}
-Le schéma du point milieu est \textbf{stable}, \textbf{consistant} et \textbf{d'ordre 2}.
+Le schéma du point milieu est \textbf{stable}, \textbf{consistant} et \textbf{d'ordre 2}.\\
+(si $f$ est L-lipschitzienne par rapport à la $2^{\text{ème}}$ variable)  \\
+
+\newpage
+\textbf{Démo (stabilité) :}\\
+\indent On pose $\Phi(t,y,h)=f(t + \frac{h}{2}, y + \frac{h}{2}f(t,y))$, ainsi :
+\begin{align*}
+||\Phi(t,y,h)-\Phi(t,z,h)|| & = f(t+\frac{h}{2},y+\frac{h}{2}f(t,y)) - f(t+\frac{h}{2},z+\frac{h}{2}f(t,z))  \\
+							& \leq L|y+\frac{h}{2}f(t,y)-z-\frac{h}{2}f(t,z)| \\
+							& \leq L\left[ |y-z| + \frac{h}{2}|f(y,y)-f(t,z)| \right] \\
+							& \leq |y-z|(L+\frac{h}{2}L^2) \\
+							& \leq C|y-z|
+\end{align*}
+\indent Ce qui montre que le schéma du point milieu est stable. \\
+
+\textbf{Démo (consistance) :}\\
+\indent On a $\Phi(t,y,0)=f(t,y)$\\
+\indent Ce qui montre que le schéma du point milieu est consistant.\\
+
+\textbf{Démo (ordre) :}\\
+\indent $T_i =\frac{y(t_{i+1})-y(t_i)}{h}-\Phi(t,y(t_i),h)$\\
+\indent On a d'une part :\\
+\indent $y(t_{i+1})=y(t_i+h)=y(t_i)+hy'(t_i)+\frac{h^2}{2}y''(t_i)+\frac{h^3}{3!}y^{(3)}(\xi_i)$ pour $t_i<\xi_i<t_{i+1}$
+\begin{align*}
+\frac{y(t_i+h)-y(t_i)}{h} & = y'(t_i)+\frac{h}{2}y''(t_i)+\frac{h^2}{3!}y^{(3)}(\xi_i) \\
+						  & = f(t_i,y(t_i))+\frac{h}{2} \frac{d}{dt}f(t,y(t))|_{t=t_i} + \frac{h^2}{6}y^{(3)}(\xi_i) \\
+						  & = f(t_i,y(t_i))+\frac{h}{2}\left[\frac{df}{dt}(t,y(t))+\frac{df}{dy}y'(t)\right]|_{t=t_i} + \frac{h^2}{6}y^{(3)}(\xi_i) \\
+						  & = f(t_i,y(t_i))+\frac{h}{2}\left[\frac{df}{dt}(t_i,y(t_i))+\frac{df}{dy}(t_i,y(t_i))\times f(t_i,y(t_i))\right] + \frac{h^2}{6}y^{(3)}(\xi_i)
+\end{align*}
+\indent On a d'autre part :\\
+\begin{align*}
+\Phi(t,y(t_i),h) & = f(t_i+\frac{h}{2}, y(t_i)+\frac{h}{2}f(t_i,y(t_i)) \\
+				 & = f(t_i,y(t_i))+\frac{h}{2}\left[\frac{df}{dt}(t_i,y(t_i))+\frac{df}{dy}(t_i,y(t_i))\times f(t_i,y(t_i))\right] -O(h^2)
+\end{align*}
+\indent Donc (on soustrait les deux équations obtenues) :\\
+\indent $T_i=\frac{h^2}{6}y^{(3)}(\xi_i) + O(h^2)$ d'où $T_i \leq Ch^{\textcolor{red}{\textcircled{\scriptsize 2}}}$ \\
+\indent Ce qui montre que le schéma du point milieu est d'ordre 2.\\ \\
 
 \subsection{Application dans \textit{Scilab}}
 On s'intéresse une nouvelle fois à l'équation différentielle (\ref{exemple_equa_diff}), à savoir :\\
@@ -1484,7 +1525,7 @@ y(0)=0
 \end{equation*} \\
 Dont on rappelle la solution : $y=Ce^{\frac{-t^2}{2}}+1$\\ \\
 
-On implémente donc dans \textit{Scilab} le schéma du point milieu avec le code \ref{code_pointmilieu}
+On implémente donc dans \textit{Scilab} le schéma du point milieu avec le code \ref{code_pointmilieu} qui nous donne l'affichage (\ref{graph_pointmilieu}).
 \begin{table}[H]
 \caption{Schéma du point milieu}
 \begin{tabular}{l}
@@ -1493,7 +1534,6 @@ On implémente donc dans \textit{Scilab} le schéma du point milieu avec le code
 \end{tabular}
 \end{table}
 
-L'exécution du code \ref{code_pointmilieu} nous donne l'affichage (\ref{graph_pointmilieu}).
 \begin{figure}[H]
 \centering
 \caption{Affichage (schéma du point milieu)}
@@ -1508,8 +1548,8 @@ On rappelle que l'on a : $y(t_{i+1}) = y(t_i) + \int_{t_i}^{t_{i+1}} y'dt = y(t_
 On approche $\int_{t_i}^{t_{i+1}} f(t,y(t))dt$ par \textbf{l'aire du trapèze} :\\
 \abovedisplayskip=0mm
 \begin{align*}
-   y(t_{i+1}) & \thicksim y(t_i)+\frac{h}{2} \left[ f(t_i,y(t_i)) + f(t_{i+1},y(t_{i+1})) \right] \\
-			  & \thicksim y(t_i)+\frac{h}{2} \left[ f(t_i,y(t_i)) + f(t_i+h,y(t_i)+hf(t_i,y(t_i)) \right]
+y(t_{i+1}) & \thicksim y(t_i)+\frac{h}{2} \left[ f(t_i,y(t_i)) + f(t_{i+1},y(t_{i+1})) \right] \\
+		   & \thicksim y(t_i)+\frac{h}{2} \left[ f(t_i,y(t_i)) + f(t_i+h,y(t_i)+hf(t_i,y(t_i)) \right]
 \end{align*}
 D'où \textbf{le schéma d'Euler-Cauchy} :\\
 \begin{equation}
@@ -1521,7 +1561,33 @@ z_0 \text{ donné, } z_0=y_0
 \end{equation}
 
 \subsubsection{Propriétés}
-Le schéma d'Euler-Cauchy est \textbf{stable}, \textbf{consistant} et \textbf{d'ordre 2}.
+Le schéma d'Euler-Cauchy est \textbf{stable}, \textbf{consistant} et \textbf{d'ordre 2}.\\
+(si $f$ est L-lipschitzienne par rapport à la $2^{\text{ème}}$ variable)  \\
+
+\textbf{Démo (stabilité) :}\\
+\indent On pose $\Phi(t,y,h)=\frac{f(t,y)+f(t+h,y+hf(t,y)}{2}$, ainsi :
+\begin{align*}
+||\Phi(t,y,h)-\Phi(t,z,h)|| & = \frac{1}{2}||f(t,y)-f(t,z)+f(t+h,y+hf(t,y))-f(t+h,z+hf(t,z))|| \\
+							& \leq \frac{1}{2}\left[ L|y-z| + L{|y-z|+h(f(t,y)-f(t,z))} \right] \\
+							& \leq \frac{1}{2}|y-z|\left[ L + L + hL^2 \right] \\
+							& \leq C|y-z|
+\end{align*}
+\indent Ce qui montre que le schéma d'Euler-Cauchy est stable. \\
+
+\textbf{Démo (consistance) :}\\
+\indent On a $\Phi(t,y,0)=\frac{f(t,y)+f(t,y)}{2}=f(t,y)$\\
+\indent Ce qui montre que le schéma d'Euler-Cauchy est consistant.\\
+
+\textbf{Démo (ordre) :}\\
+\begin{align*}
+T_i & =\frac{y(t_{i+1})-y(t_i)}{h}-\Phi(t,y(t_i),h) \\
+	& =\frac{y(t_{i+1})-y(t_i)}{h} - \frac{1}{2}(f(t_i,y(t_i))+f(t_i+h,y(t_i)+hf(t_i,y(y_i))) \\
+	& = f(t_i,y(t_i))+\frac{h}{2}\left[ \frac{df}{dt}(t_i,y(t_i)) + \frac{df}{dy}f(t_i,y(t_i)) \right] + \frac{h^2}{2}y^{(3)}(\xi_i)\\
+	& - \frac{1}{2}(f(t_i,y(t_i))+f(t_i,y(t_i))) + h\frac{df}{dt}(t_i,y(t_i)) + h\frac{df}{dy}f(t_i,y(t_i)) + O(h^2) \\
+	& = \frac{h^2}{2}y^{(3)}(\xi_i) + O(h^2)
+\end{align*}
+\indent Donc $T_i \leq Ch^{\textcolor{red}{\textcircled{\scriptsize 2}}}$ \\
+\indent Ce qui montre que le schéma d'Euler-Cauchy est d'ordre 2.\\ \\
 
 \subsection{Application dans \textit{Scilab}}
 On s'intéresse toujours à l'équation différentielle (\ref{exemple_equa_diff}), à savoir :\\
@@ -1565,7 +1631,9 @@ z_{i+1}=z_i\left( \frac{k_1+2k_2+2k_3+k_4}{6} \right)
 \end{equation}
 
 \subsubsection{Propriétés}
-Le schéma de Runge-Kutta est \textbf{stable}, \textbf{consistant} et \textbf{d'ordre 4}.
+Le schéma de Runge-Kutta est \textbf{stable}, \textbf{consistant} et \textbf{d'ordre 4}.\\
+(si $f$ est L-lipschitzienne par rapport à la $2^{\text{ème}}$ variable)  \\
+(on admettra les démonstrations de ces propriétés)
 
 \subsection{Application dans \textit{Scilab}}
 On s'intéresse une dernière fois à l'équation différentielle (\ref{exemple_equa_diff}), à savoir :\\
@@ -1629,7 +1697,7 @@ L'exécution du code \ref{code_ordre} nous donne l'affichage (figure \ref{graph_
 
 Et on a les coefficients de régression linéaire :
 \begin{verbatim}
--->a1
+-->a1 
   = 1.0342713  
  
 -->a2
@@ -1652,7 +1720,7 @@ Pour un système mis sous la forme :
 \left\lbrace
 \begin{array}{l}
 y'(t)= f(t,y)  \\
-y_0 \text{donné} \\
+y_0 \text{ donné} \\
 \end{array}\right.
 \end{equation}
 \textit{ode} a différents prototypes, les arguments qui nous intéressent ici sont :
@@ -1701,7 +1769,7 @@ Pour compléter l'étude, on peut se souvenir de ce qui est enseigné en termina
 \phi(t)=\theta_0 cos \left( \sqrt{\frac{g}{L}}t \right)
 \end{equation}\\
 
-On implémente ainsi dans \textit{Scilab} un programme qui permettra de comparer les deux solutions approchées (par le schéma d'Euler et par l'approximation $\theta(t)\simeq sin\theta(t)$) avec le code \ref{code_pendule}.
+On implémente ainsi dans \textit{Scilab} un programme qui permettra de comparer les deux solutions approchées (par le schéma d'Euler et par l'approximation $\theta(t)\simeq sin\theta(t)$) avec le code \ref{code_pendule}, on obtient l'affichage (\ref{aff_pendule}).
 \begin{table}[H]
 \caption{Résolution du problème du pendule}
 \begin{tabular}{l}
@@ -1710,15 +1778,103 @@ On implémente ainsi dans \textit{Scilab} un programme qui permettra de comparer
 \end{tabular}
 \end{table}
 
-On obtient alors l'affichage \ref{aff_pendule}.
 \begin{figure}[H]
 \centering
 \caption{Superposition des solutions approchées pour différentes valeurs de $\theta_0$}
 \includegraphics[width=\textwidth]{graph_pendule.pdf}
 \label{aff_pendule}
 \end{figure}
+Comme on pouvait s'y attendre, l'approximation $\theta(t)\simeq sin\theta(t)$ est de moins en moins fidèle à la réalité à mesure que $\theta(0)$ augmente. Compte-tenu des graphiques obtenus figure (\ref{aff_pendule}), on peut raisonnablement considérer que cette approximation est bonne lorsque $\theta(0) \leq \frac{\pi}{4}$.
+
+\section{Application concrète : les systèmes proies / prédateurs}
+Nous allons nous intéresser à un deuxième exemple de systèmes d'équations différentielles classiques : les modèles proies / prédateurs. Considérons une population $x(t)$ de proies à l'instant $t$ et une population $y(t)$ de prédateurs à l'instant $t$, populations evoluant dans le même milieu. On a alors le système d'équations différentielles (\ref{proie_predateur}). \\
+\begin{equation}
+\label{proie_predateur}
+\left\lbrace
+\begin{array}{l}
+x'(t)=ax(t)-bx(t)y(t)  \ \ \ \ \ \ \text{ avec } a,b,c,d \in \mathbb{R}^{+*}\\
+y'(t)=-cy(t)+dx(t)y(t) \\
+\end{array}\right.
+\end{equation}
+Avec $a$ le taux de reproduction des proies (en l'absence de prédateurs), $b$ le taux de mortalité des proies (en la présence de prédateurs), $c$ le taux de mortalité des prédateurs (en l'absence de proies) et $d$ le taux de reproduction des prédateurs (en la présence de proies). Ces coefficients peuvent être choisis arbitrairement afin de créer différents modèles (où les prédateurs sont avantagés, où les proies sont avantagées, etc). Nous choisissons des valeurs déjà connus comme étant de bons paramètres, à savoir :
+\begin{equation}
+a=\frac{2}{3}, \ \ \ b=\frac{4}{3}, \ \ \ c=d=1
+\end{equation}
+On obtient donc le modèle proies / prédateurs (\ref{proie_predateur_part}). \\
+\begin{equation}
+\label{proie_predateur_part}
+\left\lbrace
+\begin{array}{l}
+x'(t)=\frac{2}{3}x(t)-\frac{4}{3}x(t)y(t) \\
+y'(t)=-y(t)+x(t)y(t) \\
+\end{array}\right.
+\end{equation}
+
+\indent Nous appliquons donc un des schémas étudiés précédemment (par souci de simplicité et de clarté du code, on choisit le schéma d'Euler) au système (\ref{proie_predateur_part}) afin de connaître l'évolution de la proportion de proies et de prédateurs en fonction du temps. On s'intéressera également à l'évolution de la proportion de proies en fonction de la proportion de prédateurs. Les conditions initiales sont choisies arbitrairement : $x(0)=y(0)=1/2$ (notons que la modification de ces conditions initiales ne changent pas l'allure des courbes obtenues). On implémente ainsi dans \textit{Scilab} le code \ref{code_proie-predateur}.
+\begin{table}[H]
+\caption{Résolution du problème proies / prédateurs}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{proie-predateur.sce}
+\label{code_proie-predateur}
+\end{tabular}
+\end{table}
+
+On obtient alors l'affichage (\ref{aff_proie-predateur}). L'évolution de la proportion de proies et de la proportion de prédateurs indiquent une certaine périodicité dans l'évolution, mise en évidence par l'évolution de la proportion de proies en fonction de la proportion de prédateurs : il s'agit d'un cycle. Tout ceci indique l'existence d'un équilibre dans le milieu. Sans cet équilibre, on peut imaginer que les prédateurs, en présence de proies, se reproduiraient exponentiellement, en dépit des proies qui finiraient par s'éteindre, ce qui entraînerait l’extinction des prédateurs, privés de nourriture. Il n'en est rien, la nature est tout de même bien faite !
+\begin{figure}[H]
+\centering
+\caption{Évolution des proportions proies-prédateurs}
+\includegraphics[width=\textwidth]{proie-predateur.pdf}
+\label{aff_proie-predateur}
+\end{figure}
 
 \section{Application concrète : la mécanique céleste}
+On s'intéresse à un dernier exemple de systèmes d'équations différentielles : la mécanique céleste. L'idée est ici de simuler le mouvements de plusieurs corps soumis à leurs attractions gravitationnelles mutuelles. On considère donc deux corps sphériques de masses respectives $m_1$ et $m_2$ et de centres :
+\begin{displaymath}
+u_1=\left( \begin{array}{c} x_1 \\ y_1 \end{array} \right), \ \ \ u_2=\left( \begin{array}{c} x_2 \\ y_2 \end{array} \right)
+\end{displaymath}
+On sait que la force de gravitation exercée par un corps (1) sur un autre corps (2) est égale à :
+\begin{displaymath}
+F_{21}=G \frac{m_1 m_2}{||u_2 - u_1||^3}(u_2-u_1)
+\end{displaymath}
+Où $G$ est la constante de gravitation universelle, $G=6,67\times 10^{-11}$.\\
+En écrivant les équations de la dynamique, on peut simuler le mouvement des deux corps en fonction d'une configuration initiale de position et de vitesse, on obtient alors le système d'équations différentielles (\ref{meca_celeste}).
+\begin{equation}
+\label{meca_celeste}
+\left\lbrace
+\begin{array}{l}
+u_1''=+G m_2 \frac{u_2 - u_1}{||u_2 - u_1||^3} \\
+u_2''=-G m_1 \frac{u_2 - u_1}{||u_2 - u_1||^3}
+\end{array}\right.
+\end{equation}\\
+On a les conditions initiales de position :
+\begin{equation}
+u_1(0)=(0,0), \ \ \ u_2(0)=(d_{TL},0)
+\end{equation}
+Et de vitesse :
+\begin{equation}
+u_1'(0)=(0,0), \ \ \ u_2'(0)=(0,\frac{2\pi}{T}d_{TL})
+\end{equation}
+Où $d_{TL}$ est la distance Terre-Lune, $d_{TL}=3,84402\times 10^8$ mètres\\ et $T$ est la période de rotation, $T=27,55$ jours.\\ \\
+Pour pouvoir travailler directement avec la macro \textit{ode} de \textit{Scilab}, on met les équations (\ref{meca_celeste}) sous forme du premier ordre en temps. On considère $v \in \mathbb{R}^8$ tel que
+\begin{equation}
+v=\left( \begin{array}{c} u_1 \\ u_1' \\ u_2 \\ u_2' \end{array} \right)
+\end{equation}
+On peut donc écrire le système (\ref{meca_celeste}) sous la forme $v'=f(v)$ On implémente ainsi dans \textit{Scilab} le code \ref{code_celeste_1}.
+\begin{table}[H]
+\caption{Résolution du modèle de mécanique céleste}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{celeste.sce}
+\label{code_celeste_1}
+\end{tabular}
+\end{table}
+
+On obtient alors l'affichage (\ref{aff_celeste}).
+\begin{figure}[H]
+\centering
+\caption{Mécanique céleste : trajectoires des corps}
+\includegraphics[width=\textwidth]{celeste.pdf}
+\label{aff_celeste}
+\end{figure}
 
 \chapter{Valeurs propres}
 \section{Introduction}
@@ -1862,7 +2018,7 @@ h_{ij}= \frac{g_{ii}}{c_j} \text{ avec } c_j=\sum^3_{i=1} g_{ij} \text{ si } c_j
 h_{ij}= \frac{1}{3} \text{ sinon} \\
 \end{array}\right. $ \\ \\
 
-Afin d'élaborer un premier modèle dit naïf : l'internaute clique sur le lien d'une page et s'y dirige selon les probabilités :
+Afin d'élaborer un premier modèle dit naïf, on considère que l'internaute clique sur le lien d'une page et s'y dirige selon les probabilités :
 \begin{equation}
 \left( \begin{array}{c} p_{n+1} \\ q_{n+1} \\ r_{n+1} \end{array} \right)
 = \underbrace{\left( \begin{array}{ccc} 0 & 1 & 1 \\ \frac{1}{2} & 0 & 0 \\ \frac{1}{2} & 0 & 0 \end{array} \right)}_H
@@ -1872,7 +2028,7 @@ Afin d'élaborer un premier modèle dit naïf : l'internaute clique sur le lien 
 Posons $A=\left( \begin{array}{ccc} 0 & 1 & 1 \\ \frac{1}{2} & 0 & 0 \\ \frac{1}{2} & 0 & 0 \end{array} \right)$, supposons que $n\longrightarrow +\infty$, si $\left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)\longrightarrow C$ alors on a $C=AC$\\
 Donc $C$ est le vecteur propre de $A$ associée à la valeur propre 1.\\ \\
 
-\indent Or dans notre exemple, on a $\left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)=A^n\left( \begin{array}{c} p_{0} \\ q_{0} \\ r_{0} \end{array} \right)=A^n\left( \begin{array}{c} \frac{1}{3} \\ \frac{1}{3} \\ \frac{1}{3} \end{array} \right)$ diverge lorsque $n\longrightarrow +\infty$\\
+\indent Or dans notre exemple, on a $\left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)=A^n\left( \begin{array}{c} p_{0} \\ q_{0} \\ r_{0} \end{array} \right)=A^n\left( \begin{array}{c} \frac{1}{3} \\ \frac{1}{3} \\ \frac{1}{3} \end{array} \right)$ diverge lorsque $n\longrightarrow +\infty$\\ \\ \\
 En effet, $A$ a trois valeurs propres distinctes : $\lambda_1=1$, $\lambda_2=-1$ et $\lambda_3<1$, donc $|\lambda_1|=|\lambda_2|=1$\\
 $A$ possède donc deux valeurs propres dominantes, donc il est normal que la suite diverge. Le modèle naïf (\ref{naif}) ne permet donc pas de déterminer le PageRank de notre configuration très simple.\\ \\
 
@@ -1934,13 +2090,25 @@ On implémente ainsi dans \textit{Scilab} le code \ref{pagerank}.
 \end{tabular}
 \end{table}
 On obtient ainsi les vecteurs associés aux différentes configurations :\\
+
+\begin{figure}[H]
+\begin{minipage}[c]{.40\linewidth}
 \textbf{Configuration 1 :}
 \begin{verbatim}
     0.4864865  
     0.2567568  
     0.2567568
 \end{verbatim}
+\end{minipage} \hfill
+\begin{minipage}[c]{.58\linewidth}
+\begin{figure}[H]
+   \includegraphics[width=4.5cm]{diag_config1.png}
+   \end{figure}
+\end{minipage}
+\end{figure}
 
+\begin{figure}[H]
+\begin{minipage}[c]{.40\linewidth}
 \noindent \textbf{Configuration 2 :}
 \begin{verbatim}
     0.01875    
@@ -1952,7 +2120,16 @@ On obtient ainsi les vecteurs associés aux différentes configurations :\\
     0.1866015  
     0.3092864
 \end{verbatim}
+\end{minipage} \hfill
+\begin{minipage}[c]{.58\linewidth}
+\begin{figure}[H]
+   \includegraphics[width=4.5cm]{diag_config2.png}
+   \end{figure}
+\end{minipage}
+\end{figure}
 
+\begin{figure}[H]
+\begin{minipage}[c]{.40\linewidth}
 \noindent \textbf{Configuration 3 :}
 \begin{verbatim}
     0.2    
@@ -1961,7 +2138,33 @@ On obtient ainsi les vecteurs associés aux différentes configurations :\\
     0.285  
     0.03  
 \end{verbatim}
+\end{minipage} \hfill
+\begin{minipage}[c]{.58\linewidth}
+\begin{figure}[H]
+   \includegraphics[width=4.5cm]{diag_config3.png}
+   \end{figure}
+\end{minipage}
+\end{figure}
 
+\begin{figure}[H]
+\begin{minipage}[c]{.40\linewidth}
+\noindent \textbf{Configuration 4 :}
+\begin{verbatim}
+    0.3681507  
+    0.1418094  
+    0.2879616  
+    0.2020783 
+\end{verbatim}
+\end{minipage} \hfill
+\begin{minipage}[c]{.58\linewidth}
+\begin{figure}[H]
+   \includegraphics[width=4.5cm]{diag_config4.png}
+   \end{figure}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[H]
+\begin{minipage}[c]{.40\linewidth}
 \noindent \textbf{Configuration 5 :}
 \begin{verbatim}
     0.0311925  
@@ -1979,7 +2182,14 @@ On obtient ainsi les vecteurs associés aux différentes configurations :\\
     0.1184380  
     0.1166532  
     0.1325107
-\end{verbatim} 
+\end{verbatim}
+\end{minipage} \hfill
+\begin{minipage}[c]{.58\linewidth}
+\begin{figure}[H]
+   \includegraphics[width=6cm]{diag_config5.png}
+   \end{figure}
+\end{minipage}
+\end{figure}
 
 
 

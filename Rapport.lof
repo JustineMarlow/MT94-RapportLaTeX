@@ -39,8 +39,16 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Affichage (sch\IeC {\'e}ma d'Euler)}}{49}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Affichage (sch\IeC {\'e}ma du point milieu)}}{51}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Affichage (sch\IeC {\'e}ma d'Euler-Cauchy)}}{53}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Affichage (sch\IeC {\'e}ma de Runge Kutta)}}{55}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Affichage (ordres des diff\IeC {\'e}rents sch\IeC {\'e}mas)}}{58}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Sch\IeC {\'e}ma du pendule consid\IeC {\'e}r\IeC {\'e}}}{59}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Superposition des solutions approch\IeC {\'e}es pour diff\IeC {\'e}rentes valeurs de $\theta _0$}}{61}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Affichage (sch\IeC {\'e}ma d'Euler-Cauchy)}}{54}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Affichage (sch\IeC {\'e}ma de Runge Kutta)}}{56}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Affichage (ordres des diff\IeC {\'e}rents sch\IeC {\'e}mas)}}{59}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Sch\IeC {\'e}ma du pendule consid\IeC {\'e}r\IeC {\'e}}}{60}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Superposition des solutions approch\IeC {\'e}es pour diff\IeC {\'e}rentes valeurs de $\theta _0$}}{62}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces \IeC {\'E}volution des proportions proies-pr\IeC {\'e}dateurs}}{64}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces M\IeC {\'e}canique c\IeC {\'e}leste : trajectoires des corps}}{66}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Image originale Lena}}{69}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Image originale Lena en niveaux de gris (obtenue gr\IeC {\^a}ce \IeC {\`a} la matrice)}}{69}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Diff\IeC {\'e}rentes compressions de l'image et erreur associ\IeC {\'e}e}}{71}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces PageRank : configuration 1}}{72}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces PageRank : configurations 2 \IeC {\`a} 5}}{73}

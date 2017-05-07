@@ -17,21 +17,18 @@ function y = solution_approx(theta0,t)
     y = theta0*cos(sqrt(g/L)*t);
 endfunction
 
-g=9,81;
-L=1;
+g=9,81; L=1; //donnees
 t=linspace(0,10,10000);
-gammeTheta = [%pi/32,%pi/16,%pi/8,%pi/2,3*%pi/4,63*%pi/64];
+gammeTheta = [%pi/32,%pi/16,%pi/8,%pi/4,%pi/2,3*%pi/4];
 nomTheta = ["\\frac{\\pi}{32}","\\frac{\\pi}{16}","\\frac{\\pi}{8}",
-"\\frac{\\pi}{2}","\\frac{3\\pi}{4}","\\frac{63\\pi}{64}"];
+"\\frac{\\pi}{4}","\\frac{\\pi}{2}","\\frac{3\\pi}{4}"];
 
 clf;
 for i=1:length(gammeTheta)
     theta0=gammeTheta(i);
     y=euler(theta0,t);
-    //on aurait pu resoudre avec ode : y2=ode([theta0;0],0,t,1e-10,f);
     subplot(3,2,i);
     plot(t,y(1,:),'r');
-    //on obtient le meme affichage avec plot(t,y2(1,:),'g');
     plot(t,solution_approx(theta0,t),'b');
     title(sprintf('$$\\theta_0='+nomTheta(i)+'$$'));
 end
