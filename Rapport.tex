@@ -1933,17 +1933,24 @@ Donc, par définition de $Ker(A)$, $Im(A)$ et la formule du rang :\\
 $Ker(A)=vect\left\lbrace V_{r+1},\cdots,V_n \right\rbrace$, $Im(A)=vect\left\lbrace U_1,\cdots,U_r\right\rbrace$, $rang(A)=r$
 
 \newpage
-\section{Application}
-\subsection{La compression d'images}
-Une image, constituée de $m$ lignes et $n$ colonnes de pixels peut-être représentée par une matrice $A = (a_{ij}) \in \mathcal{M}_{m,n}(\mathbb{R})$ avec la valeur de $a_{ij}$ représentant le niveau de gris du pixel $(i,j)$.\\
-Ainsi nous nous sommes intéressée à un cas d'école de la compression d'image : celle de la photo de Lena, une \textit{playmate} prise dans un numéro du magazine \textit{Playboy}.
-\begin{figure}[H]
-\centering
-\caption{Image originale Lena}
-\includegraphics[width=4.5cm]{lena.png}
-\end{figure}
+\section{Application 1 : La compression d'images}
+\subsection{Présentation du problème}
+\begin{minipage}[c]{.70\linewidth}
+\indent Une image, constituée de $m$ lignes et $n$ colonnes de pixels peut-être représentée par une matrice $A = (a_{ij}) \in \mathcal{M}_{m,n}(\mathbb{R})$ avec la valeur de $a_{ij}$ représentant le niveau de gris du pixel $(i,j)$.\\
+\indent Ainsi nous nous sommes intéressée à un cas d'école de la compression d'image : celle de la photo de Lena, une \textit{playmate} prise dans un numéro du magazine \textit{Playboy} (\ref{lena_couleur}). \\ \\
+\indent On implémente dans \textit{Scilab} le code \ref{lena_originale} afin de récupérer depuis un fichier .csv la matrice de Lena en niveaux de gris, on obtient l'affichage (\ref{originale}).
+\end{minipage} \hfill
+\begin{minipage}[c]{.05\linewidth}
+\end{minipage} \hfill
+\begin{minipage}[c]{.21\linewidth}
+	\begin{figure}[H]
+	\centering
+	\caption{Image originale Lena}
+	\includegraphics[width=4.5cm]{lena.png}
+	\label{lena_couleur}
+	\end{figure}
+\end{minipage}
 
-On implémente dans \textit{Scilab} le code \ref{lena_originale} afin de récupérer depuis un fichier .csv la matrice de Lena en niveaux de gris, on obtient l'affichage (\ref{originale}).
 \begin{table}[H]
 \caption{Lena : Récupération et affichage de l'image originale}
 \begin{tabular}{l}
@@ -1959,10 +1966,32 @@ On implémente dans \textit{Scilab} le code \ref{lena_originale} afin de récup�
 \label{originale}
 \end{figure}
 
-La matrice $lena$ que nous venons de créer et de remplir possède donc 512 colonnes et 512 lignes, elle occupe une place en mémoire absolument colossale. C'est pourquoi nous nous intéressons à sa compression. \\
-\indent Comme nous l'avons précédemment vu, nous n'avons pas besoin de toutes les valeurs de $\sigma_i$ pour construire l'image. En effet, pour un seuil $\epsilon>0$ donné, on a $|\sigma_m|<\epsilon$ pour $m\geq k+1$, avec $k<<512$. On remplace donc A par $A_k$ pour différentes valeurs de $k$ (on prendra ici 10, 20 et 30). \\ \\
+La matrice $lena$ que nous venons de créer et de remplir possède donc 512 colonnes et 512 lignes, elle occupe une place en mémoire absolument colossale. C'est pourquoi nous nous intéressons à sa compression.
 
-On implémente ainsi dans \textit{Scilab} le code \ref{lena} qui nous donne l'affichage (\ref{compression}).
+\subsection{Théorie de résolution (théorème et corollaire)}
+Pour cela, on a le théorème (\ref{theoreme_somme}) et son corollaire (\ref{theoreme_corollaire}).\\
+\indent \textbf{Théorème}\\
+\begin{equation}
+\label{theoreme_somme}
+\begin{array}{l}
+A \in \mathcal{M}_{m,n}(\mathbb{R}) \text{ alors } A=\sum \limits_{i=1}^r \sigma_i U_i V_i^T \\
+A \text{ est une somme de matrice de rang 1 (car } U_i V_i^T \text{ est une matrice de rang 1)}
+\end{array}
+\end{equation}
+\indent \textbf{Corollaire}\\
+\begin{equation}
+\label{theoreme_corollaire}
+\begin{array}{l}
+A_k \sum \limits_{i=1}^k \sigma_i U_i V_i^T \\
+\text{On a } ||A-A_k||^2_F= \sigma^2_k+1\\
+\text{Où } ||A||^2_F \text{ est la norme de Frobenius de la matrice A : } A=(a_{ij}), \ ||A||^2_F=\sum a_{ij}^2
+\end{array}
+\end{equation} \\
+
+\indent Dans le cas des images, nous n'avons pas besoin de toutes les valeurs de $\sigma_i$ pour construire l'image. En effet, pour un seuil $\epsilon>0$ donné, on a $|\sigma_m|<\epsilon$ pour $m\geq k+1$, avec $k<<512$. On remplace donc A par $A_k$ pour différentes valeurs de $k$ (on prendra ici 10, 20 et 30). Ainsi on diminue considérablement la place de l'image en mémoire : on conserve les k valeurs  de $\sigma_i$, et les vecteurs $U_i$ et $V_i$ associés (on conserve donc $3k$ valeurs, contre $512^2$ avant compression). \\
+
+\subsection{Résolution du problème}
+\indent On implémente ainsi dans \textit{Scilab} le code \ref{lena} qui nous donne l'affichage (\ref{valeur_propre}) et l'affichage (\ref{compression}).
 \begin{table}[H]
 \caption{Lena : Compression de l'image}
 \begin{tabular}{l}
@@ -1973,14 +2002,39 @@ On implémente ainsi dans \textit{Scilab} le code \ref{lena} qui nous donne l'af
 
 \begin{figure}[H]
 \centering
+\caption{Valeurs propres de $\Sigma$}
+\includegraphics[width=\textwidth]{valeur_propre.pdf}
+\label{valeur_propre}
+\end{figure}
+
+\begin{figure}[H]
+\centering
 \caption{Différentes compressions de l'image et erreur associée}
 \includegraphics[width=\textwidth]{lena_pg1.png}
 \label{compression}
 \end{figure}
 
-\newpage
-\subsection{Le PageRank}
-Pour détailler et expliquer la méthode du PageRank, il apparaît pertinent de s'intéresser à un exemple très simple de configurations de pages internet (figure (\ref{config1})). Cette configuration ne comprend que 3 pages notées $P_1$, $P_2$ et $P_3$ telles que :\\
+\indent Pour s'interroger sur la puissance de la décomposition \textit{SVD}, on peut se poser une question : est il possible, une fois que l'image a été \textit{bruitée}, déformée, floutée, etc, de récupérer une image plus nette, proche de l'image originale ? \\
+\indent C'est tout à fait possible en utilisant une nouvelle fois la décomposition \textit{SVD} : on implémente dans \textit{Scilab} le code \ref{lena_bis}. Le code nous donne l'affichage (\ref{decompression}) : la décomposition \textit{SVD} permet donc de récupérer une image plus nette à partir d'une image bruitée (même si l'image finale n'est pas aussi nette que l'image originale).
+\begin{table}[H]
+\caption{Lena : Bruitage puis débruitage de l'image}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{lena_bis.sce}
+\label{lena_bis}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Résultat du débruitage}
+\includegraphics[width=\textwidth]{lena_pg2.png}
+\label{decompression}
+\end{figure}
+
+
+\section{Application 2 : le \textit{PageRank}}
+\subsection{Présentation du problème}
+Pour détailler et expliquer la méthode du \textit{PageRank}, il apparaît pertinent de s'intéresser à un exemple très simple de configurations de pages internet (figure (\ref{config1})). Cette configuration ne comprend que 3 pages notées $P_1$, $P_2$ et $P_3$ telles que :\\
 \begin{minipage}[c]{.40\linewidth}
 \begin{itemize}
 \item la page $P_1$ a un lien vers $P_2$ et $P_3$
@@ -1999,6 +2053,7 @@ Pour détailler et expliquer la méthode du PageRank, il apparaît pertinent de 
 
 On se demande donc : laquelle des trois pages a le plus d'importance ? Autrement dit, laquelle est la plus pertinente ?\\ \\
 
+\subsection{Théorie de résolution (modélisation et méthode de la puissance)}
 \indent On peut dans un premier temps poser les suites suivantes :
 \begin{itemize}
 \item $p_n$ la probabilité d'être sur $P_1$ au bout de $n$ clics
@@ -2032,7 +2087,6 @@ Donc $C$ est le vecteur propre de $A$ associée à la valeur propre 1.\\ \\
 En effet, $A$ a trois valeurs propres distinctes : $\lambda_1=1$, $\lambda_2=-1$ et $\lambda_3<1$, donc $|\lambda_1|=|\lambda_2|=1$\\
 $A$ possède donc deux valeurs propres dominantes, donc il est normal que la suite diverge. Le modèle naïf (\ref{naif}) ne permet donc pas de déterminer le PageRank de notre configuration très simple.\\ \\
 
-\newpage
 \indent Il est donc indispensable de modifier le modèle. Pour celà, nous allons introduire une part de hasard : on suppose que l'internaute peut à tout moment réactualiser sa recherche et accéder à n'importe quelle autre page aléatoirement (de manière équiprobable).\\
 Soit $A_n$ cet événement, notons $\alpha =P(A_n)$, on a alors, selon la formule des probabilités totales :
 \begin{itemize}
@@ -2040,7 +2094,7 @@ Soit $A_n$ cet événement, notons $\alpha =P(A_n)$, on a alors, selon la formul
 \item $P(q_{n+1})=P(q_{n+1}|A_n)\times P(A_n) + P(q_{n+1}|\overline{A_n})\times P(\overline{A_n}) = \alpha \times \frac{1}{3} + (1-\alpha) p_n\times \frac{1}{2}$
 \item $P(r_{n+1})=P(r_{n+1}|A_n)\times P(A_n) + P(r_{n+1}|\overline{A_n})\times P(\overline{A_n}) = \alpha \times \frac{1}{3} + (1-\alpha) p_n\times \frac{1}{2}$
 \end{itemize}
-d'où $\left( \begin{array}{c} p_{n+1} \\ q_{n+1} \\ r_{n+1} \end{array} \right)= \left[ \alpha \times \frac{1}{3} \left( \begin{array}{c} 1 \\ 1 \\ 1 \end{array} \right) + (1-\alpha) \left( \begin{array}{ccc} 0 & 1 & 1 \\ \frac{1}{2} & 0 & 0 \\ \frac{1}{2} & 0 & 0 \end{array} \right) \right] \left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)$\\
+d'où $\left( \begin{array}{c} p_{n+1} \\ q_{n+1} \\ r_{n+1} \end{array} \right)= \left[ \alpha \times \frac{1}{3} \left( \begin{array}{c} 1 \\ 1 \\ 1 \end{array} \right) + (1-\alpha) \left( \begin{array}{ccc} 0 & 1 & 1 \\ \frac{1}{2} & 0 & 0 \\ \frac{1}{2} & 0 & 0 \end{array} \right) \right] \left( \begin{array}{c} p_{n} \\ q_{n} \\ r_{n} \end{array} \right)$\\ \\
 
 \noindent Par ailleurs, on a $p_n+q_n+r_n$ = 1\\
 Donc $\left( \begin{array}{c} 1 \\ 1 \\ 1 \end{array} \right) =
@@ -2057,7 +2111,28 @@ Finalement, avec $p=1-\alpha$, on a le modèle :
 \end{equation}
 La matrice $A$ admet donc comme unique valeur propre dominante et comme valeur propre simple $\lambda=1$. On peut ainsi lui appliquer la méthode de la puissance afin de déterminer $x$ tel que $x=Ax$, $x$ sera alors le PageRank de la configuration.\\ \\
 
-La configuration 1 décrite dans la figure (\ref{config1}) constitue un exemple très simple. Ainsi, pour étoffer notre étude, on appliquera donc également la méthode aux configurations plus complexes suivantes. On définira leur modèle respectif de manière analogue à celui de la configuration 1 (modèle (\ref{modele})).
+\indent \textbf{Méthode de la puissance :} \\
+Soit $A \in \mathcal{M}_{n,n}(\mathbb{R})$ telle que $A$ admet $\lambda_1, \lambda_2, \cdots, \lambda_n$ valeurs propres \\
+On suppose $|\lambda_1|> |\lambda_2| \geq \cdots \geq |\lambda_n|$, on dit que $\lambda_1$ est la valeur propre dominante de A.\\
+Le but de la méthode est d'approcher $\lambda_1$ et $v_1$ le vecteur propre associé.\\
+On suppose {$v1, \cdots, v_n$} une base de vecteurs propres de $A$.\\
+On part de $x^{(0)} \in \mathbb{R}^n$ tel que $x^{(0)}=\sum \limits_{i=1}^n \alpha_i v_i$ avec $\alpha_i \neq 0$\\
+On a naïvement $x^{(1)} =Ax^{(0)}=A(\sum \limits_{i=1}^n \alpha_i v_i)= \sum \limits_{i=1}^n \alpha_i A v_i =\sum \limits_{i=1}^n \alpha_i \lambda_i v_i$\\
+Et donc : $x^{(k)} = Ax^{(k-1)} = A^kx^{(0)} = \sum \limits_{i=1}^n \alpha_i \lambda_i^k v_i = \lambda_1^k \alpha_1 v_1 + \sum \limits_{i=2}^n \alpha_i \lambda_i^k v_i = \lambda_1^k \alpha_1 \left[ v_1 + \sum \limits_{i=2}^n \frac{\alpha_i}{\alpha_1} \left(\frac{\lambda_i}{\lambda_1}^k \right) v_i \right]$ \\
+Si $k>>1$, on a $x^{(k)}\sim \lambda_1^k \alpha_1 v_1$, donc $x^{(k)}$ est dans la direction de $v_1$\\ \\
+Ainsi, on a la suite définie par récurrence :\\
+$\left\lbrace
+\begin{array}{l}
+\forall n \in \mathbb{N}, \ w^{(n+1)}=Aw^{(n)}  \\
+\text{Avec } \frac{w^{(n)}}{||w^{(n)}||} \longrightarrow \frac{v_1}{||v_1||} \\
+\text{Et } \frac{(w^{(n)})^TAw^{(n)}}{||w^{(n)}||^2} \longrightarrow \lambda_1 \\
+\end{array}\right. $\\ \\
+Dans la pratique, on normalise les vecteurs $w^{(n)}$ afin d'éviter les valeurs trop importances. L'idée est donc la suivante : on définit (de manière arbitraire) un premier vecteur $w$ et, itérativement, on applique $A$ et on normalise. Ainsi, au bout de $n$ itérations, on a approché le vecteur propre $v_1$ associé à la valeur propre dominante $\lambda_1$. \\
+
+\newpage
+\indent Dans le cadre du PageRank, on cherche donc à obtenir le vecteur $x$ tel que $x=Ax$, avec $A$ vérifiant les conditions d'application de la méthode de la puissance. L'idée est donc d'appliquer $A$ à un vecteur $x$ (on partira de conditions d'équiprobabilité) et de normaliser le résultat $n$ fois (on prendra $n=100$). \\
+
+\indent La configuration 1 décrite dans la figure (\ref{config1}) constitue un exemple très simple. Ainsi, pour étoffer notre étude, on appliquera donc également la méthode aux configurations plus complexes suivantes. On définira leur modèle respectif de manière analogue à celui de la configuration 1 (modèle (\ref{modele})).
 \begin{figure}[H]
 \caption{PageRank : configurations 2 à 5}
    \begin{minipage}[c]{.48\linewidth}
@@ -2081,6 +2156,7 @@ La configuration 1 décrite dans la figure (\ref{config1}) constitue un exemple 
    \end{minipage}
 \end{figure}
 
+\subsection{Résolution du problème}
 On implémente ainsi dans \textit{Scilab} le code \ref{pagerank}.
 \begin{table}[H]
 \caption{Détermination du PageRank d'un ensemble de page internet}

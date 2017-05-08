@@ -49,6 +49,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Image originale Lena}}{69}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Image originale Lena en niveaux de gris (obtenue gr\IeC {\^a}ce \IeC {\`a} la matrice)}}{69}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Diff\IeC {\'e}rentes compressions de l'image et erreur associ\IeC {\'e}e}}{71}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces PageRank : configuration 1}}{72}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces PageRank : configurations 2 \IeC {\`a} 5}}{73}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Valeurs propres de $\Sigma $}}{71}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diff\IeC {\'e}rentes compressions de l'image et erreur associ\IeC {\'e}e}}{71}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces R\IeC {\'e}sultat du d\IeC {\'e}bruitage}}{72}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces PageRank : configuration 1}}{73}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces PageRank : configurations 2 \IeC {\`a} 5}}{75}
