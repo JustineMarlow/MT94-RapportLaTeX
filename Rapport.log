@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.1)  8 MAY 2017 22:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.1)  10 MAY 2017 20:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1429,212 +1429,230 @@ Overfull \hbox (19.27151pt too wide) in paragraph at lines 1304--1304
 Sema num^^Serique 
  []
 
-[46]
-Overfull \hbox (17.3339pt too wide) in paragraph at lines 1363--1367
-\OT1/cmr/m/n/10 Le th^^Seor^^Reme fon-da-men-tal de l'analyse nous donne : $\OM
-L/cmm/m/it/10 y\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 ) = \OML/cm
-m/m/it/10 y\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 ) + [][] \OML/c
-mm/m/it/10 y[]dt \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 y\OT1/cmr/m/n/10 (\OML/cmm/
-m/it/10 t[]\OT1/cmr/m/n/10 ) + [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm
-/m/it/10 t; y\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ))\OML/cmm/m/it
-/10 dt$ 
- []
+[46] <rectangle.png, id=268, 614.295pt x 529.22719pt>
+File: rectangle.png Graphic file (type png)
+ <use rectangle.png>
+Package pdftex.def Info: rectangle.png used on input line 1364.
+(pdftex.def)             Requested size: 174.98601pt x 150.75055pt.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1381--1383
+Underfull \hbox (badness 10000) in paragraph at lines 1369--1373
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1384--1388
+Underfull \hbox (badness 10000) in paragraph at lines 1388--1389
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1389--1392
+Underfull \hbox (badness 10000) in paragraph at lines 1390--1393
 
  []
 
 
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1416.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1416.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1417--1419
+Underfull \hbox (badness 10000) in paragraph at lines 1394--1396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1417--1419
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1419.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1419.
+
+[47 <./rectangle.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 1431--1436
 
  []
 
-[47]
-Underfull \hbox (badness 10000) in paragraph at lines 1429--1434
+
+Underfull \hbox (badness 10000) in paragraph at lines 1431--1436
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1429--1434
-
- []
-
-(./euler.sce) <euler.pdf, id=271, 612.2875pt x 463.7325pt>
+(./euler.sce) <euler.pdf, id=272, 612.2875pt x 463.7325pt>
 File: euler.pdf Graphic file (type pdf)
  <use euler.pdf>
-Package pdftex.def Info: euler.pdf used on input line 1448.
+Package pdftex.def Info: euler.pdf used on input line 1450.
 (pdftex.def)             Requested size: 426.79135pt x 323.23778pt.
 
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 1479--1481
+[48] <rectangle_milieu.png, id=277, 791.20593pt x 557.83406pt>
+File: rectangle_milieu.png Graphic file (type png)
 
- []
+<use rectangle_milieu.png>
+Package pdftex.def Info: rectangle_milieu.png used on input line 1458.
+(pdftex.def)             Requested size: 174.98601pt x 123.37076pt.
 
-[49 <./euler.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1491--1493
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1494--1497
+Underfull \hbox (badness 10000) in paragraph at lines 1463--1467
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1507--1509
+Underfull \hbox (badness 5652) in paragraph at lines 1463--1467
+\OT1/cmr/m/n/10 On ap-proche $[][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/
+m/it/10 t; y\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ))\OML/cmm/m/it/
+10 dt$ \OT1/cmr/m/n/10 par \OT1/cmr/bx/sc/10 l'aire du
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1483--1485
+
+ []
+
+[49 <./euler.pdf> <./rectangle_milieu.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 1495--1497
 
  []
 
 
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1514.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1514.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1512--1516
+Underfull \hbox (badness 10000) in paragraph at lines 1498--1501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1512--1516
+Underfull \hbox (badness 10000) in paragraph at lines 1511--1513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1518--1519
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1518.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1518.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1516--1520
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1525--1527
+Underfull \hbox (badness 10000) in paragraph at lines 1516--1520
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1525--1527
+Underfull \hbox (badness 10000) in paragraph at lines 1522--1523
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1529--1531
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1529--1531
 
  []
 
 (./pointmilieu.sce)
-Overfull \hbox (7.01006pt too wide) in paragraph at lines 1531--1535
+Overfull \hbox (7.01006pt too wide) in paragraph at lines 1535--1539
 [][] 
  []
 
-[50] <point-milieu.pdf, id=283, 612.2875pt x 463.7325pt>
+[50] <point-milieu.pdf, id=285, 612.2875pt x 463.7325pt>
 File: point-milieu.pdf Graphic file (type pdf)
 
 <use point-milieu.pdf>
-Package pdftex.def Info: point-milieu.pdf used on input line 1540.
+Package pdftex.def Info: point-milieu.pdf used on input line 1544.
 (pdftex.def)             Requested size: 426.79135pt x 323.23778pt.
+ <trapeze.png, id=286, 696.35156pt x 542.025pt>
+File: trapeze.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 1547--1550
+<use trapeze.png>
+Package pdftex.def Info: trapeze.png used on input line 1552.
+(pdftex.def)             Requested size: 153.64514pt x 119.59323pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1557--1564
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1557--1564
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1557--1564
 
  []
 
 [51 <./point-milieu.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1553--1555
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1564--1566
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1574--1576
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1577--1580
+Underfull \hbox (badness 10000) in paragraph at lines 1584--1586
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1581--1582
+Underfull \hbox (badness 10000) in paragraph at lines 1587--1590
 
  []
 
 
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1589.
-
-
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1589.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1591
+Underfull \hbox (badness 10000) in paragraph at lines 1591--1592
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1591
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1599.
+
+
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1599.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1601
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1593--1594
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1601
 
  []
 
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 1600--1601
+
+Underfull \hbox (badness 10000) in paragraph at lines 1603--1604
 
  []
 
-(./eulercauchy.sce) <euler_cauchy.pdf, id=291, 612.2875pt x 463.7325pt>
+[52 <./trapeze.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 1610--1611
+
+ []
+
+(./eulercauchy.sce) <euler_cauchy.pdf, id=294, 612.2875pt x 463.7325pt>
 File: euler_cauchy.pdf Graphic file (type pdf)
 
 <use euler_cauchy.pdf>
-Package pdftex.def Info: euler_cauchy.pdf used on input line 1615.
+Package pdftex.def Info: euler_cauchy.pdf used on input line 1625.
 (pdftex.def)             Requested size: 426.79135pt x 323.23778pt.
  [53]
-Underfull \hbox (badness 10000) in paragraph at lines 1621--1622
+Underfull \hbox (badness 10000) in paragraph at lines 1631--1632
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1639--1640
+Underfull \hbox (badness 10000) in paragraph at lines 1649--1650
 
  []
 
 (./rungekutta.sce) [54 <./euler_cauchy.pdf>]
-<runge_kutta.pdf, id=300, 612.2875pt x 463.7325pt>
+<runge_kutta.pdf, id=303, 612.2875pt x 463.7325pt>
 File: runge_kutta.pdf Graphic file (type pdf)
  <use runge_kutta.pdf>
-Package pdftex.def Info: runge_kutta.pdf used on input line 1660.
+Package pdftex.def Info: runge_kutta.pdf used on input line 1670.
 (pdftex.def)             Requested size: 426.79135pt x 323.23778pt.
 
 [55]
-Underfull \hbox (badness 10000) in paragraph at lines 1665--1674
+Underfull \hbox (badness 10000) in paragraph at lines 1675--1684
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1665--1674
+Underfull \hbox (badness 10000) in paragraph at lines 1675--1684
 
  []
 
@@ -1642,248 +1660,248 @@ Underfull \hbox (badness 10000) in paragraph at lines 1665--1674
 Overfull \vbox (6.91415pt too high) has occurred while \output is active []
 
 
-[57] (./ordre2.sce) <ordre.pdf, id=311, 773.89125pt x 446.66875pt>
+[57] (./ordre2.sce) <ordre.pdf, id=314, 773.89125pt x 446.66875pt>
 File: ordre.pdf Graphic file (type pdf)
 
 <use ordre.pdf>
-Package pdftex.def Info: ordre.pdf used on input line 1694.
+Package pdftex.def Info: ordre.pdf used on input line 1704.
 (pdftex.def)             Requested size: 426.79135pt x 246.33649pt.
  [58] [59 <./ordre.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1716--1718
+Underfull \hbox (badness 10000) in paragraph at lines 1726--1728
 
  []
 
-<pendule.jpg, id=319, 188.20313pt x 366.61969pt>
+<pendule.jpg, id=322, 188.20313pt x 366.61969pt>
 File: pendule.jpg Graphic file (type jpg)
  <use pendule.jpg>
-Package pdftex.def Info: pendule.jpg used on input line 1740.
+Package pdftex.def Info: pendule.jpg used on input line 1750.
 (pdftex.def)             Requested size: 85.35826pt x 166.28076pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1752--1754
+Underfull \hbox (badness 10000) in paragraph at lines 1762--1764
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1752--1754
+Underfull \hbox (badness 10000) in paragraph at lines 1762--1764
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1755--1756
+Underfull \hbox (badness 10000) in paragraph at lines 1765--1766
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1755--1756
+Underfull \hbox (badness 10000) in paragraph at lines 1765--1766
 
  []
 
 [60 <./pendule.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1770--1771
+Underfull \hbox (badness 10000) in paragraph at lines 1780--1781
 
  []
 
-(./pendule.sce) <graph_pendule.pdf, id=324, 612.2875pt x 461.725pt>
+(./pendule.sce) <graph_pendule.pdf, id=327, 612.2875pt x 461.725pt>
 File: graph_pendule.pdf Graphic file (type pdf)
 
 <use graph_pendule.pdf>
-Package pdftex.def Info: graph_pendule.pdf used on input line 1784.
+Package pdftex.def Info: graph_pendule.pdf used on input line 1794.
 (pdftex.def)             Requested size: 426.79135pt x 321.8385pt.
  [61]
-Underfull \hbox (badness 10000) in paragraph at lines 1790--1791
+Underfull \hbox (badness 10000) in paragraph at lines 1800--1801
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1802--1804
+Underfull \hbox (badness 10000) in paragraph at lines 1812--1814
 
  []
 
 (./proie-predateur.sce) [62 <./graph_pendule.pdf>]
-<proie-predateur.pdf, id=332, 612.2875pt x 461.725pt>
+<proie-predateur.pdf, id=335, 612.2875pt x 461.725pt>
 File: proie-predateur.pdf Graphic file (type pdf)
 
 <use proie-predateur.pdf>
-Package pdftex.def Info: proie-predateur.pdf used on input line 1826.
+Package pdftex.def Info: proie-predateur.pdf used on input line 1836.
 (pdftex.def)             Requested size: 426.79135pt x 321.8385pt.
  [63]
-Underfull \hbox (badness 10000) in paragraph at lines 1856--1859
+Underfull \hbox (badness 10000) in paragraph at lines 1866--1869
 
  []
 
 [64 <./proie-predateur.pdf>] (./celeste.sce)
-<celeste.pdf, id=340, 606.265pt x 596.2275pt>
+<celeste.pdf, id=343, 606.265pt x 596.2275pt>
 File: celeste.pdf Graphic file (type pdf)
  <use celeste.pdf>
-Package pdftex.def Info: celeste.pdf used on input line 1875.
+Package pdftex.def Info: celeste.pdf used on input line 1885.
 (pdftex.def)             Requested size: 426.79135pt x 419.7309pt.
  [65] [66 <./celeste.pdf>]
 Chapitre 4.
 [67
 
 ]
-Overfull \hbox (1.90369pt too wide) in paragraph at lines 1894--1896
+Overfull \hbox (1.90369pt too wide) in paragraph at lines 1904--1906
 \OT1/cmr/m/n/10 Ce th^^Seor^^Reme, tr^^Res pra-tique, ne peut toute-fois s'appl
 iquer que sur des ma-tri-ces carr^^Sees et sym^^Setriques.
  []
 
 [68]
-Underfull \hbox (badness 10000) in paragraph at lines 1939--1942
+Underfull \hbox (badness 10000) in paragraph at lines 1949--1952
 
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 1948--1948
+Underfull \hbox (badness 1275) in paragraph at lines 1958--1958
 []\OT1/cmr/m/n/10 Figure 4.1: Im-age
  []
 
-<lena.png, id=356, 513.92pt x 513.92pt>
+<lena.png, id=359, 513.92pt x 513.92pt>
 File: lena.png Graphic file (type png)
  <use lena.png>
-Package pdftex.def Info: lena.png used on input line 1949.
+Package pdftex.def Info: lena.png used on input line 1959.
 (pdftex.def)             Requested size: 128.0374pt x 128.0327pt.
 
-Overfull \hbox (38.40836pt too wide) in paragraph at lines 1949--1951
+Overfull \hbox (38.40836pt too wide) in paragraph at lines 1959--1961
  [][] 
  []
 
-(./lena_originale.sce) <lena_originale.png, id=357, 612.2875pt x 461.725pt>
+(./lena_originale.sce) <lena_originale.png, id=360, 612.2875pt x 461.725pt>
 File: lena_originale.png Graphic file (type png)
 
 <use lena_originale.png>
-Package pdftex.def Info: lena_originale.png used on input line 1965.
+Package pdftex.def Info: lena_originale.png used on input line 1975.
 (pdftex.def)             Requested size: 270.30118pt x 203.82893pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1972--1974
+Underfull \hbox (badness 10000) in paragraph at lines 1982--1984
 
  []
 
 [69 <./lena.png> <./lena_originale.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1980--1982
+Underfull \hbox (badness 10000) in paragraph at lines 1990--1992
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1989--1990
+Underfull \hbox (badness 10000) in paragraph at lines 1999--2000
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1991--1992
+Underfull \hbox (badness 10000) in paragraph at lines 2001--2002
 
  []
 
-(./lena.sce) <valeur_propre.pdf, id=363, 891.33pt x 355.3275pt>
+(./lena.sce) <valeur_propre.pdf, id=366, 891.33pt x 355.3275pt>
 File: valeur_propre.pdf Graphic file (type pdf)
 
 <use valeur_propre.pdf>
-Package pdftex.def Info: valeur_propre.pdf used on input line 2006.
+Package pdftex.def Info: valeur_propre.pdf used on input line 2016.
 (pdftex.def)             Requested size: 426.79135pt x 170.13777pt.
- [70] <lena_pg1.png, id=367, 612.2875pt x 461.725pt>
+ [70] <lena_pg1.png, id=370, 612.2875pt x 461.725pt>
 File: lena_pg1.png Graphic file (type png)
 
 <use lena_pg1.png>
-Package pdftex.def Info: lena_pg1.png used on input line 2013.
+Package pdftex.def Info: lena_pg1.png used on input line 2023.
 (pdftex.def)             Requested size: 426.79135pt x 321.8385pt.
  (./lena_bis.sce) [71 <./valeur_propre.pdf> <./lena_pg1.png>] <lena_pg2.png, id
-=373, 688.5725pt x 236.885pt>
+=376, 688.5725pt x 236.885pt>
 File: lena_pg2.png Graphic file (type png)
  <use lena_pg2.png>
-Package pdftex.def Info: lena_pg2.png used on input line 2030.
+Package pdftex.def Info: lena_pg2.png used on input line 2040.
 (pdftex.def)             Requested size: 426.79135pt x 146.82741pt.
 
-<config1.png, id=374, 412.54124pt x 210.7875pt>
+<config1.png, id=377, 412.54124pt x 210.7875pt>
 File: config1.png Graphic file (type png)
  <use config1.png>
-Package pdftex.def Info: config1.png used on input line 2049.
+Package pdftex.def Info: config1.png used on input line 2059.
 (pdftex.def)             Requested size: 170.71652pt x 87.22752pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2037--2053
+Underfull \hbox (badness 10000) in paragraph at lines 2047--2063
 
  []
 
 [72 <./lena_pg2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2054--2055
+Underfull \hbox (badness 10000) in paragraph at lines 2064--2065
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2054--2055
+Underfull \hbox (badness 10000) in paragraph at lines 2064--2065
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2063--2075
+Underfull \hbox (badness 10000) in paragraph at lines 2073--2085
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2063--2075
+Underfull \hbox (badness 10000) in paragraph at lines 2073--2085
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2082--2085
+Underfull \hbox (badness 10000) in paragraph at lines 2092--2095
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2082--2085
+Underfull \hbox (badness 10000) in paragraph at lines 2092--2095
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2086--2089
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2099
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2086--2089
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2099
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2086--2089
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2099
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2086--2089
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2099
 
  []
 
 [73 <./config1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 2097--2098
+Underfull \hbox (badness 10000) in paragraph at lines 2107--2108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2097--2098
+Underfull \hbox (badness 10000) in paragraph at lines 2107--2108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2099--2103
+Underfull \hbox (badness 10000) in paragraph at lines 2109--2113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2099--2103
+Underfull \hbox (badness 10000) in paragraph at lines 2109--2113
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2111--2113
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2123
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2111--2113
+Underfull \hbox (badness 10000) in paragraph at lines 2121--2123
 
  []
 
 
-Overfull \hbox (8.8743pt too wide) in paragraph at lines 2114--2131
+Overfull \hbox (8.8743pt too wide) in paragraph at lines 2124--2141
 \OT1/cmr/m/n/10 Et donc : $\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 = \OML/cmm/m/it
 /10 Ax[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 A[]x[] \OT1/cmr/m/n/10 = [] \OML/cm
 m/m/it/10 []^^U[]v[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^U[][]v[] \OT1/cmr/m
@@ -1892,89 +1910,89 @@ m/m/it/10 []^^U[]v[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^U[][]v[] \OT1/cmr/m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2114--2131
+Underfull \hbox (badness 10000) in paragraph at lines 2124--2141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2114--2131
+Underfull \hbox (badness 10000) in paragraph at lines 2124--2141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2114--2131
+Underfull \hbox (badness 10000) in paragraph at lines 2124--2141
 
  []
 
 [74]
-Underfull \hbox (badness 10000) in paragraph at lines 2133--2134
+Underfull \hbox (badness 10000) in paragraph at lines 2143--2144
 
  []
 
-<config2.png, id=386, 358.33875pt x 319.1925pt>
+<config2.png, id=389, 358.33875pt x 319.1925pt>
 File: config2.png Graphic file (type png)
  <use config2.png>
-Package pdftex.def Info: config2.png used on input line 2140.
+Package pdftex.def Info: config2.png used on input line 2150.
 (pdftex.def)             Requested size: 204.85802pt x 182.48222pt.
 
-<config3.png, id=387, 241.65282pt x 135.50626pt>
+<config3.png, id=390, 241.65282pt x 135.50626pt>
 File: config3.png Graphic file (type png)
  <use config3.png>
-Package pdftex.def Info: config3.png used on input line 2144.
+Package pdftex.def Info: config3.png used on input line 2154.
 (pdftex.def)             Requested size: 204.85802pt x 114.87897pt.
 
-<config4.png, id=388, 350.81062pt x 237.88875pt>
+<config4.png, id=391, 350.81062pt x 237.88875pt>
 File: config4.png Graphic file (type png)
  <use config4.png>
-Package pdftex.def Info: config4.png used on input line 2151.
+Package pdftex.def Info: config4.png used on input line 2161.
 (pdftex.def)             Requested size: 204.85802pt x 138.91933pt.
 
-<config5.png, id=389, 326.72063pt x 298.11375pt>
+<config5.png, id=392, 326.72063pt x 298.11375pt>
 File: config5.png Graphic file (type png)
  <use config5.png>
-Package pdftex.def Info: config5.png used on input line 2155.
+Package pdftex.def Info: config5.png used on input line 2165.
 (pdftex.def)             Requested size: 204.85802pt x 186.92108pt.
 
 (./pagerank.sce)
-Overfull \hbox (7.01006pt too wide) in paragraph at lines 2163--2167
+Overfull \hbox (7.01006pt too wide) in paragraph at lines 2173--2177
 [][] 
  []
 
 [75 <./config2.png (PNG copy)> <./config3.png (PNG copy)> <./config4.png (PNG c
 opy)> <./config5.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 2168--2169
+Underfull \hbox (badness 10000) in paragraph at lines 2178--2179
 
  []
 
-<diag_config1.png, id=393, 423.5825pt x 360.34625pt>
+<diag_config1.png, id=396, 423.5825pt x 360.34625pt>
 File: diag_config1.png Graphic file (type png)
  <use diag_config1.png>
-Package pdftex.def Info: diag_config1.png used on input line 2181.
+Package pdftex.def Info: diag_config1.png used on input line 2191.
 (pdftex.def)             Requested size: 128.0374pt x 108.91847pt.
 
-<diag_config2.png, id=394, 303.1325pt x 294.09875pt>
+<diag_config2.png, id=397, 303.1325pt x 294.09875pt>
 File: diag_config2.png Graphic file (type png)
  <use diag_config2.png>
-Package pdftex.def Info: diag_config2.png used on input line 2202.
+Package pdftex.def Info: diag_config2.png used on input line 2212.
 (pdftex.def)             Requested size: 128.0374pt x 124.22069pt.
 
-[76 <./diag_config1.png>] <diag_config3.png, id=399, 295.1025pt x 293.095pt>
+[76 <./diag_config1.png>] <diag_config3.png, id=402, 295.1025pt x 293.095pt>
 File: diag_config3.png Graphic file (type png)
 
 <use diag_config3.png>
-Package pdftex.def Info: diag_config3.png used on input line 2220.
+Package pdftex.def Info: diag_config3.png used on input line 2230.
 (pdftex.def)             Requested size: 128.0374pt x 127.16881pt.
- <diag_config4.png, id=400, 280.04625pt x 271.0125pt>
+ <diag_config4.png, id=403, 280.04625pt x 271.0125pt>
 File: diag_config4.png Graphic file (type png)
 
 <use diag_config4.png>
-Package pdftex.def Info: diag_config4.png used on input line 2237.
+Package pdftex.def Info: diag_config4.png used on input line 2247.
 (pdftex.def)             Requested size: 128.0374pt x 123.91049pt.
- <diag_config5.png, id=401, 318.18875pt x 300.12125pt>
+ <diag_config5.png, id=404, 318.18875pt x 300.12125pt>
 File: diag_config5.png Graphic file (type png)
 
 <use diag_config5.png>
-Package pdftex.def Info: diag_config5.png used on input line 2265.
+Package pdftex.def Info: diag_config5.png used on input line 2275.
 (pdftex.def)             Requested size: 170.71652pt x 161.01894pt.
  [77 <./diag_config2.png> <./diag_config3.png> <./diag_config4.png> <./diag_con
 fig5.png>] (./Rapport.aux)
@@ -1986,10 +2004,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7533 strings out of 493029
- 98283 string characters out of 6136235
- 291603 words of memory out of 5000000
- 10767 multiletter control sequences out of 15000+600000
+ 7548 strings out of 493029
+ 98560 string characters out of 6136235
+ 291770 words of memory out of 5000000
+ 10779 multiletter control sequences out of 15000+600000
  21628 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,17n,43p,945b,2698s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2018,10 +2036,10 @@ cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Rapport.pdf (78 pages, 16148186 bytes).
+Output written on Rapport.pdf (78 pages, 16245072 bytes).
 PDF statistics:
- 497 PDF objects out of 1000 (max. 8388607)
+ 500 PDF objects out of 1000 (max. 8388607)
  285 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 396 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 words of extra memory for PDF output out of 10000 (max. 10000000)
 

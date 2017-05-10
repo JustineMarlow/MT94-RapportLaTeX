@@ -1360,8 +1360,14 @@ $\text{ est telle que } |T_i|\leq Ch^p$
 \section{Schéma d'Euler}
 \subsection{Théorie}
 \subsubsection{Définition}
+\begin{minipage}{.41\linewidth}
+\includegraphics[width=\textwidth]{rectangle.png}
+\end{minipage} \hfill
+\begin{minipage}{.05\linewidth}
+\end{minipage} \hfill
+\begin{minipage}{.53\linewidth}
 \noindent Le théorème fondamental de l'analyse nous donne : $y(t_{i+1}) = y(t_i) + \int_{t_i}^{t_{i+1}} y'dt = y(t_i) + \int_{t_i}^{t_{i+1}} f(t,y(t))dt$\\
-La valeur de $\int_{t_i}^{t_{i+1}} f(t,y(t))dt$ est inconnue, il faut donc l'approcher.\\
+La valeur de $\int_{t_i}^{t_{i+1}} f(t,y(t))dt$ est inconnue, il faut donc l'approcher.\\ \\
 On l'approche par \textbf{l'aire du rectangle gauche} :
 \abovedisplayskip=0mm
 \begin{align*}
@@ -1376,46 +1382,42 @@ z_{i+1}=z_i+hf(t_i,z_i) \\
 z_0 \text{ donné, } z_0=y_0
 \end{array}\right.
 \end{equation}
+\end{minipage}
 
 \subsubsection{Propriétés}
-\noindent Le schéma d'Euler est \textbf{stable}, \textbf{consistant} et \textbf{d'ordre 1}. \\
-(si $f$ est L-lipschitzienne par rapport à la $2^{\text{ème}}$ variable)  \\
+\noindent Le schéma d'Euler est \textbf{stable}, \textbf{consistant} et \textbf{d'ordre 1} (si $f$ est L-lipschitzienne par rapport à la $2^{\text{ème}}$ variable).  \\
 
 \textbf{Démo (stabilité) :}\\
 \indent On pose $\Phi(t,y,h)=f(t,y)$, ainsi $||\Phi(t,y,h)-\Phi(t,z,h)|| = ||f(t,y)-f(t,z)||$\\
 \indent On a $f$ L-lipschitzienne par rapport à la $2^{\text{ème}}$ variable, alors $||f(t,y)-f(t,z)||\leq L||y-z||$\\
-\indent Ce qui montre que le schéma d'Euler est stable. \\
 
 \textbf{Démo (consistance) :}\\
 \indent On pose $\Phi(t,y,h)=f(t,y)$ $\forall h$ donc on a en particulier $\Phi(t,y,0)=f(t,y)$\\
-\indent Ce qui montre que le schéma d'Euler est consistant.\\
 
 \textbf{Démo (ordre) :}\\
 \indent On a $\left\{\begin{array}{l}y_{i+1}=y_i+hf(t_i,y_i)  \\
 		y(t_{i+1})=y(t_i+h)\ \overset{Taylor-Lagrange}{=}\ y(t_i)+h\underbrace{y'(t_i)}_{f(t_i,y_i)}+\frac{h^2}{2}y''(\underbrace{\xi_i}			_{\xi_i\in(t_i,t_{i+1})})\end{array} \right.$\\
 \indent d'où $||y(t_{i+1})-y_{i+1}||=(y(t_i)-y_i)+h[f(t_i,y(t_i))-f(t_i,y_i)]+\frac{h^2}{2}y''(\xi_i)$.\\
-\indent On a $f$ L-lipschitzienne par rapport à la $2^{\text{ème}}$ variable :\\
-\indent $\exists L>0,\ ||f(t,y)-f(t,z)||\leq L||y-z||$.\\
-\indent On suppose que $\exists M>0$ tel que $||y''(\xi)||<M,\ \forall\xi\in[t_0,t_0+T]$.\\
+\indent On a $f$ L-lipschitzienne par rapport à la $2^{\text{ème}}$ variable : $\exists L>0,\ ||f(t,y)-f(t,z)||\leq L||y-z||$.\\
+\indent On suppose que $\exists M>0$ tel que $||y''(\xi)||<M,\ \forall\xi\in[t_0,t_0+T]$,\\
 \indent d'où, si on note $e_i=y(t_i)-z_i$, on a :
 		$$\begin{array}{lll}
 		||e_{i+1}||&\leq&\underbrace{(1+hL)}_{C}||e_i||+\underbrace{\frac{h^2}{2}M}_{D}\\
 		||e_{i+1}||&\leq&C||e_i||+D\\
-					&\leq&C[C||e_{i-1}||+D]+D=C^2||e_{i-1}||+D(1+C)\\
-		||e_{i+1}||&\leq&C^{i+1}e_0+D[1+C+\cdots+C^{i-1}]=C^ie_0+D\frac{C^i-1}{C-1}
+				   &\leq&C[C||e_{i-1}||+D]+D=C^2||e_{i-1}||+D(1+C)\\
+		           &\leq&C^{i+1}e_0+D[1+C+\cdots+C^{i-1}]=C^ie_0+D\frac{C^i-1}{C-1}
 		\end{array}$$
 \indent Si $y(t_0)=y_0$ alors $e_0=0$. Donc :
 		$$\begin{array}{lll}
 		||e_{i+1}||&\leq&\frac{h^2}{2}M\frac{(1+hL)^i-1}{(1+hL)-1}\\
-		||e_{i+1}||&\leq&\frac{h}{2L}M[(1+hL)^i-1]
+		           &\leq&\frac{h}{2L}M[(1+hL)^i-1]
 		\end{array}$$
 \indent On utilise $(1+x)^m\leq e^{xm},\ \forall m,\forall x>0$:
 		$$\begin{array}{lll}
 		||e_{i+1}||&\leq&h\frac{M}{2L}[e^{ihL}-1]=h\frac{M}{2L}[e^{L(t_i-t_0)}]\\
-		||e_{i+1}||&\leq&[\frac{M}{2L}(e^T-1)]h\\
-					&\leq&Ch^{\textcolor{red}{\textcircled{\scriptsize 1}}}
+		           &\leq&[\frac{M}{2L}(e^T-1)]h\\
+				   &\leq&Ch^{\textcolor{red}{\textcircled{\scriptsize 1}}}
 		\end{array}$$
-\indent Ce qui montre que le schéma d'Euler est d'ordre 1.\\ \\
 
 \subsection{Application dans \textit{Scilab}}
 Comme exemple d'application des différents schémas, nous allons donc considérer une équation différentielle particulière que nous sommes capable de résoudre analytiquement. Ainsi, nous pourrons comparer la valeur obtenue par approximation avec la solution exacte. On considère ainsi l'équation différentielle (\ref{exemple_equa_diff}).
@@ -1452,7 +1454,14 @@ L'exécution du code \ref{code_euler} nous donne l'affichage (\ref{graph_euler})
 \section{Schéma du point milieu}
 \subsection{Théorie}
 \subsubsection{Définition}
-On rappelle que l'on a : $y(t_{i+1}) = y(t_i) + \int_{t_i}^{t_{i+1}} y'dt = y(t_i) + \int_{t_i}^{t_{i+1}} f(t,y(t))dt$\\
+\begin{minipage}{.41\linewidth}
+\includegraphics[width=\textwidth]{rectangle_milieu.png}
+\end{minipage} \hfill
+\begin{minipage}{.05\linewidth}
+\end{minipage} \hfill
+\begin{minipage}{.53\linewidth}
+On rappelle que l'on a :\\
+$y(t_{i+1}) = y(t_i) + \int_{t_i}^{t_{i+1}} y'dt = y(t_i) + \int_{t_i}^{t_{i+1}} f(t,y(t))dt$\\ \\
 On approche $\int_{t_i}^{t_{i+1}} f(t,y(t))dt$ par \textbf{l'aire du rectangle du point milieu} :
 \abovedisplayskip=0mm
 \begin{align*}
@@ -1467,13 +1476,8 @@ z_{i+1}=z_i+hf\left(t_i+\frac{h}{2},z_i+\frac{h}{2}f(t_i,z_i)\right) \\
 z_0 \text{ donné, } z_0=y_0
 \end{array}\right.
 \end{equation}
-%Schéma que l'on peut écrire sous la forme : \\
-%$\left\lbrace
-%\begin{array}{l}
-%k_1 \ = \ f(t_i,z_i) \\
-%k_2 \ = \ z_i + \frac{h}{2}k_1 \\
-%z_{i+1}=z_i+hf\left(t_i+\frac{h}{2},k_2\right)
-%\end{array}\right.$
+\end{minipage}
+
 
 \subsubsection{Propriétés}
 Le schéma du point milieu est \textbf{stable}, \textbf{consistant} et \textbf{d'ordre 2}.\\
@@ -1544,13 +1548,18 @@ On implémente donc dans \textit{Scilab} le schéma du point milieu avec le code
 \section{Schéma d'Euler-Cauchy}
 \subsection{Théorie}
 \subsubsection{Définition}
-On rappelle que l'on a : $y(t_{i+1}) = y(t_i) + \int_{t_i}^{t_{i+1}} y'dt = y(t_i) + \int_{t_i}^{t_{i+1}} f(t,y(t))dt$\\
-On approche $\int_{t_i}^{t_{i+1}} f(t,y(t))dt$ par \textbf{l'aire du trapèze} :\\
+\begin{minipage}{.36\linewidth}
+\includegraphics[width=\textwidth]{trapeze.png}
+\end{minipage} \hfill
+\begin{minipage}{.02\linewidth}
+\end{minipage} \hfill
+\begin{minipage}{.56\linewidth}
+On rappelle que l'on a :\\
+$y(t_{i+1}) = y(t_i) + \int_{t_i}^{t_{i+1}} y'dt = y(t_i) + \int_{t_i}^{t_{i+1}} f(t,y(t))dt$\\ \\
+On approche $\int_{t_i}^{t_{i+1}} f(t,y(t))dt$ par \textbf{l'aire du trapèze} :
 \abovedisplayskip=0mm
-\begin{align*}
-y(t_{i+1}) & \thicksim y(t_i)+\frac{h}{2} \left[ f(t_i,y(t_i)) + f(t_{i+1},y(t_{i+1})) \right] \\
-		   & \thicksim y(t_i)+\frac{h}{2} \left[ f(t_i,y(t_i)) + f(t_i+h,y(t_i)+hf(t_i,y(t_i)) \right]
-\end{align*}
+$y(t_{i+1}) \thicksim y(t_i)+\frac{h}{2} \left[ f(t_i,y(t_i)) + f(t_{i+1},y(t_{i+1})) \right]$ \\
+$\thicksim y(t_i)+\frac{h}{2} \left[ f(t_i,y(t_i)) + f(t_i+h,y(t_i)+hf(t_i,y(t_i)) \right]$\\ \\
 D'où \textbf{le schéma d'Euler-Cauchy} :\\
 \begin{equation}
 \left\lbrace
@@ -1559,6 +1568,7 @@ z_{i+1}=z_i+\frac{h}{2} \left[ f(t_i,z_i) + f(t_i+h,z_i+hf(t_i,z_i) \right] \\
 z_0 \text{ donné, } z_0=y_0
 \end{array}\right.
 \end{equation}
+\end{minipage}
 
 \subsubsection{Propriétés}
 Le schéma d'Euler-Cauchy est \textbf{stable}, \textbf{consistant} et \textbf{d'ordre 2}.\\
@@ -1618,7 +1628,7 @@ L'exécution du code \ref{code_eulercauchy} nous donne la figure (figure \ref{gr
 
 \section{Schéma de Runge-Kutta}
 \subsection{Théorie}
-D'où \textbf{le schéma de Runge-Jutta} :\\
+On s'intéresse à un dernier schéma : \textbf{le schéma de Runge-Jutta} :\\
 \begin{equation}
 \left\lbrace
 \begin{array}{l}
