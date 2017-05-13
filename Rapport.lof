@@ -1,56 +1,62 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Erreur en fonction de l'it\IeC {\'e}ration}}{9}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Diminution relative de l'erreur en fonction de l'it\IeC {\'e}ration}}{9}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Erreur en fonction de l'it\IeC {\'e}ration}}{11}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Diminution relative de l'erreur en fonction de l'it\IeC {\'e}ration}}{11}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Erreur en fonction de l'it\IeC {\'e}ration}}{13}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Diminution relative de l'erreur en fonction de l'it\IeC {\'e}ration}}{13}
-\contentsline {figure}{\numberline {1.7}{\ignorespaces Erreur en fonction de l'it\IeC {\'e}ration}}{15}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces Diminution relative de l'erreur en fonction de l'it\IeC {\'e}ration}}{15}
-\contentsline {figure}{\numberline {1.9}{\ignorespaces Diff\IeC {\'e}rents affichages de la cin\IeC {\'e}matique invers\IeC {\'e}e en fonction de $n$}}{22}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Erreur en fonction de l'it\IeC {\'e}ration}}{10}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Diminution relative de l'erreur en fonction de l'it\IeC {\'e}ration}}{10}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Erreur en fonction de l'it\IeC {\'e}ration}}{12}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Diminution relative de l'erreur en fonction de l'it\IeC {\'e}ration}}{12}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Erreur en fonction de l'it\IeC {\'e}ration}}{14}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Diminution relative de l'erreur en fonction de l'it\IeC {\'e}ration}}{14}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Erreur en fonction de l'it\IeC {\'e}ration}}{16}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Diminution relative de l'erreur en fonction de l'it\IeC {\'e}ration}}{16}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Diff\IeC {\'e}rents affichages de la cin\IeC {\'e}matique invers\IeC {\'e}e en fonction de $n$}}{23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemple de fractales : fractale de Mandelbrot}}{23}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Ensemble de Cantor}}{24}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Cantor 1845-1918}}{24}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Figure pour n=7}}{26}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Ensemble de Cantor it\IeC {\'e}ratif pour 1000 points}}{27}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Triangle de Sierpinski}}{28}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Sierpinski 1882-1924}}{28}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Triangle de Sierpinski (r\IeC {\'e}cursif) pour n=5}}{29}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Triangle de Sierpinski it\IeC {\'e}ratif pour 1000 points}}{31}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Tapis de Sierpinski}}{31}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Tapis de Sierpinski (r\IeC {\'e}cursif) pour n=2}}{32}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Tapis de Sierpinski (it\IeC {\'e}ratif) pour n=100000 points}}{34}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Flocon de neige de Von Koch}}{34}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Von Koch 1870-1924}}{34}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Courbe de Von Koch}}{36}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Figure pour n=4}}{37}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Flocon de Von Koch it\IeC {\'e}ratif pour 10000 points}}{38}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Barnsley 1946-...}}{39}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Foug\IeC {\`e}re de Barnsley}}{39}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Diff\IeC {\'e}rents affichages de la foug\IeC {\`e}re en fonction de $N$}}{40}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Julia 1893-1978}}{41}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Ensemble de Julia (exemple parmi beaucoup d'autres)}}{41}
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Diff\IeC {\'e}rents affichages de l'ensemble de Julia en fonction de $c$}}{42}
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Ensemble de Mandelbrot}}{43}
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Mandelbrot 1924-2010}}{43}
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Ensemble de Mandelbrot}}{44}
-\contentsline {figure}{\numberline {2.27}{\ignorespaces Diff\IeC {\'e}rents affichages de l'ensemble de Julia en fonction de $c$ (dans ou hors la fronti\IeC {\`e}re de Mandelbrot)}}{44}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Exemple de fractales : fractale de Mandelbrot}}{24}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Ensemble de Cantor}}{25}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Cantor 1845-1918}}{25}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Figure pour n=7}}{27}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Ensemble de Cantor it\IeC {\'e}ratif pour 1000 points}}{28}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Triangle de Sierpinski}}{29}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Sierpinski 1882-1924}}{29}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Triangle de Sierpinski (r\IeC {\'e}cursif) pour n=5}}{30}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Triangle de Sierpinski it\IeC {\'e}ratif pour 1000 points}}{32}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Tapis de Sierpinski}}{32}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Tapis de Sierpinski (r\IeC {\'e}cursif) pour n=2}}{33}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Tapis de Sierpinski (it\IeC {\'e}ratif) pour n=100000 points}}{35}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Flocon de neige de Von Koch}}{35}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Von Koch 1870-1924}}{35}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Courbe de Von Koch}}{37}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Figure pour n=4}}{38}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Flocon de Von Koch it\IeC {\'e}ratif pour 10000 points}}{39}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Barnsley 1946-...}}{40}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Foug\IeC {\`e}re de Barnsley}}{40}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Diff\IeC {\'e}rents affichages de la foug\IeC {\`e}re en fonction de $N$}}{41}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Julia 1893-1978}}{42}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Ensemble de Julia (exemple parmi beaucoup d'autres)}}{42}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Diff\IeC {\'e}rents affichages de l'ensemble de Julia en fonction de $c$}}{43}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Ensemble de Mandelbrot}}{44}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Mandelbrot 1924-2010}}{44}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Ensemble de Mandelbrot}}{45}
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Diff\IeC {\'e}rents affichages de l'ensemble de Julia en fonction de $c$ (dans ou hors la fronti\IeC {\`e}re de Mandelbrot)}}{45}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Affichage (sch\IeC {\'e}ma d'Euler)}}{49}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Affichage (sch\IeC {\'e}ma du point milieu)}}{51}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Affichage (sch\IeC {\'e}ma d'Euler-Cauchy)}}{54}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Affichage (sch\IeC {\'e}ma de Runge Kutta)}}{56}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Affichage (ordres des diff\IeC {\'e}rents sch\IeC {\'e}mas)}}{59}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Sch\IeC {\'e}ma du pendule consid\IeC {\'e}r\IeC {\'e}}}{60}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Superposition des solutions approch\IeC {\'e}es pour diff\IeC {\'e}rentes valeurs de $\theta _0$}}{62}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces \IeC {\'E}volution des proportions proies-pr\IeC {\'e}dateurs}}{64}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces M\IeC {\'e}canique c\IeC {\'e}leste : trajectoires des corps}}{66}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Affichage (sch\IeC {\'e}ma d'Euler)}}{50}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Affichage (sch\IeC {\'e}ma du point milieu)}}{52}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Affichage (sch\IeC {\'e}ma d'Euler-Cauchy)}}{55}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Affichage (sch\IeC {\'e}ma de Runge Kutta)}}{57}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Affichage (ordres des diff\IeC {\'e}rents sch\IeC {\'e}mas)}}{60}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Sch\IeC {\'e}ma du pendule consid\IeC {\'e}r\IeC {\'e}}}{61}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Superposition des solutions approch\IeC {\'e}es pour diff\IeC {\'e}rentes valeurs de $\theta _0$}}{63}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces \IeC {\'E}volution des proportions proies-pr\IeC {\'e}dateurs}}{65}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces M\IeC {\'e}canique c\IeC {\'e}leste : trajectoires des corps}}{67}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Image originale Lena}}{69}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Image originale Lena en niveaux de gris (obtenue gr\IeC {\^a}ce \IeC {\`a} la matrice)}}{69}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Valeurs propres de $\Sigma $}}{71}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Diff\IeC {\'e}rentes compressions de l'image et erreur associ\IeC {\'e}e}}{71}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces R\IeC {\'e}sultat du d\IeC {\'e}bruitage}}{72}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces PageRank : configuration 1}}{73}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces PageRank : configurations 2 \IeC {\`a} 5}}{75}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Image originale Lena}}{70}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Image originale Lena en niveaux de gris (obtenue gr\IeC {\^a}ce \IeC {\`a} la matrice)}}{70}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Valeurs propres de $\Sigma $}}{72}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diff\IeC {\'e}rentes compressions de l'image et erreur associ\IeC {\'e}e}}{72}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces R\IeC {\'e}sultat du d\IeC {\'e}bruitage}}{73}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces PageRank : configuration 1}}{74}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces PageRank : configurations 2 \IeC {\`a} 5}}{76}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Ensemble de donn\IeC {\'e}es}}{84}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Affichage des diff\IeC {\'e}rentes approximations}}{85}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces \IeC {\'E}volution de l'erreur en fonction du degr\IeC {\'e} du polyn\IeC {\^o}me}}{85}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Affichage des diff\IeC {\'e}rentes approximations sur T et V}}{87}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \IeC {\'E}volution de l'erreur sur T et sur V en fonction du degr\IeC {\'e} du polyn\IeC {\^o}me}}{88}

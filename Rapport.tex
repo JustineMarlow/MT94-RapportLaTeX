@@ -2277,6 +2277,227 @@ On obtient ainsi les vecteurs associés aux différentes configurations :\\
 \end{minipage}
 \end{figure}
 
+\newpage
+\subsection{Extension de la méthode à d'autres problèmes}
+Il est intéressant de constater que la méthode de résolution mise en place pour résoudre le problème du \textit{PageRank} ne se résume pas aux pages internet : on peut également s'intéresser à un système de connections interurbaines.\\ \\
+Considérons $n$ villes reliées entre elles par un réseau ferroviaire. On désire connaître le taux d'accessibilité des villes entre elles pour mesurer le taux de facilité d'accès entre les villes. Il s'agit d'un problème complètement analogue à celui du \textit{PageRank}. En effet, le problème se résout en obtenant le vecteur propre associé à la valeur $\lambda$ de plus grand module de la matrice $A=(a_{ij})_{i,j=1,\cdots , n}$ telle que :\\
+\begin{displaymath}
+a_{ij}= \left\lbrace
+\begin{array}{l}
+1 \text{ si la i-eme ville est reliee à la j-eme ville}  \\
+0 \text{ sinon} \\
+\end{array}\right.
+\end{displaymath}
+On s'inspire donc de la méthode et du code mis en place pour résoudre le problème du \textit{PageRank} afin de déterminer l'importance des villes dans le réseau. On implémente ainsi le code (\ref{italie}).
+
+\begin{table}[H]
+\caption{Détermination de l'importance d'un ville dans un réseau ferroviaire}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{villes_italiennes.sce}
+\label{italie}
+\end{tabular}
+\end{table}
+
+\newpage
+On obtient les résultats ci-dessous.
+\begin{figure}[H]
+\begin{minipage}[c]{.40\linewidth}
+\begin{verbatim}
+    (Varèse)  0.0421801  
+    (Milian)  0.2014850  
+    (Pavie)   0.0421801  
+    (Lodi)    0.0740944  
+    (Crémone) 0.1126387  
+    (Mantoue) 0.0455507  
+    (Brescia) 0.1016265  
+    (Bergame) 0.1295628  
+    (Côme)    0.0999746  
+    (Lecco)   0.1068086  
+    (Sondrio) 0.0438988 
+\end{verbatim}
+\end{minipage} \hfill
+\begin{minipage}[c]{.58\linewidth}
+\begin{figure}[H]
+   \includegraphics[width=6cm]{diag_italiennes.png}
+   \end{figure}
+\end{minipage}
+\end{figure}
+
+\chapter{Problèmes non linéaires II}
+\section{Introduction}
+
+\newpage
+\section{Approche statistique}
+On a un jeu de données $(x_i,y_i)$. Considérons l'hypothèse suivante : les $x_i$ sont donnés et les $y_i$ sont des variables statistiquement indépendantes. On suppose qu'il existe un modèle parfait que l'on approche :
+\begin{displaymath}
+y_i = f(x_i, \theta) + \varepsilon_i
+\end{displaymath}
+Où $\varepsilon$ est une variable aléatoire d'espérance $E(\varepsilon_i)=0$, de variance $Var(\varepsilon_i)=\sigma^2$ et de densité $g$\\
+On cherche à trouver la densité de probabilité $\Phi$ de $y$, avec $\Phi_i$ de $y_i$  définie par :
+\begin{displaymath}
+\Phi_i(y_i, \theta)=g(y_i - f(x_i,\theta))
+\end{displaymath}
+Si $\varepsilon$ suit une loi normale, donc $g(\varepsilon)=(\sigma \sqrt{2\pi})^{-1}exp\left( -\frac{1}{2\sigma^2} \varepsilon^2 \right)$, on a :\\
+\begin{displaymath}
+\Phi_i(y_i, \theta)=(\sigma \sqrt{2\pi})^{-1}exp\left( -\frac{1}{2\sigma^2} (y_i - f(x_i,\theta))^2 \right)
+\end{displaymath}
+Finalement, comme $y_i$ sont des variables indépendantes, on a :
+\begin{displaymath}
+\Phi(y, \theta)=\prod \limits_{i=1}^n \Phi_i(y_i, \theta)
+\end{displaymath}
+On interprète alors ces formules :\\
+pour $D \subset \mathbb{R}^n, \ \ \ Prob[y \in D | \theta]=\int \limits_D \Phi(y,\theta)dy_1,\cdots,dy_n$\\
+Pour $y$ fixé, alors $\Phi(y,\theta)=L(\theta,y)$ est appelée la fonction de vraisemblance de paramètre $\theta$ que l'on cherche évidemment à maximiser.
+\begin{align*}
+L(\theta,y) & = \prod \limits_{i=1}^n \Phi_i(y_i, \theta) \\
+			& = \prod \limits_{i=1}^n (\sigma \sqrt{2\pi})^{-1}exp\left( -\frac{1}{2\sigma^2} (y_i - f(x_i,\theta))^2 \right) \\
+			& = (\sigma \sqrt{2\pi})^{-n}exp \left( -\frac{1}{2\sigma^2} \underbrace{\sum \limits_{i=1}^n(y_i - f(x_i,\theta))^2}_{(*)} \right)
+\end{align*}
+Pour maximiser $L(\theta,y)$, on cherche donc à minimiser $(*)$, donc $arg \ \underset{\theta \in \mathbb{R}^p}{max} \ L(\theta,y)=arg \ \underset{\theta \in \mathbb{R}^p}{min} \ S(\theta)$, ce qui revient à dire que, résoudre le problème des moindres carrés revient à calculer le modèle dont la vraisemblance statistique est la plus grande (en supposant que l'erreur suit une loi normale).
+
+\section{Problèmes des moindres carrés linéaires}
+\subsection{Théorie}
+On suppose donc que l'on possède un des données $(x_i,y_i)$ et qu'il en existe un modèle tel que :
+\abovedisplayskip=0mm
+\begin{displaymath}
+y=f(x,\theta) \text{ est linéaire } \Leftrightarrow y=\sum \limits^{p}_{k=1} \theta_k\Phi_k(x) \text{ (pour $x$ fixé, $y$ est une combinaison linéaire des $\theta_k$)}
+\end{displaymath}
+On cherche donc à minimiser :
+\abovedisplayskip=0mm
+\begin{displaymath}
+S(\theta)= \sum \limits^{n}_{i=1} (\theta_1 + \theta_2 x_i + \cdots + \theta_p x_i^p - y_i)^2 = ||r(\theta)||^2
+\end{displaymath}
+On pose :
+\abovedisplayskip=0mm
+\begin{displaymath}
+A=\left[ \begin{array}{c}
+\theta_1 + \theta_2 x_1 + \cdots + \theta_p x_1^p \\
+\vdots \\
+\theta_1 + \theta_2 x_n + \cdots + \theta_p x_n^p \\
+\end{array} \right] \ \ \ \ \ \ \ \ \text{(A est appelée la matrice de Vandermonde)}
+\end{displaymath}
+Finalement, on a :
+\abovedisplayskip=0mm
+\begin{displaymath}
+S(\theta)= ||r(\theta)||^2 = ||A\theta - y||
+\end{displaymath}
+Et on cherche $\overset{\wedge}{\theta}$ tel que $\overset{\wedge}{\theta }=arg \ \underset{\theta \in \mathbb{R}^p}{min} \ S(\theta)$\\
+On connaît une condition nécessaire : $\nabla S(\overset{\wedge}{\theta})=0$ où $\nabla S(\overset{\wedge}{\theta})$ est le gradient de S en $\overset{\wedge}{\theta}$. \\
+\textbf{Rappel :} si $f:\mathbb{R}^n\rightarrow \mathbb{R}$ est une fonction différentiable en a, alors :\\
+$f(a+h)=f(a)+\nabla f(a)^Th + ||h||\varepsilon(h)$ où $\lim \limits_{h\rightarrow 0)} \varepsilon(h) \rightarrow 0$\\
+Ainsi on calcule $\nabla S(\overset{\wedge}{\theta})$ en développant $S(\theta)$, ainsi :
+\begin{align*}
+S(\theta+h) & = S(\theta) + \nabla S(\theta)^Th + ||Ah||^2 \\
+			& = ||A\theta -y||^2 + 2(A\theta-y)^TAh + ||Ah||^2
+\end{align*}
+Par identification, on a donc : $\nabla S(\theta)=2A^T(A\theta -y)$.\\
+Par ailleurs, on a le théorème :\\
+\textbf{Théorème :}\\
+Une solution au problème des moindres carrés est donnée par $\overset{\wedge}{\theta}$ qui vérifie
+\begin{equation}
+\nabla S(\theta)=0 \Leftrightarrow A^TA\overset{\wedge}{\theta}=A^Ty
+\end{equation}
+De plus, si $rang(A)=$ son nombre de colonnes, alors cette solution est unique. \\
+
+\textbf{Démonstration :}\\
+\indent \textbf{Équivalence}\\
+\indent \begin{align*}
+		S(\theta)=S(\overset{\wedge}{\theta}+\theta -\overset{\wedge}{\theta} & = S(\overset{\wedge}{\theta}) + \nabla S(\overset{\wedge}{\theta})^T(\theta - \overset{\wedge}{\theta}) + ||A(\theta - \overset{\wedge}{\theta})||^2 \\
+		& = S(\overset{\wedge}{\theta}) + ||A(\theta - \overset{\wedge}{\theta})||^2 \\
+		& \geq S(\overset{\wedge}{\theta})
+\end{align*}
+\indent \textbf{Unicité}\\
+\indent \begin{align*}
+S(\overset{\wedge}{\theta})=S(\theta) & \Longleftrightarrow ||A(\theta - \overset{\wedge}{\theta})||^2 = 0 \\
+& \Longleftrightarrow A(\theta - \overset{\wedge}{\theta})=0 \\
+& \Longleftrightarrow \theta = \overset{\wedge}{\theta}
+\end{align*}
+
+Finalement, résoudre des problèmes de moindres carrés linéaires n'est histoire que d'algèbre linéaire. Par ailleurs, lorsque la solution est unique, dans \textit{Scilab}, on peut directement résoudre $\theta$ en utilisant la commande \textit{theta = A $\backslash$ y}.
+
+\subsection{Application : Régression polynomiale avec validation}
+On applique donc la méthode étudiée pour un premier problème de simple régression linéaire. Le code (\ref{donnes}) nous permet dans un premier temps de récupérer des données (un ensemble de couples $(t_i,y_i)$) et de les représenter sur un graphique (affichage (\ref{donnes_graph})).
+\begin{table}[H]
+\caption{Récupération des données}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{recuperation_des_donnes.sce}
+\label{donnes}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Ensemble de données}
+\includegraphics[width=10cm]{donnes_brutes.pdf}
+\label{donnes_graph}
+\end{figure}
+
+On cherche donc à approcher le modèle inconnu par des polynômes de différents degrés. On implémente alors le code (\ref{diff_poly}) qui nous donne les affichages  (\ref{graph_diff_poly}) et (\ref{erreur_poly}).
+\begin{table}[H]
+\caption{Approximation par différents polynômes}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{trace_poly.sce}
+\label{diff_poly}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Affichage des différentes approximations}
+\includegraphics[width=\textwidth]{graph_diff_poly.png}
+\label{graph_diff_poly}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\caption{Évolution de l'erreur en fonction du degré du polynôme}
+\includegraphics[width=12cm]{erreur_poly.pdf}
+\label{erreur_poly}
+\end{figure}
+
+Grâce aux tracés des différents polynômes (\ref{graph_diff_poly}) et en particulier au tracé de l'erreur en fonction du degré (\ref{erreur_poly}), on constate que l'erreur ne diminue plus de manière significative à partir du troisième degré. Dés lors, comment choisir le modèle qui représente le mieux les données ?\\ \\
+\indent Pour répondre à cette problématique, on applique la méthode dite de validation. On considère un ensemble de données $\mathcal{T}$ dit d'apprentissage et un ensemble de données $\mathcal{V}$ dit de validation (il s'agit du complémentaire de $\mathcal{T}$). On applique alors la méthode de résolution du problème de moindres carrés sur $\mathcal{T}$ pour obtenir un modèle. On applique ensuite ce modèle sur $\mathcal{V}$. On évalue l'erreur sur chacun des ensembles :\\
+\begin{displaymath}
+\begin{array}{ccc}
+S_{\mathcal{T}}(\theta)=\sum \limits_{i \in \mathcal{T}}(P(t_i)-y_i)^2 & \ \ \ \ \ \ \ \ & S_{\mathcal{V}}(\theta)=\sum \limits_{i \in \mathcal{V}}(P(t_i)-y_i)^2
+\end{array}
+\end{displaymath}
+L'erreur sur l'ensemble d'apprentissage $S_{\mathcal{T}}(\theta)$ ne nous donne pas plus d'information que l'erreur précédemment calculée sur l'ensemble des données. En revanche, l'erreur de validation $S_{\mathcal{V}}(\theta)$ nous permet de choisir un modèle car la différence entre chaque degré est bien plus significative (comme les données n'ont pas servi à l'élaboration du modèle, elles permettent de le valider ou non).\\ \\
+\indent Dans notre cas, on choisit $\mathcal{V}=\{ t \in [0,2] \ | \ abs(t)\leq 1 \}$. On implémente donc dans \textit{Scilab} le code (\ref{code_validation}) qui nous donne les affichages (\ref{graph_validation_poly}) et (\ref{erreur_validation}).
+
+\begin{table}[H]
+\caption{Approximation par différents polynômes et méthode de validation}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{validation.sce}
+\label{code_validation}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Affichage des différentes approximations sur T et V}
+\includegraphics[width=\textwidth]{validation_poly.png}
+\label{graph_validation_poly}
+\end{figure}
+
+Les points bleus et verts représentent réciproquement l'ensemble d'apprentissage et l'ensemble de validation. Le modèle (représenté par la courbe rouge) est élaboré sur l'ensemble d'apprentissage et est évalué sur l'ensemble des données (donc en particulier sur l'ensemble de validation).
+
+\begin{figure}[H]
+\centering
+\caption{Évolution de l'erreur sur T et sur V en fonction du degré du polynôme}
+\includegraphics[width=12cm]{erreur_validation.pdf}
+\label{erreur_validation}
+\end{figure}
+
+Comme on pouvait s'y attendre, l'erreur d'apprentissage ne nous offre pas plus d'information concernant la précision du modèle en fonction du degré du polynôme. En revanche, l'erreur de validation nous montre quel modèle est le plus représentatif : il s'agit donc du degré 4.
+
+
+
+\section{Problèmes des moindres carrés non linéaires}
+
+
+
+
 
 
 \end{document}
