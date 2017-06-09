@@ -2492,12 +2492,241 @@ Les points bleus et verts représentent réciproquement l'ensemble d'apprentissa
 Comme on pouvait s'y attendre, l'erreur d'apprentissage ne nous offre pas plus d'information concernant la précision du modèle en fonction du degré du polynôme. En revanche, l'erreur de validation nous montre quel modèle est le plus représentatif : il s'agit donc du degré 4.
 
 
-
 \section{Problèmes des moindres carrés non linéaires}
+Précédemment, on a supposé que, pour un jeu de données $(x_i,y_i)$ et qu'il en existe un modèle tel que :
+\abovedisplayskip=0mm
+\begin{displaymath}
+y=f(x,\theta) \text{ est linéaire } \Leftrightarrow y=\sum \limits^{p}_{k=1} \theta_k\Phi_k(x) \text{ (pour $x$ fixé, $y$ est une combinaison linéaire des $\theta_k$)}
+\end{displaymath}
+Maintenant, considérons un modèle qui ne serait pas linéaire, comme par exemple :
+\abovedisplayskip=0mm
+\begin{displaymath}
+y=f(x,\theta) = exp(\theta_1 + \theta_2x)
+\end{displaymath}
+Pour résoudre un problème de moindres carrés non linéaires :
 
+\subsection{Méthode du gradient}
 
+\subsection{Méthode de Levenberg-Marquardt}
 
+\chapter{Equation aux dérivées partielles}
+\section{Introduction}
+Pour introduire ce dernier chapitre, nous nous sommes intéressés à une expérience menée par Joseph Fourier, décrite dans \textit{Théorie Analytique de la chaleur} en 1822. \\
+\indent Considérons donc l'expérience suivante. Un anneau de métal est chauffé à blanc à l'aide d'une source de chaleur placée sous la section de l'anneau à $\theta=0$ (on suppose que la distribution $f(\theta)$ de la température reste symétrique par rapport à cette section). On place ensuite cet anneau dans le sable (qui constitue un bon isolant) et on observe la température de l'anneau en fonction du temps ($t$). Compte tenu des conditions expérimentales, on considère que la température ne dépend que de $\theta$ et $t$ , on la note $u(\theta,t)$. \\
+\indent Le bilan énergétique nous permet d'écrire l'équation aux dérivés partielles :
+\abovedisplayskip=0mm
+\begin{displaymath}
+\textit{C}\rho \frac{\partial u}{\partial t} - \lambda \frac{\partial^2u}{\partial\theta^2} = 0 \ \ \ \ \ \ \ \ \ \ \ \forall \theta \in ]-\pi , \pi [, \forall t>0, C, \rho, \lambda \in \mathbb{R}^+
+\end{displaymath}
+Avec $\textit{C}$ la capacité calorifique, $\rho$ la masse volumique et $\lambda$ le coefficient de conduction thermique.\\
+Si on pose $d=\frac{\lambda}{\textit{C}\rho}$ ($d$ est appelé le coefficient de diffusivité), on obtient l'équation :
+\begin{equation}
+\label{eq_chaleur}
+\frac{\partial u}{\partial t} - d \frac{\partial^2 u}{\partial \theta^2} = 0
+\end{equation}
+En outre, on pose les hypothèses suivantes :
+\begin{itemize}
+\item La symétrie impose que l'on suppose que $\forall \theta \in [-\pi,\pi], \ u(\theta,t)=u(-\theta,t)$ (la fonction est paire)
+\item On suppose que $u(\theta,t)$ est dérivable par rapport à $\theta$. \\
+On en déduit $\frac{\partial u}{\partial \theta}(0,t)=0 \ \ \ \ \forall t$
+\ \ \ \ \ \ \ \ \ \ et $\frac{\partial u}{\partial \theta}(\pi,t)=\frac{\partial u}{\partial \theta}(-\pi,t)=0 \ \ \ \ \forall t$
+\end{itemize}
+On ajoute donc à l'équation (\ref{eq_chaleur}) les conditions dites limites :
+\begin{equation}
+\label{cond_limites}
+\frac{\partial u}{\partial \theta}(0,t)=0 \ \ \ \frac{\partial u}{\partial \theta}(\pi,t)=0 \text{ (comme u est paire, on restreint l'étude à }[0,\pi])
+\end{equation}
+Et la condition initiale :
+\begin{equation}
+\label{cond_initiale}
+u(\theta,0)=f(\theta) \ \ \ \forall \theta \in [0,\pi]
+\end{equation}
+L'idée est donc de résoudre l'équation (\ref{eq_chaleur}) à l'aide des conditions limites (\ref{cond_limites}) et la condition initiale (\ref{cond_initiale}).
 
+\section{Résolution de l'équation de la chaleur}
+\subsection{Résolution des équations (\ref{eq_chaleur}) et (\ref{cond_limites})}
+On cherche $u$ sous la forme "à variables séparées" : $u(\theta,t)=g(\theta)h(t)$ (on ne prétend pas obtenir toutes les solutions mais au moins une partie).
+\begin{align*}
+\text{(\ref{eq_chaleur})} & \Rightarrow g(\theta)h'(t)-dg''(\theta)h(t) = 0 \ \ \ \ \ \forall t >0, \forall \theta \in [0,\pi] \\
+						  & \Rightarrow \frac{g''(\theta)}{g'(\theta} = \frac{h'(t)}{dh(t)}
+\end{align*}
+Donc il existe $C \in \mathbb{R}$ tel que $\frac{g''(\theta)}{g'(\theta} = \frac{h'(t)}{dh(t)}=C$ \\
+D'une part, on a nécessairement $h'(t)=Cdh(t) \ \Rightarrow \ h(t)=\gamma exp(Cdt)$ \\
+Supposons que $C>0$, $\lim \limits_{t\rightarrow +\infty} h(t) = +\infty$, ce qui n'est pas physiquement plausible, donc $C\leq 0$ \\
+D'autre part, on a $g''(\theta)-Cg(\theta)=0$.\\
+On pose $C=-\delta^2$ avec $\delta>0$, $g''(\theta)+\delta^2g(\theta)=0$\\
+d'où $g(\theta)=\alpha cos(\delta \theta) + \beta sin(\delta \theta) = \alpha cos(\delta \theta)$ (car comme $u$ est paire, $g$ l'est aussi) \\
+Si on vérifie une des conditions limites, à savoir : $\frac{\partial u}{\partial \theta}(\pi,t)=g'(\pi)h(t)=0$, \\
+on obtient $-\alpha \delta sin(\delta \theta)=0$ donc $\exists n \in \mathbb{N}$ tel que $\delta=n$.\\
+Donc $g(\theta)=\alpha cos(nt)$ est solution $\forall n \in \mathbb{N}$ \\
+Finalement, on a donc comme solution générale aux équations (\ref{eq_chaleur}) et (\ref{cond_limites}) mais pas de (\ref{cond_initiale}) :
+\abovedisplayskip=0mm
+\begin{displaymath}
+u_n = \alpha_n cos(n \theta) exp(-dn^2t)
+\end{displaymath}
 
+\subsection{Ajout de l'équation (\ref{cond_initiale})}
+On pose donc $u_n = \alpha_n cos(n \theta) exp(-dn^2t)$ \\
+\abovedisplayskip=0mm
+\begin{displaymath}
+\text{(\ref{cond_initiale})} \Leftrightarrow u(\theta,0) = \sum \limits_{n\geq 0} \alpha_n cos(n \theta) = f(\theta)  \ \ \ \ \ \forall \theta \in [0,\pi] \\
+\end{displaymath}
+On applique ensuite des règles de trigonométrie :
+\begin{enumerate}
+\item on a $\int_0^{\pi}cos(n \theta) d\theta = 0$ pour $n>0$ \\
+donc $\int_0^{\pi} \sum \limits_{n\geq 0} \alpha_n cos(n \theta) d\theta = \int_0^{\pi}f(\theta) d\theta \Leftrightarrow \pi \alpha_0 = \int_0^{\pi}f(\theta) d\theta \Leftrightarrow \alpha_0 = \frac{1}{\pi} \int_0^{\pi}f(\theta) d\theta$
+\item on a $\int_0^{\pi}cos(n \theta)cos(k \theta) d\theta = 0$ si $k \neq n$ et $\int_0^{\pi}cos^2(n \theta) d\theta = \frac{\pi}{2}$\\
+$\int_0^{\pi} \sum \limits_{n\geq 0} \alpha_n cos(n \theta) cos(k \theta) d\theta = \int_0^{\pi} f(\theta) cos(k \theta) d\theta$ \\
+$\Leftrightarrow \alpha_k \int_0^{\pi}cos^2(k\theta)d\theta = \int_0^{\pi}f(\theta)cos(k\theta)d\theta$ \\
+$\Leftrightarrow \alpha_k = \frac{2}{\pi} \int_0^{\pi}f(\theta)cos(k\theta)d\theta $
+\end{enumerate}
+Cette série de termes est appelée une série de Fourier. \\
+Si on néglige les termes de la série pour $n\geq 2$, on peut donc approcher $u(\theta,t)$ par $\alpha_0 + \alpha_1cos(\theta)exp(-dt)$
+
+\section{Mathématiques des séries de Fourier}
+\noindent \textbf{Définitions}
+\begin{itemize}
+\item On appelle polynôme trigonométrique toute fonction définie par :\\
+$P_n(x) = \frac{a_0}{2} + \sum \limits_{k=1}^n \left[ a_k cos\left(\frac{2k\pi}{T}x\right) + b_k sin\left(\frac{2k\pi}{T}x\right) \right]$
+\item On appelle série trigonométrique toute fonction définie par :\\
+$f(x) = \frac{a_0}{2} + \sum \limits_{k=1}^n \left[ a_k cos\left(\frac{2k\pi}{T}x\right) + b_k sin\left(\frac{2k\pi}{T}x\right) \right]$ \\
+On suppose que pour tout $x$, la série converge.
+\end{itemize}
+
+\noindent \textbf{Propriétés}\\
+Si $(a_n)$ et $(b_n)$ sont décroissantes et tendent vers 0 alors $\lim \limits_{n\longrightarrow +\infty}P_n(x) \text{ existe pour tout }x$
+\\ \\
+\noindent \textbf{Définitions}
+\begin{itemize}
+\item On dit que $P_n$ converge \textbf{simplement} vers $f$ si :\\
+$\forall \varepsilon > 0, \forall x \in [0,t], \exists N \in \mathbb{N}, \forall n \in \mathbb{N}, n>N \Rightarrow |P_n(x)-f(x)|<\varepsilon$
+\item On dit que $P_n$ converge \textbf{uniformément} vers $f$ si :\\
+$\forall \varepsilon > 0, \exists N \in \mathbb{N}, \forall x \in [0,t], \forall n \in \mathbb{N}, n>N \Rightarrow |P_n(x)-f(x)|<\varepsilon$
+\end{itemize}
+
+\noindent \textbf{Formule}\\
+Si $P_n \longrightarrow f$ uniformément, avec $f$ périodique de période $T$, alors on peut montrer que :\\
+\abovedisplayskip=0mm
+\begin{displaymath}
+a_n = \frac{2}{T} \int_0^{T} f(x)cos\left(nx \times \frac{2\pi}{T}\right)dx \ \ \ \ \ \ \ b_n = \frac{2}{T} \int_0^{T} f(x)sin\left(nx \times \frac{2\pi}{T}\right)dx 
+\end{displaymath}
+\\
+\noindent \textbf{Théorème (Dirichlet, 1829)}\\
+Soit $f$ périodique et telles que :
+\begin{itemize}
+\item les discontinuités de $f$ sont en nombre fini et de première espèce (c'est à dire que les limites à droite et à gauche des points existent, sont finies, mais ne sont pas égales).
+\item en tout point, $f$ admet une dérivée à droite et à gauche
+\end{itemize}
+Alors $S(x)=\frac{a_0}{2} + \sum \limits_{k=1}^n \left[ a_k cos\left(\frac{2k\pi}{T}x\right) + b_k sin\left(\frac{2k\pi}{T}x\right) \right]$ converge \\
+et $S(x) = \left\lbrace
+\begin{array}{l}
+\frac{f(x^+)+f(x^-)}{2} \text{ si }f\text{ est discontinue en }x  \\
+f(x) \text{ sinon}
+\end{array}\right.$ \\
+La convergence est uniforme sur tout intervalle où $f$ est continue.
+
+\section{Application : Les séries de Fourier et le phénomène de Gibbs}
+Pour se familiariser avec les séries de Fourier, on s'intéresse à la fonction $f : \mathbb{R} \longrightarrow \mathbb{R}$ périodique de période $2\pi$ définie par :
+\abovedisplayskip=0mm
+\begin{displaymath}
+\forall x \in [-\pi,0[, \ \ f(x)=-1,
+\end{displaymath}
+\abovedisplayskip=0mm
+\begin{displaymath}
+\forall x \in [0,\pi[, \ \ f(x)=1.
+\end{displaymath}
+En appliquant la formule des coefficients de la série de Fourier, à savoir pour $f(x)$ une fonction périodique de période $T$ :
+\abovedisplayskip=0mm
+\begin{displaymath}
+a_n = \frac{2}{T} \int_0^{T} f(x)cos\left(nx \times \frac{2\pi}{T}\right)dx \ \ \ \ \ \ \ b_n = \frac{2}{T} \int_0^{T} f(x)sin\left(nx \times \frac{2\pi}{T}\right)dx 
+\end{displaymath}
+(notons que l'intégration peut se faire sur un tout autre intervalle de longueur $T$ que $[0,T]$)\\
+Ainsi : $f(x) = \frac{a_0}{2} + \sum \limits_{k=1}^n a_k cos\left(\frac{2k\pi}{T}\right) + b_k sin\left(\frac{2k\pi}{T}\right)$.\\ \\
+On calcule les coefficients de $S(x)$ la série de Fourier de $f(x)$, on obtient :
+\abovedisplayskip=0mm
+\begin{displaymath}
+a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)cos(nx)dx = 0
+\end{displaymath}
+\abovedisplayskip=0mm
+\begin{displaymath}
+b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x)sin(nx)dx =
+\left\lbrace
+\begin{array}{l}
+0 \text{ si $n$ est pair}  \\
+\frac{4}{n\pi} \text{ si $n$ impair}
+\end{array}\right.
+\end{displaymath}
+Finalement, on a $S(x)= \frac{4}{\pi} \sum \limits_{p\geq 0} \frac{sin((2p+1)x)}{2p+1}$. \\
+On a $S(x)=f(x)$ pour tout $x$ où $f$ est continue. En effet, $S(k\pi)=0 \neq f(k\pi)$. \\
+\indent Soit $S_n(x)$ la somme partielle de rang $n$ de la série de Fourier de $f$. Pour la calculer et la représenter pour des valeurs croissantes de $n$, on implémente dans \textit{Scilab} le code (\ref{gibbs}) qui nous donne l'affichage (\ref{graph_gibbs}).
+
+\begin{table}[H]
+\caption{Somme partielle d'une série de Fourier pour différentes valeurs de $n$}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{gibbs1.sce}
+\label{gibbs}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Effet Gibbs pour différentes valeurs de $n$}
+\includegraphics[width=\textwidth]{gibbs.png}
+\label{graph_gibbs}
+\end{figure}
+
+Ce premier exemple de série de Fourier nous permet de constater le phénomène de Gibbs : au voisinage des points de discontinuité de $f$, on constate des déformations du signal, de fortes oscillations, comme des ressauts. En effet, la somme partielle $S_n$ est une fonction continue, il est ainsi logique que cette série ne puisse pas approcher la fonction $f$ au voisinage de ses points de discontinuité.\\
+
+Notons que ce phénomène ne se produit évidemment pas pour des fonctions continues en tout point, prenons par exemple :\\
+$f:\mathbb{R}\longrightarrow \mathbb{R}$ périodique de période $2\pi$ et $f(x)=|x|,\ x \in [-\pi,\pi]$\\
+On a $a_n=\frac{2}{2\pi} \int_{-\pi}^{\pi}xcos(nx)=0$ (car la fonction est impaire)\\
+et $b_n=\frac{1}{\pi} \int_{-\pi}^{\pi}xsin(nx)=\frac{2}{\pi} \int_{0}^{\pi}xsin(nx)=(-1)^{n+1}\frac{2}{n}$.\\
+En adaptant le précédent code, on obtient le code (\ref{gibbs2}) et l'affichage (\ref{graph_gibbs2}) : aucun phénomène de Gibbs n'apparaît.
+
+\begin{table}[H]
+\caption{Série de Fourier d'une fonction totalement continue}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{gibbs2.sci}
+\label{gibbs2}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Absence de phénomène Gibbs}
+\includegraphics[width=\textwidth]{gibbs2.png}
+\label{graph_gibbs2}
+\end{figure}
+
+\newpage
+\section{Application : Représenter à l'aide des séries de Fourier}
+Nous nous sommes intéressés à la fonction $f$ définir sur $[0,\frac{1}{2}]$ par $f(x)=x(x-1)$. On souhaite représenter cette fonction, qui n'est pas périodique, à l'aide des séries de Fourier. L'idée est donc de représenter des fonctions, qui elles sont périodiques et qui coïncident avec $f$ sur son ensemble de définition $[0,\frac{1}{2}]$, à l'aide des séries de Fourier.\\
+On considère ainsi les trois fonctions suivantes :
+\begin{itemize}
+\item $f_1$ périodique de période $\frac{1}{2}$ vérifiant $\forall x \in [0,\frac{1}{2}], \ f_1(x)=f(x).$
+\item $f_2$ paire et périodique de période $1$ vérifiant $\forall x \in [0,\frac{1}{2}], \ f_2(x)=f(x).$
+\item $f_3$ impaire et périodique de période $2$ vérifiant $\forall x \in [0,1], \ f_3(x)=f_2(x).$
+\end{itemize}
+On calcule les coefficients de la série de Fourier de chacune des fonctions $f_1$, $f_2$ et $f_3$ : \\
+\begin{tabular}{llll}
+$f_1$ & $a_0=\frac{-1}{3}$ & $a_n=\frac{1}{4\pi^2n^2}$ & $b_n=\frac{1}{4\pi n}$ \\
+$f_2$ & $a_0=\frac{-1}{3}$ & $a_n=\frac{1}{\pi^2n^2}$ & $b_n=0$ \\
+$f_3$ & $a_0=0$ & $a_n=0$ & $b_n=4\times \frac{(-1)^n-1}{\pi^3 n^3}$
+\end{tabular} \\ \\
+\indent On constate que, à mesure que $n$ augmente, les coefficients décroissent très vite (lorsqu'il ne sont pas nuls, on divise par $n$, voir $n^2$, voir même $n^3$). Avec ces coefficients, on peut donc calculer les sommes partielles des séries de Fourier des fonctions $f_1$, $f_2$ et $f_3$. Pour calculer et représenter ces sommes simultanément, on implémente dans \textit{Scilab} le code (\ref{fourier}) pour obtenir l'affichage (\ref{graph_fourier}).
+\begin{table}[H]
+\caption{Sommes partielles des séries de Fourier des différentes fonctions}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{fourier.sce}
+\label{fourier}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Représentation des sommes partielles}
+\includegraphics[width=\textwidth]{fourier.png}
+\label{graph_fourier}
+\end{figure}
 
 \end{document}
