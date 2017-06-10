@@ -132,12 +132,14 @@
 \contentsline {subsection}{\numberline {5.3.2}Application : R\IeC {\'e}gression polynomiale avec validation}{84}
 \contentsline {section}{\numberline {5.4}Probl\IeC {\`e}mes des moindres carr\IeC {\'e}s non lin\IeC {\'e}aires}{89}
 \contentsline {subsection}{\numberline {5.4.1}M\IeC {\'e}thode du gradient}{89}
-\contentsline {subsection}{\numberline {5.4.2}M\IeC {\'e}thode de Levenberg-Marquardt}{89}
-\contentsline {chapter}{\numberline {6}Equation aux d\IeC {\'e}riv\IeC {\'e}es partielles}{90}
-\contentsline {section}{\numberline {6.1}Introduction}{90}
-\contentsline {section}{\numberline {6.2}R\IeC {\'e}solution de l'\IeC {\'e}quation de la chaleur}{91}
-\contentsline {subsection}{\numberline {6.2.1}R\IeC {\'e}solution des \IeC {\'e}quations (6.1\hbox {}) et (6.2\hbox {})}{91}
-\contentsline {subsection}{\numberline {6.2.2}Ajout de l'\IeC {\'e}quation (6.3\hbox {})}{91}
-\contentsline {section}{\numberline {6.3}Math\IeC {\'e}matiques des s\IeC {\'e}ries de Fourier}{91}
-\contentsline {section}{\numberline {6.4}Application : Les s\IeC {\'e}ries de Fourier et le ph\IeC {\'e}nom\IeC {\`e}ne de Gibbs}{92}
-\contentsline {section}{\numberline {6.5}Application : Repr\IeC {\'e}senter \IeC {\`a} l'aide des s\IeC {\'e}ries de Fourier}{95}
+\contentsline {subsubsection}{Th\IeC {\'e}orie}{89}
+\contentsline {subsubsection}{Application}{90}
+\contentsline {subsection}{\numberline {5.4.2}M\IeC {\'e}thode de Levenberg-Marquardt}{92}
+\contentsline {chapter}{\numberline {6}Equation aux d\IeC {\'e}riv\IeC {\'e}es partielles}{93}
+\contentsline {section}{\numberline {6.1}Introduction}{93}
+\contentsline {section}{\numberline {6.2}R\IeC {\'e}solution de l'\IeC {\'e}quation de la chaleur}{94}
+\contentsline {subsection}{\numberline {6.2.1}R\IeC {\'e}solution des \IeC {\'e}quations (6.1\hbox {}) et (6.2\hbox {})}{94}
+\contentsline {subsection}{\numberline {6.2.2}Ajout de l'\IeC {\'e}quation (6.3\hbox {})}{94}
+\contentsline {section}{\numberline {6.3}Math\IeC {\'e}matiques des s\IeC {\'e}ries de Fourier}{94}
+\contentsline {section}{\numberline {6.4}Application : Les s\IeC {\'e}ries de Fourier et le ph\IeC {\'e}nom\IeC {\`e}ne de Gibbs}{95}
+\contentsline {section}{\numberline {6.5}Application : Repr\IeC {\'e}senter \IeC {\`a} l'aide des s\IeC {\'e}ries de Fourier}{98}

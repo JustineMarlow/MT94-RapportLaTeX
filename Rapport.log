@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.1)  7 JUN 2017 21:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.1)  10 JUN 2017 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -334,6 +334,9 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/fncychap/fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \RW=\skip43
@@ -433,9 +436,6 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
-Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -559,9 +559,6 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 ) (./Rapport.aux
 
 LaTeX Warning: Label `tapis_rec' multiply defined.
-
-
-LaTeX Warning: Label `julia' multiply defined.
 
 )
 \openout1 = `Rapport.aux'.
@@ -897,28 +894,33 @@ Package pdftex.def Info: graphcinematique_2.pdf used on input line 544.
 (pdftex.def)             Requested size: 204.85802pt x 255.41426pt.
  [24 <./graphcinematique.pdf> <./graphcinematique_2.pdf>]
 Chapitre 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 551--553
+
+ []
+
 <fractales_intro.jpg, id=127, 616.704pt x 462.528pt>
 File: fractales_intro.jpg Graphic file (type jpg)
  <use fractales_intro.jpg>
-Package pdftex.def Info: fractales_intro.jpg used on input line 556.
-(pdftex.def)             Requested size: 426.79135pt x 320.09743pt.
+Package pdftex.def Info: fractales_intro.jpg used on input line 557.
+(pdftex.def)             Requested size: 362.77525pt x 272.08458pt.
 
-[25
-
- <./fractales_intro.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 561--562
 
  []
 
-<cantor.png, id=131, 1003.75pt x 162.6075pt>
+[25
+
+ <./fractales_intro.jpg>] <cantor.png, id=131, 1003.75pt x 162.6075pt>
 File: cantor.png Graphic file (type png)
- <use cantor.png>
+
+<use cantor.png>
 Package pdftex.def Info: cantor.png used on input line 575.
 (pdftex.def)             Requested size: 298.75264pt x 48.39804pt.
-
-<mr_cantor.jpg, id=133, 220.825pt x 289.08pt>
+ <mr_cantor.jpg, id=133, 220.825pt x 289.08pt>
 File: mr_cantor.jpg Graphic file (type jpg)
- <use mr_cantor.jpg>
+
+<use mr_cantor.jpg>
 Package pdftex.def Info: mr_cantor.jpg used on input line 582.
 (pdftex.def)             Requested size: 86.93681pt x 113.81102pt.
 
@@ -1996,106 +1998,167 @@ Package pdftex.def Info: diag_config5.png used on input line 2275.
 (pdftex.def)             Requested size: 170.71652pt x 161.01894pt.
  [79 <./diag_config2.png> <./diag_config3.png> <./diag_config4.png> <./diag_con
 fig5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2282--2284
+Underfull \hbox (badness 10000) in paragraph at lines 2282--2283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2282--2284
+Underfull \hbox (badness 10000) in paragraph at lines 2282--2283
 
  []
 
-(./villes_italiennes.sce) [80]
-<diag_italiennes.png, id=422, 344.28625pt x 311.1625pt>
+<italie.png, id=419, 386.19281pt x 436.63126pt>
+File: italie.png Graphic file (type png)
+ <use italie.png>
+Package pdftex.def Info: italie.png used on input line 2287.
+(pdftex.def)             Requested size: 369.88582pt x 418.19519pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2290--2291
+
+ []
+
+(./villes_italiennes.sce) [80 <./italie.png (PNG copy)>]
+<diag_italiennes.png, id=423, 344.28625pt x 311.1625pt>
 File: diag_italiennes.png Graphic file (type png)
 
 <use diag_italiennes.png>
-Package pdftex.def Info: diag_italiennes.png used on input line 2321.
+Package pdftex.def Info: diag_italiennes.png used on input line 2327.
 (pdftex.def)             Requested size: 170.71652pt x 154.28943pt.
  [81 <./diag_italiennes.png>]
 Chapitre 5.
 [82
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2339--2341
+Underfull \hbox (badness 10000) in paragraph at lines 2345--2347
 
  []
 
 [83]
-Underfull \hbox (badness 10000) in paragraph at lines 2399--2401
+Underfull \hbox (badness 10000) in paragraph at lines 2405--2407
 
  []
 
 (./recuperation_des_donnes.sce)
-<donnes_brutes.pdf, id=434, 612.2875pt x 461.725pt>
+<donnes_brutes.pdf, id=435, 612.2875pt x 461.725pt>
 File: donnes_brutes.pdf Graphic file (type pdf)
  <use donnes_brutes.pdf>
-Package pdftex.def Info: donnes_brutes.pdf used on input line 2431.
+Package pdftex.def Info: donnes_brutes.pdf used on input line 2437.
 (pdftex.def)             Requested size: 284.52756pt x 214.55899pt.
 
 [84] (./trace_poly.sce)
-Overfull \hbox (6.11008pt too wide) in paragraph at lines 33--2439
+Overfull \hbox (6.11008pt too wide) in paragraph at lines 33--2445
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (18.11009pt too wide) in paragraph at lines 2438--2442
+Overfull \hbox (18.11009pt too wide) in paragraph at lines 2444--2448
 [][] 
  []
 
-<graph_diff_poly.png, id=439, 601.24625pt x 570.13pt>
+<graph_diff_poly.png, id=440, 601.24625pt x 570.13pt>
 File: graph_diff_poly.png Graphic file (type png)
 
 <use graph_diff_poly.png>
-Package pdftex.def Info: graph_diff_poly.png used on input line 2447.
+Package pdftex.def Info: graph_diff_poly.png used on input line 2453.
 (pdftex.def)             Requested size: 426.79135pt x 404.71684pt.
  [85 <./donnes_brutes.pdf>]
-<erreur_poly.pdf, id=445, 612.2875pt x 333.245pt>
+<erreur_poly.pdf, id=446, 612.2875pt x 333.245pt>
 File: erreur_poly.pdf Graphic file (type pdf)
  <use erreur_poly.pdf>
-Package pdftex.def Info: erreur_poly.pdf used on input line 2454.
+Package pdftex.def Info: erreur_poly.pdf used on input line 2460.
 (pdftex.def)             Requested size: 341.43306pt x 185.82776pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2458--2460
+Underfull \hbox (badness 10000) in paragraph at lines 2464--2466
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2458--2460
+Underfull \hbox (badness 10000) in paragraph at lines 2464--2466
 
  []
 
 [86 <./graph_diff_poly.png> <./erreur_poly.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2464--2467
+Underfull \hbox (badness 10000) in paragraph at lines 2470--2473
 
  []
 
-(./validation.sce) <validation_poly.png, id=451, 612.2875pt x 809.0225pt>
+(./validation.sce) <validation_poly.png, id=452, 612.2875pt x 809.0225pt>
 File: validation_poly.png Graphic file (type png)
 
 <use validation_poly.png>
-Package pdftex.def Info: validation_poly.png used on input line 2479.
+Package pdftex.def Info: validation_poly.png used on input line 2485.
 (pdftex.def)             Requested size: 426.79135pt x 563.91704pt.
  [87]
-<erreur_validation.pdf, id=455, 618.31pt x 402.50375pt>
+<erreur_validation.pdf, id=456, 618.31pt x 402.50375pt>
 File: erreur_validation.pdf Graphic file (type pdf)
 
 <use erreur_validation.pdf>
-Package pdftex.def Info: erreur_validation.pdf used on input line 2488.
+Package pdftex.def Info: erreur_validation.pdf used on input line 2494.
 (pdftex.def)             Requested size: 341.43306pt x 222.26828pt.
- [88 <./validation_poly.png>] [89 <./erreur_validation.pdf>]
-Chapitre 6.
-[90
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 2569--2571
+ [88 <./validation_poly.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2519--2524
 
  []
 
 
-Overfull \hbox (13.89445pt too wide) in paragraph at lines 2583--2585
+Underfull \hbox (badness 10000) in paragraph at lines 2526--2528
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2529--2532
+
+ []
+
+[89 <./erreur_validation.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2551--2553
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2555--2557
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2560--2561
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2565--2567
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2573--2576
+
+ []
+
+[90]
+Underfull \hbox (badness 10000) in paragraph at lines 2589--2591
+
+ []
+
+(./gradient.sce) <gradient.png, id=469, 612.2875pt x 461.725pt>
+File: gradient.png Graphic file (type png)
+
+<use gradient.png>
+Package pdftex.def Info: gradient.png used on input line 2603.
+(pdftex.def)             Requested size: 426.79135pt x 321.8385pt.
+ [91] [92 <./gradient.png>]
+Chapitre 6.
+[93
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 2667--2669
+
+ []
+
+
+Overfull \hbox (13.89445pt too wide) in paragraph at lines 2681--2683
 \OT1/cmr/m/n/10 Si on n^^Seglige les ter-mes de la s^^Serie pour $\OML/cmm/m/it
 /10 n \OMS/cmsy/m/n/10 ^^U \OT1/cmr/m/n/10 2$, on peut donc ap-procher $\OML/cm
 m/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R; t\OT1/cmr/m/n/10 )$ par $\OML
@@ -2105,54 +2168,54 @@ m/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R; t\OT1/cmr/m/n/10 )$ par $\OML
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2596--2600
+Underfull \hbox (badness 10000) in paragraph at lines 2694--2698
 
  []
 
-[91]
-Underfull \hbox (badness 10000) in paragraph at lines 2607--2610
+[94]
+Underfull \hbox (badness 10000) in paragraph at lines 2705--2708
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2642--2647
+Underfull \hbox (badness 10000) in paragraph at lines 2740--2745
 
  []
 
-(./gibbs1.sce) [92] <gibbs.png, id=475, 612.2875pt x 461.725pt>
+(./gibbs1.sce) [95] <gibbs.png, id=487, 612.2875pt x 461.725pt>
 File: gibbs.png Graphic file (type png)
 
 <use gibbs.png>
-Package pdftex.def Info: gibbs.png used on input line 2674.
+Package pdftex.def Info: gibbs.png used on input line 2772.
 (pdftex.def)             Requested size: 426.79135pt x 321.8385pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2678--2679
+Underfull \hbox (badness 10000) in paragraph at lines 2776--2777
 
  []
 
-[93 <./gibbs.png>] (./gibbs2.sci)
-<gibbs2.png, id=480, 685.56125pt x 274.02374pt>
+[96 <./gibbs.png>] (./gibbs2.sci)
+<gibbs2.png, id=493, 685.56125pt x 274.02374pt>
 File: gibbs2.png Graphic file (type png)
  <use gibbs2.png>
-Package pdftex.def Info: gibbs2.png used on input line 2697.
+Package pdftex.def Info: gibbs2.png used on input line 2795.
 (pdftex.def)             Requested size: 426.79135pt x 170.59541pt.
- [94 <./gibbs2.png>] (./fourier.sce)
-Overfull \hbox (7.01006pt too wide) in paragraph at lines 2719--2723
+ [97 <./gibbs2.png>] (./fourier.sce)
+Overfull \hbox (7.01006pt too wide) in paragraph at lines 2817--2821
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2710--2723
+Underfull \hbox (badness 10000) in paragraph at lines 2808--2821
 
  []
 
-<fourier.png, id=485, 697.60625pt x 366.36874pt>
+<fourier.png, id=498, 697.60625pt x 366.36874pt>
 File: fourier.png Graphic file (type png)
  <use fourier.png>
-Package pdftex.def Info: fourier.png used on input line 2728.
+Package pdftex.def Info: fourier.png used on input line 2826.
 (pdftex.def)             Requested size: 426.79135pt x 224.14426pt.
- [95]
-[96 <./fourier.png>] (./Rapport.aux)
+ [98]
+[99 <./fourier.png>] (./Rapport.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2161,10 +2224,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7645 strings out of 493029
- 100120 string characters out of 6136235
- 292792 words of memory out of 5000000
- 10847 multiletter control sequences out of 15000+600000
+ 7666 strings out of 493029
+ 100385 string characters out of 6136235
+ 293935 words of memory out of 5000000
+ 10864 multiletter control sequences out of 15000+600000
  21628 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,17n,43p,945b,2698s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2195,10 +2258,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Rapport.pdf (97 pages, 16583993 bytes).
+Output written on Rapport.pdf (100 pages, 16684181 bytes).
 PDF statistics:
- 588 PDF objects out of 1000 (max. 8388607)
- 336 compressed objects within 4 object streams
+ 600 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 456 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 466 words of extra memory for PDF output out of 10000 (max. 10000000)
 

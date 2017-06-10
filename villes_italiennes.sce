@@ -9,9 +9,9 @@ function H=constrH(G,n)
         for j=1:n
         s=sum(G(:,j));
         if s == 0 then
-            G(:,j)=ones(n,1)/n;
-            s=1;
-        end
+		G(:,j)=ones(n,1)/n;
+		s=1;
+	end
         H(i,j)=G(i,j)/s;
         end
     end
@@ -31,7 +31,6 @@ A=constrA(H,n);
 
 for i=1:100
     x=A*x;
-    //on normalise x
     x=x/sum(x);
 end
 

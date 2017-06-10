@@ -34,12 +34,13 @@
 \contentsline {table}{\numberline {4.2}{\ignorespaces Lena : Compression de l'image}}{72}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Lena : Bruitage puis d\IeC {\'e}bruitage de l'image}}{74}
 \contentsline {table}{\numberline {4.4}{\ignorespaces D\IeC {\'e}termination du PageRank d'un ensemble de page internet}}{78}
-\contentsline {table}{\numberline {4.5}{\ignorespaces D\IeC {\'e}termination de l'importance d'un ville dans un r\IeC {\'e}seau ferroviaire}}{80}
+\contentsline {table}{\numberline {4.5}{\ignorespaces D\IeC {\'e}termination de l'importance d'un ville dans un r\IeC {\'e}seau ferroviaire}}{81}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces R\IeC {\'e}cup\IeC {\'e}ration des donn\IeC {\'e}es}}{84}
 \contentsline {table}{\numberline {5.2}{\ignorespaces Approximation par diff\IeC {\'e}rents polyn\IeC {\^o}mes}}{85}
 \contentsline {table}{\numberline {5.3}{\ignorespaces Approximation par diff\IeC {\'e}rents polyn\IeC {\^o}mes et m\IeC {\'e}thode de validation}}{87}
+\contentsline {table}{\numberline {5.4}{\ignorespaces M\IeC {\'e}thode du gradient \IeC {\`a} pas optimal}}{91}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Somme partielle d'une s\IeC {\'e}rie de Fourier pour diff\IeC {\'e}rentes valeurs de $n$}}{93}
-\contentsline {table}{\numberline {6.2}{\ignorespaces S\IeC {\'e}rie de Fourier d'une fonction totalement continue}}{94}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Sommes partielles des s\IeC {\'e}ries de Fourier des diff\IeC {\'e}rentes fonctions}}{95}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Somme partielle d'une s\IeC {\'e}rie de Fourier pour diff\IeC {\'e}rentes valeurs de $n$}}{96}
+\contentsline {table}{\numberline {6.2}{\ignorespaces S\IeC {\'e}rie de Fourier d'une fonction totalement continue}}{97}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Sommes partielles des s\IeC {\'e}ries de Fourier des diff\IeC {\'e}rentes fonctions}}{98}

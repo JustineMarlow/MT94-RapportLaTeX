@@ -1,13 +1,13 @@
 %pour la mise en page
 \documentclass[a4paper,10pt]{report}
 \usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
 \usepackage[Conny]{fncychap}
 %Sonny Lenny Glenn Conny Rejne et Bjarne
 
 %pour les maths
 \usepackage{graphicx}
 \usepackage{amsmath}
-\usepackage{indentfirst}
 \usepackage{amssymb}
 
 %pour les figures
@@ -94,9 +94,9 @@
 
 \begin{document}
 \AddToShipoutPicture*{\BackgroundPic}
-\title{Cahier d'intégration MT94}
-\author{Marlow Justine}
-\date{}
+\title{MT94 - Introduction aux mathématiques appliquées \\ Cahier d'intégration}
+\author{Justine Marlow}
+\date{Printemps 2017}
 \maketitle
 
 \addcontentsline{toc}{chapter}{Table des matières}
@@ -548,17 +548,17 @@ On peut ainsi avoir accès après exécution du programme principal à un affich
 
 \chapter{Fractales}
 \section{Introduction}
-L'existence des fractales part d'une interrogation assez surprenante : comment construire des figures parfaitement irrégulières, peu importe l'échelle choisie pour les observer (c'est à dire des courbes de fonctions continues mais non dérivables) ? Comment simuler grâce à des outils mathématiques des motifs présent dans la nature comme l'écume des vagues, les nuages,... ? Comment représenter \textit{l'infini} sur une surface finie ? La solution à ces interrogations est d'aller au delà de la géométrie classique, c'est à dire euclidienne.
+L'existence des fractales part d'une interrogation assez surprenante : comment construire des figures parfaitement irrégulières, peu importe l'échelle choisie pour les observer (c'est à dire des courbes de fonctions continues mais non dérivables) ? Comment simuler grâce à des outils mathématiques des motifs présent dans la nature comme l'écume des vagues, les nuages,... ? Comment représenter l'infini sur une surface finie ? La solution à ces interrogations est d'aller au delà de la géométrie classique, c'est à dire euclidienne. \\ \\
+\indent Nous verrons dans ce chapitre que ces figures existent et sont appelées fractales. Nous étudierons plusieurs manières de les construire (nous découvrirons des méthodes récursives mais aussi des méthodes itératives).
 
-\begin{center}
 \begin{figure}[H]
+\centering
 \caption{Exemple de fractales : fractale de Mandelbrot}
-\includegraphics[width=\textwidth]{fractales_intro.jpg}
+\includegraphics[width=.85\textwidth]{fractales_intro.jpg}
 \end{figure}
-\end{center}
 
 \section{Dimension de Hausdorff}
-Avant d'étudier des fractales particuliers, il apparaît pertinent de commencer par définir \textit{la dimension de Hausdorff}, c'est à dire la notion de dimension que l'on peut appliquer à un fractal. La dimension de Van Hausdorff d'une fractale $K$ est définie ainsi :\\
+Avant d'étudier des fractales particulières, il apparaît pertinent de commencer par définir \textit{la dimension de Hausdorff}, c'est à dire la notion de dimension que l'on peut appliquer à une fractale. La dimension de Van Hausdorff d'une fractale $K$ est définie ainsi :\\
 \begin{itemize}
 \item on note $N(\varepsilon)$ le nombre de carrés de longueur (ou de disques de rayon) $\varepsilon$ recouvrant $K$
 \item on a alors $d=\lim\limits_{\varepsilon \rightarrow 0} \frac{ln(N(\varepsilon))}{ln(\frac{1}{\varepsilon})}$, $d \notin \mathbb{N}$
@@ -642,7 +642,7 @@ L'exécution du code nous donne ainsi la figure \ref{cantor_recursif}.
 \begin{center}
 \begin{figure}[H]
 \centering
-\caption{Figure pour n=7}
+\caption{Ensemble de Cantor (récursif pour n=7)}
 \includegraphics[width=0.8\textwidth]{cantor_recursif.pdf}
 \label{cantor_recursif}
 \end{figure}
@@ -694,7 +694,7 @@ Finalement $C_n$ converge au sens de la distance de Hausdorff vers $C^\infty$, l
 L'exécution du code nous donne ainsi la figure \ref{cantor_iteratif}.:
 \begin{center}
 \begin{figure}[H]
-\caption{Ensemble de Cantor itératif pour 1000 points}
+\caption{Ensemble de Cantor (itératif pour 1000 points)}
 \includegraphics[width=\textwidth]{cantor_iteratif.pdf}
 \label{cantor_iteratif}
 \end{figure}
@@ -752,7 +752,7 @@ Le programme récursif s'inspire tout autant de la définition même de la fract
 L'exécution du code nous donne ainsi la figure \ref{sierpinski_recursif}.
 \begin{figure}[H]
 \centering
-\caption{Triangle de Sierpinski (récursif) pour n=5}
+\caption{Triangle de Sierpinski (récursif pour n=5)}
 \includegraphics[width=0.75\textwidth]{sierpinski_recursif.pdf}
 \label{sierpinski_recursif}
 \end{figure}
@@ -798,7 +798,7 @@ Finalement $T_n$ converge au sens de la distance de Hausdorff vers $T^\infty$, l
 L'exécution du code nous donne ainsi la figure \ref{sierpinski_iteratif}.
 \begin{figure}[H]
 \centering
-\caption{Triangle de Sierpinski itératif pour 1000 points}
+\caption{Triangle de Sierpinski (itératif pour 1000 points)}
 \includegraphics[width=0.75\textwidth]{sierpinski_iteratif.pdf}
 \label{sierpinski_iteratif}
 \end{figure}
@@ -887,7 +887,7 @@ f_8 \left[ \begin{array}{l} x \\ y \end{array} \right] =
 L'exécution du code nous donne ainsi la figure \ref{tapis_it}.
 \begin{figure}[H]
 \centering
-\caption{Tapis de Sierpinski (itératif) pour n=100000 points}
+\caption{Tapis de Sierpinski (itératif pour n=100000 points)}
 \includegraphics[width=0.75\textwidth]{tapis_iteratif.pdf}
 \label{tapis_it}
 \end{figure}
@@ -984,7 +984,7 @@ En s'insipirant toujours de la définition de la fractale, on implémente dans \
 L'exécution du code nous donne ainsi la figure \ref{koch_recursif}.
 \begin{figure}[H]
 \centering
-\caption{Figure pour n=4}
+\caption{Courbe de Von Koch (récursive pour n=4)}
 \includegraphics[width=\textwidth]{koch_recursif.pdf}
 \label{koch_recursif}
 \end{figure}
@@ -1034,7 +1034,7 @@ Finalement $K_n$ converge au sens de la distance de Hausdorff vers $K^\infty$, l
 L'exécution du code nous donne ainsi la figure \ref{koch_iteratif}.
 \begin{figure}[H]
 \centering
-\caption{Flocon de Von Koch itératif pour 10000 points}
+\caption{Flocon de Von Koch (itératif pour 10000 points)}
 \includegraphics[width=\textwidth]{koch_iteratif.pdf}
 \label{koch_iteratif}
 \end{figure}
@@ -1094,7 +1094,7 @@ On implémente donc dans \textit{Scilab} le code \ref{code_fougere}.
 
 L'exécution du code nous donne ainsi la figure \ref{affichage_fougere} pour différentes valeurs de $N$.
 \begin{figure}[H]
-\caption{Différents affichages de la fougère en fonction de $N$}
+\caption{Différents affichages de la fougère en fonction de $N$ (itérative)}
    \begin{minipage}[c]{.49\linewidth}
    \centering
       \includegraphics[height=8cm]{graphfougere.pdf}
@@ -1180,7 +1180,7 @@ Avec l'ensemble de Julia, nous avions vu que la sélection d'une valeur de $c$ \
 \begin{figure}[H]
 \centering
 \caption{Ensemble de Mandelbrot}
-\label{julia}
+\label{mandelbrot}
 \centering
 \includegraphics[width=6cm]{mandelbrot.png}
 \end{figure}	
@@ -1210,7 +1210,7 @@ On implémente donc dans \textit{Scilab} le code \ref{code_mandelbrot}.
 
 L'exécution du code nous donne ainsi la figure \ref{affichage_mandelbrot}.
 \begin{figure}[H]
-\caption{Ensemble de Mandelbrot}
+\caption{Ensemble de Mandelbrot construit}
 \centering
 \includegraphics[height=8cm]{mandelbrot1.png}
 \label{affichage_mandelbrot}
@@ -2280,6 +2280,13 @@ On obtient ainsi les vecteurs associés aux différentes configurations :\\
 \newpage
 \subsection{Extension de la méthode à d'autres problèmes}
 Il est intéressant de constater que la méthode de résolution mise en place pour résoudre le problème du \textit{PageRank} ne se résume pas aux pages internet : on peut également s'intéresser à un système de connections interurbaines.\\ \\
+
+\begin{figure}[H]
+\centering
+\caption{Réseau ferroviaire de villes italiennes}
+\includegraphics[width=13cm]{italie.png}
+\end{figure}
+
 Considérons $n$ villes reliées entre elles par un réseau ferroviaire. On désire connaître le taux d'accessibilité des villes entre elles pour mesurer le taux de facilité d'accès entre les villes. Il s'agit d'un problème complètement analogue à celui du \textit{PageRank}. En effet, le problème se résout en obtenant le vecteur propre associé à la valeur $\lambda$ de plus grand module de la matrice $A=(a_{ij})_{i,j=1,\cdots , n}$ telle que :\\
 \begin{displaymath}
 a_{ij}= \left\lbrace
@@ -2298,7 +2305,6 @@ On s'inspire donc de la méthode et du code mis en place pour résoudre le probl
 \end{tabular}
 \end{table}
 
-\newpage
 On obtient les résultats ci-dessous.
 \begin{figure}[H]
 \begin{minipage}[c]{.40\linewidth}
@@ -2493,19 +2499,112 @@ Comme on pouvait s'y attendre, l'erreur d'apprentissage ne nous offre pas plus d
 
 
 \section{Problèmes des moindres carrés non linéaires}
-Précédemment, on a supposé que, pour un jeu de données $(x_i,y_i)$ et qu'il en existe un modèle tel que :
-\abovedisplayskip=0mm
-\begin{displaymath}
-y=f(x,\theta) \text{ est linéaire } \Leftrightarrow y=\sum \limits^{p}_{k=1} \theta_k\Phi_k(x) \text{ (pour $x$ fixé, $y$ est une combinaison linéaire des $\theta_k$)}
-\end{displaymath}
+Précédemment, on a supposé que, pour un jeu de données $(x_i,y_i)$, il en existe un modèle linéaire.\\
 Maintenant, considérons un modèle qui ne serait pas linéaire, comme par exemple :
 \abovedisplayskip=0mm
 \begin{displaymath}
 y=f(x,\theta) = exp(\theta_1 + \theta_2x)
 \end{displaymath}
-Pour résoudre un problème de moindres carrés non linéaires :
+
+Comment résoudre un problème des moindres carrés non linéaires ? On cherche toujours à minimiser $S(\theta) = ||r(\theta)||^2$ avec $r_i(\theta)=f(x_i,\theta)-y_i$. On a vu une condition nécessaire : 
+\abovedisplayskip=0mm
+\begin{displaymath}
+\nabla S(\overset{\wedge}{\theta})=0=2J_r(\overset{\wedge}{\theta})^Tr(\overset{\wedge}{\theta})
+\end{displaymath}
+On connaît d'ores et déjà un premier angle d'attaque possible : il s'agit de la méthode de Newton (étudiée dans le premier chapitre : Problèmes non linéaires). Cependant, en appliquant cette méthode, nous ferions face à certaines difficultés. D'abord, au niveau calculatoire, il faudrait calculer $J_r(\theta)$, c'est à dire la jacobienne du gradient (et donc des dérivées secondes). Ensuite, au niveau de l'application, la convergence vers le minimum n'est pas assurée : on avait vu que la méthode de Newton converge rapidement à la condition que le point initial n'est pas trop éloigné de la solution. Mais l'idée de la méthode de Newton est à garder (cf méthode de Levenberg-Marquardt).
+
 
 \subsection{Méthode du gradient}
+\subsubsection{Théorie}
+\textbf{Définition : direction de descente}\\
+Soit $E$ un espace vectoriel de dimension finie.\\
+Soit $f:E \longrightarrow \mathbb{R}$ une fonction continue et $x \in E$.\\
+On dit que $w \in E\backslash (0)$ est une direction de descente en $x$ s'il existe $\rho_0>0$ tel que :\\
+\abovedisplayskip=0mm
+\begin{displaymath}
+f(x+w\rho)\leq f(x) \ \ \ \ \ \ \ \ \forall \rho \in [0,\rho_0]
+\end{displaymath}
+Il s'agit d'une direction de descente stricte si $f(x+w\rho)< f(x) \ \ \ \ \ \ \ \ \forall \rho \in [0,\rho_0]$ \\
+
+\textbf{Lemme : gradient et direction de descente}\\
+Soit $x \in E$ et $f$ continûment différentiable dans un couvert contenant $x$.\\
+Si $\nabla J(x) \neq 0$ alors $w = - \nabla J(x)$ est une direction de descente stricte en $x$.\\
+
+\textbf{Méthode du gradient à pas fixe}\\
+La méthode du gradient consiste à "descendre" itérativement vers le minimum local de la fonction, elle suit l'algorithme suivant (la principale difficulté réside dans le choix de $x_0$ et surtout de $\rho$) :\\
+\begin{algorithm}
+\begin{algorithmic}
+\REQUIRE{Données : $x_0$ et $\rho$}
+\REPEAT
+\STATE $w_n= - \nabla J(x_n)$
+\IF {$w_n=0$}
+\STATE \textbf{retourner } $x_n$
+\ELSE
+\STATE $x_{n+1}=x_n+\rho w_n$
+\ENDIF
+\STATE $n=n+1$
+\UNTIL{critère d'arrêt}
+\end{algorithmic}
+\end{algorithm}
+
+\subsubsection{Application}
+Pour appliquer la méthode du gradient, on considère la fonction :\\
+\abovedisplayskip=0mm
+\begin{displaymath}
+f(x) = \frac{1}{2}x^TAx - b^Tx
+\end{displaymath}
+Il s'agit d'une forme quadratique où $A$ est une matrice symétrique, définie positive et $b$ est un vecteur de $\mathbb{R}^n$. On sait que le minimum de $f$ est réalisé par $\overset{\wedge}{x}$ vérifiant le système d'équations linéaires $A\overset{\wedge}{x}=b$. \\
+
+Dans notre application, on prendra : $A = \left( \begin{array}{cc} 2 & -1 \\ -1 & 2 \end{array} \right)$ et $b=\left( \begin{array}{c} 1 \\ 1 \end{array} \right)$.
+
+\textbf{Calcul du gradient}\\
+\begin{align*}
+f(x+h) & = \frac{1}{2}(x+h)^TA(x+h) - b^T(x+h) \\
+	   & = \frac{1}{2}x^TAx - b^Tx + \frac{1}{2}h^TAx + \frac{1}{2}x^TAh -b^Th + \frac{1}{2}h^TAh \\
+	   & = f(x) + (Ax-b)^Th + \frac{1}{2}h^TAh
+\end{align*}
+Donc $\nabla f(x) = (Ax-b)$ \\
+
+\textbf{$\rho$ optimal}\\
+Le pas optimal est donné (montré dans l'UV RO04) par :
+\abovedisplayskip=0mm
+\begin{displaymath}
+\rho = \frac{||\nabla J||^2}{\nabla J^TA\nabla J}
+\end{displaymath}
+Dans notre cas, on a le pas optimal : $\rho = \frac{2}{\lambda_1 + \lambda_2}$ avec $\lambda_1$ et $\lambda_2$ les valeurs propres de $A$ \\
+$\lambda_1 = 3$ et $\lambda_2 = 1$ donc $\rho=\frac{2}{4}=\frac{1}{2}$. \\
+
+\textbf{Courbe iso-valeurs}\\
+L'équation paramétrique de la courbe iso-valeurs de $f$ passant par un point $x_0$ du plan est donnée par :
+\abovedisplayskip=0mm
+\begin{displaymath}
+x(t)= \overset{\wedge}{x} + P\left( \begin{array}{c} a_1cos(t) \\ a_2sin(t) \end{array} \right)
+\end{displaymath}
+où $P$ est la matrice des vecteurs propres de $A$ et $a_1$ et $a_2$ sont donnés par :
+\abovedisplayskip=0mm
+\begin{displaymath}
+a_1= \left( \frac{2(f(x_0)-f(\overset{\wedge}{x})}{\lambda_1} \right)^\frac{1}{2}, a_2= \left( \frac{2(f(x_0)-f(\overset{\wedge}{x})}{\lambda_2} \right)^\frac{1}{2}.
+\end{displaymath}
+\\
+
+\textbf{Code et affichage}\\
+Pour représenter graphiquement l'aspect itératif de la méthode du gradient, on l'applique sur 50 itérations. A chaque itération on trace la courbe iso-valeurs de la fonction passant par $x_n$ puis on relie $x_n$ et $x_{n+1}$. On implémente donc la méthode du gradient (à pas optimal) avec le code (\ref{gradient}) qui nous donnes l'affichage (\ref{graph_gradient}).\\
+
+\begin{table}[H]
+\caption{Méthode du gradient à pas optimal}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{gradient.sce}
+\label{gradient}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Visualisation de la méthode du gradient}
+\includegraphics[width=\textwidth]{gradient.png}
+\label{graph_gradient}
+\end{figure}
+
 
 \subsection{Méthode de Levenberg-Marquardt}
 

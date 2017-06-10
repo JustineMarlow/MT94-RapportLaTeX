@@ -12,29 +12,29 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Exemple de fractales : fractale de Mandelbrot}}{25}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Ensemble de Cantor}}{26}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Cantor 1845-1918}}{26}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Figure pour n=7}}{28}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Ensemble de Cantor it\IeC {\'e}ratif pour 1000 points}}{29}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Ensemble de Cantor (r\IeC {\'e}cursif pour n=7)}}{28}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Ensemble de Cantor (it\IeC {\'e}ratif pour 1000 points)}}{29}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Triangle de Sierpinski}}{30}
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Sierpinski 1882-1924}}{30}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Triangle de Sierpinski (r\IeC {\'e}cursif) pour n=5}}{31}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Triangle de Sierpinski it\IeC {\'e}ratif pour 1000 points}}{33}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Triangle de Sierpinski (r\IeC {\'e}cursif pour n=5)}}{31}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Triangle de Sierpinski (it\IeC {\'e}ratif pour 1000 points)}}{33}
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Tapis de Sierpinski}}{33}
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Tapis de Sierpinski (r\IeC {\'e}cursif) pour n=2}}{34}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Tapis de Sierpinski (it\IeC {\'e}ratif) pour n=100000 points}}{36}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Tapis de Sierpinski (it\IeC {\'e}ratif pour n=100000 points)}}{36}
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Flocon de neige de Von Koch}}{36}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Von Koch 1870-1924}}{36}
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Courbe de Von Koch}}{38}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Figure pour n=4}}{39}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Flocon de Von Koch it\IeC {\'e}ratif pour 10000 points}}{40}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Courbe de Von Koch (r\IeC {\'e}cursive pour n=4)}}{39}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Flocon de Von Koch (it\IeC {\'e}ratif pour 10000 points)}}{40}
 \contentsline {figure}{\numberline {2.18}{\ignorespaces Barnsley 1946-...}}{41}
 \contentsline {figure}{\numberline {2.19}{\ignorespaces Foug\IeC {\`e}re de Barnsley}}{41}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Diff\IeC {\'e}rents affichages de la foug\IeC {\`e}re en fonction de $N$}}{42}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Diff\IeC {\'e}rents affichages de la foug\IeC {\`e}re en fonction de $N$ (it\IeC {\'e}rative)}}{42}
 \contentsline {figure}{\numberline {2.21}{\ignorespaces Julia 1893-1978}}{43}
 \contentsline {figure}{\numberline {2.22}{\ignorespaces Ensemble de Julia (exemple parmi beaucoup d'autres)}}{43}
 \contentsline {figure}{\numberline {2.23}{\ignorespaces Diff\IeC {\'e}rents affichages de l'ensemble de Julia en fonction de $c$}}{44}
 \contentsline {figure}{\numberline {2.24}{\ignorespaces Ensemble de Mandelbrot}}{45}
 \contentsline {figure}{\numberline {2.25}{\ignorespaces Mandelbrot 1924-2010}}{45}
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Ensemble de Mandelbrot}}{46}
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Ensemble de Mandelbrot construit}}{46}
 \contentsline {figure}{\numberline {2.27}{\ignorespaces Diff\IeC {\'e}rents affichages de l'ensemble de Julia en fonction de $c$ (dans ou hors la fronti\IeC {\`e}re de Mandelbrot)}}{46}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Affichage (sch\IeC {\'e}ma d'Euler)}}{51}
@@ -54,13 +54,15 @@
 \contentsline {figure}{\numberline {4.5}{\ignorespaces R\IeC {\'e}sultat du d\IeC {\'e}bruitage}}{74}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces PageRank : configuration 1}}{75}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces PageRank : configurations 2 \IeC {\`a} 5}}{77}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces R\IeC {\'e}seau ferroviaire de villes italiennes}}{80}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Ensemble de donn\IeC {\'e}es}}{85}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Affichage des diff\IeC {\'e}rentes approximations}}{86}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces \IeC {\'E}volution de l'erreur en fonction du degr\IeC {\'e} du polyn\IeC {\^o}me}}{86}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Affichage des diff\IeC {\'e}rentes approximations sur T et V}}{88}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces \IeC {\'E}volution de l'erreur sur T et sur V en fonction du degr\IeC {\'e} du polyn\IeC {\^o}me}}{89}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Visualisation de la m\IeC {\'e}thode du gradient}}{92}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Effet Gibbs pour diff\IeC {\'e}rentes valeurs de $n$}}{93}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Absence de ph\IeC {\'e}nom\IeC {\`e}ne Gibbs}}{94}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Repr\IeC {\'e}sentation des sommes partielles}}{96}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Effet Gibbs pour diff\IeC {\'e}rentes valeurs de $n$}}{96}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Absence de ph\IeC {\'e}nom\IeC {\`e}ne Gibbs}}{97}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Repr\IeC {\'e}sentation des sommes partielles}}{99}
