@@ -1,5 +1,5 @@
 function out=formeQ(x,A,b)
-    out=.5*x'*A*x-b'*x; // Forme quadratique
+    out=.5*x'*A*x-b'*x;
 endfunction
 
 function out=gradient(x,A,b)
@@ -21,19 +21,18 @@ b=[1 1]';
 xc=A\b; // Point qui minimise le gradient (donc annule la fonction)
 [D,P]=bdiag(A); // Matrice reelle (blocs de diagonalisation)
 d=diag(D);
+x=[1;0]; //point de depart arbitraire
+rho=0.5; //rho fixe
 
 clf;
-x=[1;0]; //point de depart arbitraire
-pas=0.5; //rho fixe optimal
 set(gca(),"isoview","on");
 trace(x);
 
 for i=1:50
     last=x;
-    x=last-pas*gradient(last,A,b);
-    disp(x)
+    x=last-rho*gradient(last,A,b);
     plot([last(1) x(1)],[last(2) x(2)],"r");
     trace(x);
 end
 
-title("Algorithme du gradient a pas fixe (optimal)",'fontsize',3);
+title("Algorithme du gradient a pas fixe",'fontsize',3);

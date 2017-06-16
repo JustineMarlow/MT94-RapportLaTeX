@@ -1,7 +1,3 @@
-\contentsline {chapter}{Table des mati\IeC {\`e}res}{1}
-\contentsline {chapter}{Table des figures}{4}
-\contentsline {chapter}{Table des codes}{6}
-\contentsline {chapter}{R\IeC {\'e}sum\IeC {\'e}}{8}
 \contentsline {chapter}{\numberline {1}Probl\IeC {\`e}mes non lin\IeC {\'e}aires I}{9}
 \contentsline {section}{\numberline {1.1}Introduction}{9}
 \contentsline {section}{\numberline {1.2}La dichotomie ou bissection}{10}
@@ -109,7 +105,7 @@
 \contentsline {section}{\numberline {3.9}Application concr\IeC {\`e}te : le pendule}{62}
 \contentsline {section}{\numberline {3.10}Application concr\IeC {\`e}te : les syst\IeC {\`e}mes proies / pr\IeC {\'e}dateurs}{64}
 \contentsline {section}{\numberline {3.11}Application concr\IeC {\`e}te : la m\IeC {\'e}canique c\IeC {\'e}leste}{66}
-\contentsline {chapter}{\numberline {4}Valeurs propres}{69}
+\contentsline {chapter}{\numberline {4}Valeurs et vecteurs propres}{69}
 \contentsline {section}{\numberline {4.1}Introduction}{69}
 \contentsline {section}{\numberline {4.2}Base th\IeC {\'e}orique}{70}
 \contentsline {subsection}{\numberline {4.2.1}Rappels d'alg\IeC {\`e}bre lin\IeC {\'e}aire}{70}
@@ -131,15 +127,20 @@
 \contentsline {subsection}{\numberline {5.3.1}Th\IeC {\'e}orie}{83}
 \contentsline {subsection}{\numberline {5.3.2}Application : R\IeC {\'e}gression polynomiale avec validation}{84}
 \contentsline {section}{\numberline {5.4}Probl\IeC {\`e}mes des moindres carr\IeC {\'e}s non lin\IeC {\'e}aires}{89}
-\contentsline {subsection}{\numberline {5.4.1}M\IeC {\'e}thode du gradient}{89}
-\contentsline {subsubsection}{Th\IeC {\'e}orie}{89}
-\contentsline {subsubsection}{Application}{90}
-\contentsline {subsection}{\numberline {5.4.2}M\IeC {\'e}thode de Levenberg-Marquardt}{92}
-\contentsline {chapter}{\numberline {6}Equation aux d\IeC {\'e}riv\IeC {\'e}es partielles}{93}
-\contentsline {section}{\numberline {6.1}Introduction}{93}
-\contentsline {section}{\numberline {6.2}R\IeC {\'e}solution de l'\IeC {\'e}quation de la chaleur}{94}
-\contentsline {subsection}{\numberline {6.2.1}R\IeC {\'e}solution des \IeC {\'e}quations (6.1\hbox {}) et (6.2\hbox {})}{94}
-\contentsline {subsection}{\numberline {6.2.2}Ajout de l'\IeC {\'e}quation (6.3\hbox {})}{94}
-\contentsline {section}{\numberline {6.3}Math\IeC {\'e}matiques des s\IeC {\'e}ries de Fourier}{94}
-\contentsline {section}{\numberline {6.4}Application : Les s\IeC {\'e}ries de Fourier et le ph\IeC {\'e}nom\IeC {\`e}ne de Gibbs}{95}
-\contentsline {section}{\numberline {6.5}Application : Repr\IeC {\'e}senter \IeC {\`a} l'aide des s\IeC {\'e}ries de Fourier}{98}
+\contentsline {subsection}{\numberline {5.4.1}M\IeC {\'e}thode du gradient}{90}
+\contentsline {subsubsection}{Th\IeC {\'e}orie}{90}
+\contentsline {subsection}{\numberline {5.4.2}Application de la m\IeC {\'e}thode du gradient}{90}
+\contentsline {subsection}{\numberline {5.4.3}M\IeC {\'e}thode de Levenberg-Marquardt}{95}
+\contentsline {subsubsection}{Limites de la m\IeC {\'e}thode du gradient}{95}
+\contentsline {subsubsection}{Th\IeC {\'e}orie de la m\IeC {\'e}thode de Levenberg-Marquardt}{96}
+\contentsline {subsection}{\numberline {5.4.4}Application de la m\IeC {\'e}thode de Levenberg-Marquardt}{97}
+\contentsline {subsection}{\numberline {5.4.5}Application concr\IeC {\`e}te : probl\IeC {\`e}me de moindres carr\IeC {\'e}s non lin\IeC {\'e}aire}{99}
+\contentsline {chapter}{\numberline {6}Equation aux d\IeC {\'e}riv\IeC {\'e}es partielles}{102}
+\contentsline {section}{\numberline {6.1}Introduction}{102}
+\contentsline {section}{\numberline {6.2}R\IeC {\'e}solution de l'\IeC {\'e}quation de la chaleur}{103}
+\contentsline {subsection}{\numberline {6.2.1}R\IeC {\'e}solution des \IeC {\'e}quations (6.1\hbox {}) et (6.2\hbox {})}{103}
+\contentsline {subsection}{\numberline {6.2.2}Ajout de l'\IeC {\'e}quation (6.3\hbox {})}{103}
+\contentsline {section}{\numberline {6.3}Math\IeC {\'e}matiques des s\IeC {\'e}ries de Fourier}{103}
+\contentsline {section}{\numberline {6.4}Application : Les s\IeC {\'e}ries de Fourier et le ph\IeC {\'e}nom\IeC {\`e}ne de Gibbs}{104}
+\contentsline {section}{\numberline {6.5}Application : Repr\IeC {\'e}senter \IeC {\`a} l'aide des s\IeC {\'e}ries de Fourier}{107}
+\contentsline {section}{\numberline {6.6}Application : Retour \IeC {\`a} l'\IeC {\'e}quation de la chaleur}{108}

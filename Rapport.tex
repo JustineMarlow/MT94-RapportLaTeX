@@ -99,20 +99,16 @@
 \date{Printemps 2017}
 \maketitle
 
-\addcontentsline{toc}{chapter}{Table des matières}
-\tableofcontents
 \newpage
-\addcontentsline{toc}{chapter}{Table des figures}
-\listoffigures
-\newpage
-\addcontentsline{toc}{chapter}{Table des codes}
-\listoftables
-
-\newpage
-\addcontentsline{toc}{chapter}{Résumé}
 \chapter*{Résumé}
 \markboth{RESUME}{}
 Blabla résumé, MT94
+
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
+\listoftables
 
 \chapter{Problèmes non linéaires I}
 
@@ -1298,7 +1294,8 @@ y(0)=1
 \end{array}\right.
 \end{equation}
 on a (\ref{equa_diff_pb}) $\Rightarrow \ \frac{dy}{dt} = e^{-t^2}y \ \Rightarrow \ \frac{dy}{y} = e^{-t^2}dt \ \Rightarrow \ \int_{}^{} \frac{dy}{y} = \int_{}^{} e^{-t^2}dt \ \Rightarrow \ ln(y) = \int_{}^{} e^{-t^2}dt $\\
-Or on ne connaît pas de primitive de $t \longrightarrow e^{-t^2}$, on ne peut donc pas résoudre le système (\ref{equa_diff_pb}) de manière analytique. Dans ce genre de situation, on a alors recours à un schéma numérique.
+Or on ne connaît pas de primitive de $t \longrightarrow e^{-t^2}$, on ne peut donc pas résoudre le système (\ref{equa_diff_pb}) de manière analytique. Dans ce genre de situation, on a alors recours à un schéma numérique.\\ \\
+\indent Dans ce chapitre, nous étudierons \textit{le schéma d'Euler}, \textit{le schéma du point milieu}, \textit{le schéma d'Euler-Cauchy} et enfin \textit{le schéma de Runge-Kutta}.
 
 \newpage
 \section{Idée, stabilité, consistance et ordre d'un schéma numérique}
@@ -1886,8 +1883,28 @@ On obtient alors l'affichage (\ref{aff_celeste}).
 \label{aff_celeste}
 \end{figure}
 
-\chapter{Valeurs propres}
+\chapter{Valeurs et vecteurs propres}
 \section{Introduction}
+Dans de nombreux domaines scientifiques, et plus particulièrement en informatique, les matrices sont utilisées afin de stockées un nombre gargantuesque de valeurs dans un même objet et de gérer ces données facilement (accès rapide à une donnée). Les matrices constituent donc un instrument intéressant et puissant afin de modéliser certains problèmes. Dans ce chapitre nous étudierons donc deux méthodes de manipulation de matrices qui permettent la résolution de ces problèmes, à savoir : \textit{la méthode de la décomposition en valeur singulière} (\textit{SVD} dans son abréviation anglaise) et \textit{la méthode de la puissance}. \\ \\
+
+\indent On se penchera en particulier sur le problème de la compression d'image et le problème du \textit{PageRank}. \\
+
+\begin{minipage}[c]{.30\linewidth}
+	\begin{figure}[H]
+	\centering
+	\caption{Cas d'école de la compression d'image}
+	\includegraphics[width=\textwidth]{lena.png}
+	\end{figure}
+\end{minipage}
+\begin{minipage}[c]{.05\linewidth}
+\end{minipage} \hfill
+\begin{minipage}[c]{.60\linewidth}
+	\begin{figure}[H]
+	\centering
+	\caption{Exemple de configuration de \textit{PageRank}}
+	\includegraphics[width=\textwidth]{config1.png}
+	\end{figure}
+\end{minipage} \hfill
 
 \newpage
 \section{Base théorique}
@@ -2331,10 +2348,35 @@ On obtient les résultats ci-dessous.
 
 \chapter{Problèmes non linéaires II}
 \section{Introduction}
+Dans de très nombreux domaines scientifiques, il est fréquent de réaliser une expérience afin d'observer un phénomène et donc de récupérer un ensemble de données sous la forme $(x_i,y_i)_{i=1,\cdots,n}$. Le phénomène est souvent décrit par un modèle, ainsi $y_i=f(x_i,\theta)$, on cherche donc à déterminer $\theta$ pour que le modèle ainsi obtenu explique au mieux les données. \\
+
+\begin{minipage}[c]{.45\linewidth}
+	\begin{figure}[H]
+	\caption{Un premier ensemble de données $(x_i,y_i)$}
+	\centering
+	\includegraphics[width=\textwidth]{donnes_brutes.pdf}
+	\end{figure}
+\end{minipage}
+\begin{minipage}[c]{.05\linewidth}
+\end{minipage} \hfill
+\begin{minipage}[c]{.45\linewidth}
+	\begin{figure}[H]
+	\caption{Un deuxième ensemble de données $(x_i,y_i)$}
+	\centering
+	\includegraphics[width=\textwidth]{donnes_brutes2.pdf}
+	\end{figure}
+\end{minipage} \hfill \\ \\
+
+On sait que déterminer ce modèle peut se ramener à la résolution d'un problème dit de moindres carrés, c'est à dire que l'on cherche à minimiser la quantité :
+\abovedisplayskip=0mm
+\begin{displaymath}
+\sum \limits^{n}_{i=1} (y_i - f(x_i,\theta))^2
+\end{displaymath}
+Comment résoudre un tel problème ? Dans ce chapitre, nous étudierons différentes méthodes de résolution pour des problèmes de moindres carrés \textit{linéaires} ainsi que pour des problèmes de moindres carrés \textit{non linéaires}.
 
 \newpage
 \section{Approche statistique}
-On a un jeu de données $(x_i,y_i)$. Considérons l'hypothèse suivante : les $x_i$ sont donnés et les $y_i$ sont des variables statistiquement indépendantes. On suppose qu'il existe un modèle parfait que l'on approche :
+On a un jeu de données $(x_i,y_i)_{i=1,\cdots,n}$. Considérons l'hypothèse suivante : les $x_i$ sont donnés et les $y_i$ sont des variables statistiquement indépendantes. On suppose qu'il existe un modèle parfait que l'on approche :
 \begin{displaymath}
 y_i = f(x_i, \theta) + \varepsilon_i
 \end{displaymath}
@@ -2373,15 +2415,20 @@ On cherche donc à minimiser :
 \begin{displaymath}
 S(\theta)= \sum \limits^{n}_{i=1} (\theta_1 + \theta_2 x_i + \cdots + \theta_p x_i^p - y_i)^2 = ||r(\theta)||^2
 \end{displaymath}
-On pose :
 \abovedisplayskip=0mm
 \begin{displaymath}
-A=\left[ \begin{array}{c}
-\theta_1 + \theta_2 x_1 + \cdots + \theta_p x_1^p \\
+\text{avec } r(\theta) =\left[ \begin{array}{c}
+\theta_1 + \theta_2 x_1 + \cdots + \theta_p x_1^p - y_1 \\
 \vdots \\
-\theta_1 + \theta_2 x_n + \cdots + \theta_p x_n^p \\
-\end{array} \right] \ \ \ \ \ \ \ \ \text{(A est appelée la matrice de Vandermonde)}
+\theta_1 + \theta_2 x_n + \cdots + \theta_p x_n^p - y_n \\
+\end{array} \right] \ \ \ \ \ \ \ \ \text{on pose } A = \left[ \begin{array}{ccccc}
+1 & t_1 & t_1^2 & \cdots & t_1^p \\
+| & \vdots & \vdots & \vdots & \vdots \\
+1 & t_n & t_n^2 & \cdots & t_n^p \\
+\end{array} \right]
 \end{displaymath}
+$r$ est appelé le vecteur résidu et $A$ la matrice de Vandermonde.
+\newpage
 Finalement, on a :
 \abovedisplayskip=0mm
 \begin{displaymath}
@@ -2424,7 +2471,7 @@ Finalement, résoudre des problèmes de moindres carrés linéaires n'est histoi
 \subsection{Application : Régression polynomiale avec validation}
 On applique donc la méthode étudiée pour un premier problème de simple régression linéaire. Le code (\ref{donnes}) nous permet dans un premier temps de récupérer des données (un ensemble de couples $(t_i,y_i)$) et de les représenter sur un graphique (affichage (\ref{donnes_graph})).
 \begin{table}[H]
-\caption{Récupération des données}
+\caption{Récupération des données (moindres carrés linéaires)}
 \begin{tabular}{l}
 \lstinputlisting[language=scilab]{recuperation_des_donnes.sce}
 \label{donnes}
@@ -2433,7 +2480,7 @@ On applique donc la méthode étudiée pour un premier problème de simple régr
 
 \begin{figure}[H]
 \centering
-\caption{Ensemble de données}
+\caption{Ensemble de données (moindres carrés linéaires)}
 \includegraphics[width=10cm]{donnes_brutes.pdf}
 \label{donnes_graph}
 \end{figure}
@@ -2506,14 +2553,21 @@ Maintenant, considérons un modèle qui ne serait pas linéaire, comme par exemp
 y=f(x,\theta) = exp(\theta_1 + \theta_2x)
 \end{displaymath}
 
-Comment résoudre un problème des moindres carrés non linéaires ? On cherche toujours à minimiser $S(\theta) = ||r(\theta)||^2$ avec $r_i(\theta)=f(x_i,\theta)-y_i$. On a vu une condition nécessaire : 
+Comment résoudre un problème des moindres carrés non linéaires ? On connaît une astuce surnommée le \textit{log-trick} qui consiste à appliquer la fonction logarithmique au modèle. Ainsi, on cherche $ln(f(x,\theta))=\theta_1 + \theta_2x$, on peut donc appliquer la méthode de résolution des problèmes de moindres carrés linéaires puis appliquer $exp$ à la solution ainsi trouvée. Cependant, faisant ainsi, on obtient :
+\abovedisplayskip=0mm
+\begin{displaymath}
+S_{log}(\theta)=\sum \limits_{i=1}^n (log(y_i)-(\theta_1+\theta_2x))^2
+\end{displaymath}
+$log(y_i)-log(f(x_i,\theta))$ n'est pas une loi normale, ainsi on observera une tendance à accentuer les valeurs extrèmes (c'est à dire proche de 0). Cette astuce ne constitue donc pas une solution acceptable (nous le constaterons plus tard dans l'application concrète). \\ \\\
+
+On cherche donc toujours à minimiser $S(\theta) = ||r(\theta)||^2$ avec $r_i(\theta)=f(x_i,\theta)-y_i$. On a vu une condition nécessaire : 
 \abovedisplayskip=0mm
 \begin{displaymath}
 \nabla S(\overset{\wedge}{\theta})=0=2J_r(\overset{\wedge}{\theta})^Tr(\overset{\wedge}{\theta})
 \end{displaymath}
 On connaît d'ores et déjà un premier angle d'attaque possible : il s'agit de la méthode de Newton (étudiée dans le premier chapitre : Problèmes non linéaires). Cependant, en appliquant cette méthode, nous ferions face à certaines difficultés. D'abord, au niveau calculatoire, il faudrait calculer $J_r(\theta)$, c'est à dire la jacobienne du gradient (et donc des dérivées secondes). Ensuite, au niveau de l'application, la convergence vers le minimum n'est pas assurée : on avait vu que la méthode de Newton converge rapidement à la condition que le point initial n'est pas trop éloigné de la solution. Mais l'idée de la méthode de Newton est à garder (cf méthode de Levenberg-Marquardt).
 
-
+\newpage
 \subsection{Méthode du gradient}
 \subsubsection{Théorie}
 \textbf{Définition : direction de descente}\\
@@ -2530,16 +2584,18 @@ Il s'agit d'une direction de descente stricte si $f(x+w\rho)< f(x) \ \ \ \ \ \ \
 Soit $x \in E$ et $f$ continûment différentiable dans un couvert contenant $x$.\\
 Si $\nabla J(x) \neq 0$ alors $w = - \nabla J(x)$ est une direction de descente stricte en $x$.\\
 
-\textbf{Méthode du gradient à pas fixe}\\
+\textbf{Méthode du gradient}\\
 La méthode du gradient consiste à "descendre" itérativement vers le minimum local de la fonction, elle suit l'algorithme suivant (la principale difficulté réside dans le choix de $x_0$ et surtout de $\rho$) :\\
+
 \begin{algorithm}
 \begin{algorithmic}
-\REQUIRE{Données : $x_0$ et $\rho$}
+\REQUIRE{Données : $\theta_0$}
 \REPEAT
 \STATE $w_n= - \nabla J(x_n)$
 \IF {$w_n=0$}
 \STATE \textbf{retourner } $x_n$
 \ELSE
+\STATE Choisir $\rho$
 \STATE $x_{n+1}=x_n+\rho w_n$
 \ENDIF
 \STATE $n=n+1$
@@ -2547,7 +2603,7 @@ La méthode du gradient consiste à "descendre" itérativement vers le minimum l
 \end{algorithmic}
 \end{algorithm}
 
-\subsubsection{Application}
+\subsection{Application de la méthode du gradient}
 Pour appliquer la méthode du gradient, on considère la fonction :\\
 \abovedisplayskip=0mm
 \begin{displaymath}
@@ -2571,8 +2627,6 @@ Le pas optimal est donné (montré dans l'UV RO04) par :
 \begin{displaymath}
 \rho = \frac{||\nabla J||^2}{\nabla J^TA\nabla J}
 \end{displaymath}
-Dans notre cas, on a le pas optimal : $\rho = \frac{2}{\lambda_1 + \lambda_2}$ avec $\lambda_1$ et $\lambda_2$ les valeurs propres de $A$ \\
-$\lambda_1 = 3$ et $\lambda_2 = 1$ donc $\rho=\frac{2}{4}=\frac{1}{2}$. \\
 
 \textbf{Courbe iso-valeurs}\\
 L'équation paramétrique de la courbe iso-valeurs de $f$ passant par un point $x_0$ du plan est donnée par :
@@ -2585,28 +2639,238 @@ où $P$ est la matrice des vecteurs propres de $A$ et $a_1$ et $a_2$ sont donné
 \begin{displaymath}
 a_1= \left( \frac{2(f(x_0)-f(\overset{\wedge}{x})}{\lambda_1} \right)^\frac{1}{2}, a_2= \left( \frac{2(f(x_0)-f(\overset{\wedge}{x})}{\lambda_2} \right)^\frac{1}{2}.
 \end{displaymath}
-\\
 
 \textbf{Code et affichage}\\
-Pour représenter graphiquement l'aspect itératif de la méthode du gradient, on l'applique sur 50 itérations. A chaque itération on trace la courbe iso-valeurs de la fonction passant par $x_n$ puis on relie $x_n$ et $x_{n+1}$. On implémente donc la méthode du gradient (à pas optimal) avec le code (\ref{gradient}) qui nous donnes l'affichage (\ref{graph_gradient}).\\
+On applique la méthode sur 50 itérations. Pour la représenter graphiquement, à chaque itération on trace la courbe iso-valeurs de la fonction passant par $x_n$ puis on relie $x_n$ et $x_{n+1}$. On implémente donc d'abord la méthode du gradient (à pas fixe) avec le code (\ref{gradient}).
 
 \begin{table}[H]
-\caption{Méthode du gradient à pas optimal}
+\caption{Méthode du gradient (à pas fixe)}
 \begin{tabular}{l}
 \lstinputlisting[language=scilab]{gradient.sce}
 \label{gradient}
 \end{tabular}
 \end{table}
 
+\newpage
+On implémente également la méthode du gradient (à pas optimal) avec le code (\ref{gradient_opt}).\\
+
+\begin{table}[H]
+\caption{Méthode du gradient (à pas optimal)}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{gradient_optimal.sce}
+\label{gradient_opt}
+\end{tabular}
+\end{table}
+
+\newpage
+Le code \ref{gradient} (méthode à pas fixe) et le code \ref{gradient_opt} (méthode à pas optimal) nous donnent respectivement les affichages (\ref{graph_gradient}) et (\ref{graph_gradient2}).
 \begin{figure}[H]
 \centering
-\caption{Visualisation de la méthode du gradient}
-\includegraphics[width=\textwidth]{gradient.png}
+\caption{Affichage de la méthode du gradient à pas fixe}
+\includegraphics[width=9cm]{gradient.png}
 \label{graph_gradient}
 \end{figure}
 
+\begin{figure}[H]
+\centering
+\caption{Affichage de la méthode du gradient à pas optimal}
+\includegraphics[width=9cm]{gradient2.png}
+\label{graph_gradient2}
+\end{figure}
 
+On constate, sans grande surprise, que la méthode du gradient à pas optimal converge beaucoup plus vite vers la solution que la méthode à pas fixe.\\
+
+On aurait également pu se servir du code \ref{pas_opt} qui nous était fourni afin de calculer le $\rho$ optimal:
+\begin{table}[H]
+\caption{Fonction de calcul de $\rho$ optimal}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{pasOptimal.sce}
+\label{pas_opt}
+\end{tabular}
+\end{table}
+
+\newpage
 \subsection{Méthode de Levenberg-Marquardt}
+\subsubsection{Limites de la méthode du gradient}
+On considère la fonction de Rosenbrock (également connue sous le nom de fonction banane) définie par :
+\abovedisplayskip=0mm
+\begin{displaymath}
+f(x) = (1-x_1)^2 + 100(x_2-x_1^2)^2
+\end{displaymath}
+On sait que $f$ présente un minimum global en (1,1).\\ \\
+On calcule le gradient de $f$, on obtient :
+\abovedisplayskip=0mm
+\begin{displaymath}
+\nabla f(x) = \left( \begin{array}{c} -2\times(1-x_1)-400x_1(x_2-x_1^2) \\ 200\times(x_2-x_1^2) \end{array} \right)
+\end{displaymath}
+\\ \\
+Nous allons directement appliquer la méthode du gradient à pas optimal à cet exemple (définir un $\rho$ fixe qui donne un résultat satisfaisant est ardu). On implémente donc dans \textit{Scilab} le code \ref{banana_gradient} qui nous donne l'affichage (\ref{banana_graph1}).
+
+\begin{table}[H]
+\caption{Fonction de Rosenbrock : méthode du gradient (pas optimal)}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{banana_gradient.sce}
+\label{banana_gradient}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Affichage de la méthode du gradient à pas optimal (fonction de Rosenbrock)}
+\includegraphics[width=13cm]{banana_1.png}
+\label{banana_graph1}
+\end{figure}
+
+On constate que la méthode du gradient admet des limites. Même en augmentant le nombre d'itérations à 50, la méthode ne permet pas d'atteindre ni même d'approcher le minimum : elle est inefficace dans le cas de la fonction de Rosenbrock. Quelle solution nous reste t'il ?\\
+
+\subsubsection{Théorie de la méthode de Levenberg-Marquardt}
+Précédemment, nous avons évoqué la possibilité d'appliquer la méthode de Newton à un problème de moindres carrés non linéaires. Toutefois, il nous était apparu qu'une telle application allait être ardue. C'est pourquoi nous avions évincé cette possibilité. Or l'idée de la méthode de Newton est à garder.\\
+On cherche donc toujours à minimiser $S(\theta)=||r(\theta)||^2$, $r_i(\theta)=f(x_i,\theta)-y_i$.
+
+Soit le développement limité du résidus en $\theta_k$ avec $h=\theta - \theta_k$ :
+\abovedisplayskip=0mm
+\begin{displaymath}
+r(\theta)=r(\theta_k)+J_r(\theta_k)(\theta-\theta_k) + ||\theta-\theta_k||\varepsilon (\theta - \theta_k)
+\end{displaymath}
+La première méthode que nous avons évoqué est \textbf{la méthode de Gauss-Newton}. Elle se base sur l'algorithme suivant :
+\begin{algorithm}
+\begin{algorithmic}
+\REQUIRE{Données : $x_0$}
+\FOR {$k$ allant de 1 à NbIterations}
+\STATE $\theta_{k+1} = r(\theta)_{min}$
+\ENDFOR
+\end{algorithmic}
+\end{algorithm}
+Ainsi trouvé $\theta_{k+1}$ est une problème de moindre carré linéaire et on a :
+\abovedisplayskip=0mm
+\begin{displaymath}
+S_k(\theta)=||r(\theta_k)+J_r(\theta_k)(\theta-\theta_k)||^2
+\end{displaymath}
+Ainsi on a :
+\abovedisplayskip=0mm
+\begin{align*}
+\theta_{k+1} = & \theta_k - [J_r(\theta_k)^TJ_r(\theta_k)]^{-1} J_r(\theta_k)^Tr(\theta_k) \\
+			 = & \theta_k - \frac{1}{2}[J_r(\theta_k)^TJ_r(\theta_k)]^{-1} \nabla S(\theta_k)
+\end{align*}
+Problème : que faire lorsque $J_r(\theta_k)$ est trop faible et vaut zéro à la précision machine prés ? La seconde méthode étudiée consiste à ajouter un terme, il s'agit de \textbf{la méthode de Levenberg-Marquardt}. L'expression de $\theta_{k+1}$ devient :
+\begin{align*}
+\theta_{k+1} = & \theta_k - [J_r(\theta_k)^TJ_r(\theta_k) + \lambda I]^{-1} J_r(\theta_k)^Tr(\theta_k) \\
+			 = & \theta_k - \frac{1}{2}[J_r(\theta_k)^TJ_r(\theta_k) + \lambda I]^{-1} \nabla S(\theta_k)
+\end{align*}
+
+Le paramètre $\lambda$ permet de balancer la méthode entre vitesse ($\lambda = 0$) et robustesse ($\lambda\longrightarrow \infty$). \\
+
+Ainsi la méthode de Levenberg-Marquardt dans le cas de la recherche du minimum d'une fonction peut donc s'appliquer lorsque la fonction à minimiser s'écrit : $f(x)=||g(x)||^2$.
+
+
+\subsection{Application de la méthode de Levenberg-Marquardt}
+On retourne donc à la fonction de Rosenbrock qui peut s'écrire $f(x)=||g(x)||^2$. $g(x)$ est connue, on en calcule la jacobienne $J_g$ :
+\abovedisplayskip=0mm
+\begin{displaymath}
+g(x) = \left( \begin{array}{c} 1 - x_1 \\ 10(x_2-x_1^2) \end{array} \right) \ \ \ \ \ J_g(x) = \left( \begin{array}{cc} -1 & 0 \\ -20x_1 & 10 \end{array} \right)
+\end{displaymath}
+On applique donc la méthode de Levenberg-Marquardt à la fonction de Rosenbrock en implémentant dans \textit{Scilab} le code \ref{banana_levenberg} qui nous donne l'affichage (\ref{banana_graph2}).
+
+\begin{table}[H]
+\caption{Fonction de Rosenbrock : méthode de Levenberg-Marquardt}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{banana_levenberg.sce}
+\label{banana_levenberg}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Affichage de la méthode de Levenberg-Marquardt (fonction de Rosenbrock)}
+\includegraphics[width=13cm]{banana_2.png}
+\label{banana_graph2}
+\end{figure}
+
+Comme évoqué dans la partie théorique, la valeur de $\lambda$ influence le comportement de la méthode : pour des valeurs proches de 0, la convergence est très rapide mais aussi brutale, tandis que pour des valeurs supérieures à 1, les 20 itérations ne permettent pas d'atteindre le minimum, d'où le choix ici de prendre $\lambda=1$.
+
+\newpage
+\subsection{Application concrète : problème de moindres carrés non linéaire}
+On considère donc un problème de moindres carrés non linéaire. On réutilise le code (\ref{donnes}) pour récupérer des données (un ensemble de couples $(t_i,y_i)_{i=1,\cdots,n}$) et de les représenter sur un graphique (affichage (\ref{donnes_graph2})).
+
+\begin{figure}[H]
+\centering
+\caption{Ensemble de données (moindres carrés non linéaires)}
+\includegraphics[width=10cm]{donnes_brutes2.pdf}
+\label{donnes_graph2}
+\end{figure}
+
+On nous donne le modèle de $y$ à savoir :
+\abovedisplayskip=0mm
+\begin{displaymath}
+f(t)=exp(\theta_1 + \theta_2t + \theta_3t^2)
+\end{displaymath}
+On cherche donc à minimiser la quantité :
+\abovedisplayskip=0mm
+\begin{displaymath}
+S(\theta_1,\theta_2,\theta_3)=\sum \limits_{i=1}^n (f(t_i)-y_i)^2
+\end{displaymath}
+On se propose, pour résoudre ce problème de moindres carrés non linéaire d'appliquer d'une part l'astuce du \textit{log-trick} et d'autre part la méthode de Levenberg-Marquardt étudiée. On comparera enfin les approximations obtenues. \\
+
+\textbf{Calcul du vecteur résidus :}\\
+On pose $\theta = (\theta_1 \ \ \theta_2 \ \ \theta_3)^T$, ainsi $S(\theta)=\sum \limits_{i=1}^m (f(t_i)-y_i)^2=||r(\theta)||^2$.
+Ainsi on a :
+\abovedisplayskip=0mm
+\begin{displaymath}
+r(\theta) = \left( \begin{array}{c} exp(\theta_1+\theta_2 t_1 + \theta_3 t_1^2) -y_1 \\
+\vdots \\
+exp(\theta_1+\theta_2 t_n + \theta_3 t_n^2) -y_n
+ \end{array} \right)
+\end{displaymath}
+
+\textbf{Calcul de la jacobienne du vecteur résidus :}\\
+\abovedisplayskip=0mm
+\begin{displaymath}
+J_r(\theta) = \left( \begin{array}{ccc} exp(\theta_1+\theta_2 t_1 + \theta_3 t_1^2) & t_1exp(\theta_1+\theta_2 t_1 + \theta_3 t_1^2)
+& t_1^2exp(\theta_1+\theta_2 t_1 + \theta_3 t_1^2) \\
+\vdots & \vdots & \vdots \\
+exp(\theta_1+\theta_2 t_n + \theta_3 t_n^2) & t_nexp(\theta_1+\theta_2 t_n + \theta_3 t_n^2)
+& t_n^2exp(\theta_1+\theta_2 t_n + \theta_3 t_n^2)
+ \end{array} \right)
+\end{displaymath}
+
+On implémente donc l'astuce du \textit{log-trick} et la méthode de Levenberg-Marquardt afin de résoudre le problème dans \textit{Scilab} avec le code \ref{log_tric et levenberg} qui nous donnes l'affichage (\ref{graph log_tric et levenberg}).
+\begin{table}[H]
+\caption{Application concrète : log-trick et Levenberg-Marquardt}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{PMC_non_lineaire.sce}
+\label{log_tric et levenberg}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Affichage des méthodes du log-trick et de Levenberg-Marquardt}
+\includegraphics[width=\textwidth]{PMC_non_lineaire.pdf}
+\label{graph log_tric et levenberg}
+\end{figure}
+
+On obtient avec la méthode de Levenberg-Marquardt :
+\abovedisplayskip=0mm
+\begin{displaymath}
+\theta= \left( \begin{array}{c} 1.009355 \\ - 1.0541773 \\ - 0.9301856 \end{array} \right)
+\end{displaymath}
+et avec la méthode du \textit{log-trick} :
+\abovedisplayskip=0mm
+\begin{displaymath}
+\theta= \left( \begin{array}{c} 1.1162032 \\ - 1.5614853 \\ - 0.6060827 \end{array} \right)
+\end{displaymath} \\
+\textbf{Comparaison des résultats obtenus :}\\
+Qualitativement, on constate visuellement que la méthode de Levenberg-Marquardt semble mieux approcher les données que l'astuce du \textit{log-trick}. Par ailleurs, comme nous l'avions évoqué, les valeurs extrêmes ont tendance à être accentuer (l'ordonnée à l'origine de  la courbe rouge est plus importante que la courbe bleue et ne colle pas aux données).\\
+Quantitativement, on peut calculer $S(\theta)=\sum \limits_{i=1}^n (f(t_i)-y_i)^2$ en utilisant la console de \textit{Scilab} :
+\begin{verbatim}
+-->norm(exp(theta(1)+t*theta(2)+t.^2*theta(3))-y)
+ ans  =
+    0.3426253 
+-->norm(exp(reg)-y)
+ ans  =
+    0.5934367  
+\end{verbatim}
+On constate que la méthode de Levenberg-Marquardt diminue $S(\theta)$ presque de moitié, ce qui indique à nouveau que l'astuce du \textit{log-trick} n'est pas acceptable.
 
 \chapter{Equation aux dérivées partielles}
 \section{Introduction}
@@ -2665,7 +2929,7 @@ u_n = \alpha_n cos(n \theta) exp(-dn^2t)
 \end{displaymath}
 
 \subsection{Ajout de l'équation (\ref{cond_initiale})}
-On pose donc $u_n = \alpha_n cos(n \theta) exp(-dn^2t)$ \\
+On pose donc $u_n = \sum \limits_{n\geq0}\alpha_n cos(n \theta) exp(-dn^2t)$ \\(par linéarité, une somme de solutions est aussi une solution)\\
 \abovedisplayskip=0mm
 \begin{displaymath}
 \text{(\ref{cond_initiale})} \Leftrightarrow u(\theta,0) = \sum \limits_{n\geq 0} \alpha_n cos(n \theta) = f(\theta)  \ \ \ \ \ \forall \theta \in [0,\pi] \\
@@ -2778,8 +3042,9 @@ Ce premier exemple de série de Fourier nous permet de constater le phénomène 
 
 Notons que ce phénomène ne se produit évidemment pas pour des fonctions continues en tout point, prenons par exemple :\\
 $f:\mathbb{R}\longrightarrow \mathbb{R}$ périodique de période $2\pi$ et $f(x)=|x|,\ x \in [-\pi,\pi]$\\
-On a $a_n=\frac{2}{2\pi} \int_{-\pi}^{\pi}xcos(nx)=0$ (car la fonction est impaire)\\
-et $b_n=\frac{1}{\pi} \int_{-\pi}^{\pi}xsin(nx)=\frac{2}{\pi} \int_{0}^{\pi}xsin(nx)=(-1)^{n+1}\frac{2}{n}$.\\
+On a $a_n=\frac{2}{\pi} \int_{0}^{\pi}xcos(nx) dx=\frac{2}{\pi n^2}((-1)^n-1)$,\\
+$b_n=0$ (car $f$ est impaire)\\
+et $a_0=\frac{\pi}{2}$.\\
 En adaptant le précédent code, on obtient le code (\ref{gibbs2}) et l'affichage (\ref{graph_gibbs2}) : aucun phénomène de Gibbs n'apparaît.
 
 \begin{table}[H]
@@ -2827,5 +3092,94 @@ $f_3$ & $a_0=0$ & $a_n=0$ & $b_n=4\times \frac{(-1)^n-1}{\pi^3 n^3}$
 \includegraphics[width=\textwidth]{fourier.png}
 \label{graph_fourier}
 \end{figure}
+
+\section{Application : Retour à l'équation de la chaleur}
+On rappelle l'équation de la chaleur :
+\abovedisplayskip=0mm
+\begin{displaymath}
+\frac{\partial u}{\partial t} - \frac{\partial^2 u}{\partial \theta^2} = 0, \ \ \theta \in ]0,2\pi[, \ \ t>0
+\end{displaymath}
+Avec les conditions aux limites de périodicité de la solution :
+\abovedisplayskip=0mm
+\begin{displaymath}
+u(0,t)=u(2\pi,t) \ \ \ \ \ \ \ \frac{\partial u}{\partial \theta}(0,t) = \frac{\partial u}{\partial \theta}(2\pi,t)
+\end{displaymath}
+Et la condition initiale :
+\abovedisplayskip=0mm
+\begin{displaymath}
+u(\theta,0)=f(\theta)
+\end{displaymath}
+On avait donc déterminer la solution :
+\abovedisplayskip=0mm
+\begin{displaymath}
+u_n = \frac{a_0}{2} + \sum \limits_{n\geq0}a_n cos(n \theta) exp(-dn^2t) \ \ \ \ \ \text{ avec } a_k = \frac{2}{T} \int_0^{T}f(\theta)cos(k\theta)d\theta
+\end{displaymath}
+On a $f$ définie par $f(\theta) = \left\lbrace
+\begin{array}{l}
+1,\ \ \text{ si } \theta \in [\pi-\lambda,\pi+\lambda], \ \lambda \in ]0,\pi[  \\
+0,\ \ \text{ sinon}
+\end{array}\right.$ \\
+On calcule donc $a_k$ :
+\abovedisplayskip=0mm
+\begin{displaymath}
+a_k=\frac{1}{\pi} \int_{-\pi}^{\pi}f(\theta)cos(k\theta)d\theta = \frac{2}{\pi} \int_{0}^{\pi}f(\theta)cos(k\theta)d\theta = \frac{2}{\pi} \int_{\pi-\lambda}^{\pi}cos(k\theta)d\theta = \frac{-2}{k\pi}sin(n(\pi-\lambda))
+\end{displaymath} \\ \\
+
+\indent Ainsi nous sommes en mesure de calculer $u(\theta,t)$ pour différentes valeurs de $\theta$ et de $t$. On implémente donc dans \textit{Scilab} différents codes afin de visualiser le comportement de $u(\theta,t)$. On implémente d'abord le code \ref{chaleur1}, un code dynamique en 1D qui permet de visualiser dynamiquement la courbe $u(\theta)$ au cours du temps.
+
+\begin{table}[H]
+\caption{Problème de la chaleur : visualisation dynamique en 1D}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{chaleur1.sce}
+\label{chaleur1}
+\end{tabular}
+\end{table}
+
+Il est à noter que l'on commence notre étude à $t$ très légèrement supérieur à 0. En effet, à t=0, l'égalité :
+\abovedisplayskip=0mm
+\begin{displaymath}
+u_n = \frac{a_0}{2} + \sum \limits_{n\geq0}a_n cos(n \theta) exp(-dn^2t)
+\end{displaymath}
+N'est plus vérifiée (et on constate que la courbe subit l'effet Gibbs). \\
+
+\begin{figure}[H]
+\centering
+\caption{Problème de la chaleur : Visualisation de $u(\theta)$ pour des valeurs de $t$ croissantes}
+\includegraphics[width=13cm]{chaleur1.png}
+\end{figure}
+
+
+On implémente également dans \textit{Scilab} le code \ref{chaleur2}, un code statique en 2D qui permet de visualiser la courbe $u(\theta,t)$, ce code nous donne le graphique (\ref{graph_chaleur2}).
+\begin{table}[H]
+\caption{Problème de la chaleur : visualisation statique en 2D}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{chaleur2.sce}
+\label{chaleur2}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Problème de la chaleur : Visualisation de $u(\theta,t)$}
+\includegraphics[width=13cm]{chaleur2.png}
+\label{graph_chaleur2}
+\end{figure}
+
+\newpage
+On implémente finalement dans \textit{Scilab} le code \ref{chaleur3}, un code dynamique en 2D qui permet de revenir à l'expérience de Fourier et de visualiser $u(\theta,t)$ sur la surface d'un anneau.
+\begin{table}[H]
+\caption{Problème de la chaleur : visualisation dynamique en 2D}
+\begin{tabular}{l}
+\lstinputlisting[language=scilab]{chaleur3.sce}
+\label{chaleur3}
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\caption{Problème de la chaleur : Visualisation de $u(\theta)$ sur un anneau pour des valeurs de $t$ croissantes}
+\includegraphics[width=9cm]{chaleur3.png}
+\end{figure}
+
 
 \end{document}
