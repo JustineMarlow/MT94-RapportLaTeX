@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.1)  15 JUN 2017 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.1)  19 JUN 2017 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -715,22 +715,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  [8]
 Chapitre 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
+Underfull \hbox (badness 10000) in paragraph at lines 118--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 116--119
+Underfull \hbox (badness 10000) in paragraph at lines 118--121
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 120.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 122.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 120.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 122.
  [9
 
 ] (./dichotomie.sce
@@ -747,17 +747,17 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 <graphdicho.pdf, id=57, 1079.03125pt x 469.755pt>
 File: graphdicho.pdf Graphic file (type pdf)
  <use graphdicho.pdf>
-Package pdftex.def Info: graphdicho.pdf used on input line 166.
+Package pdftex.def Info: graphdicho.pdf used on input line 168.
 (pdftex.def)             Requested size: 426.79135pt x 185.80565pt.
 
 <graphdicho_reg.pdf, id=58, 1079.03125pt x 548.0475pt>
 File: graphdicho_reg.pdf Graphic file (type pdf)
 
 <use graphdicho_reg.pdf>
-Package pdftex.def Info: graphdicho_reg.pdf used on input line 175.
+Package pdftex.def Info: graphdicho_reg.pdf used on input line 177.
 (pdftex.def)             Requested size: 426.79135pt x 216.77325pt.
  [11 <./graphdicho.pdf> <./graphdicho_reg.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 185--196
+Underfull \hbox (badness 10000) in paragraph at lines 187--198
 
  []
 
@@ -765,31 +765,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 185--196
 File: graphpointfixe.pdf Graphic file (type pdf)
 
 <use graphpointfixe.pdf>
-Package pdftex.def Info: graphpointfixe.pdf used on input line 213.
+Package pdftex.def Info: graphpointfixe.pdf used on input line 215.
 (pdftex.def)             Requested size: 426.79135pt x 185.80565pt.
 
 <graphpointfixe_reg.pdf, id=72, 1079.03125pt x 469.755pt>
 File: graphpointfixe_reg.pdf Graphic file (type pdf)
 
 <use graphpointfixe_reg.pdf>
-Package pdftex.def Info: graphpointfixe_reg.pdf used on input line 221.
+Package pdftex.def Info: graphpointfixe_reg.pdf used on input line 223.
 (pdftex.def)             Requested size: 426.79135pt x 185.80565pt.
  [13 <./graphpointfixe.pdf> <./graphpointfixe_reg.pdf>] (./newton.sce) <graphne
 wton.pdf, id=78, 1079.03125pt x 469.755pt>
 File: graphnewton.pdf Graphic file (type pdf)
 
 <use graphnewton.pdf>
-Package pdftex.def Info: graphnewton.pdf used on input line 269.
+Package pdftex.def Info: graphnewton.pdf used on input line 271.
 (pdftex.def)             Requested size: 426.79135pt x 185.80565pt.
  [14]
 <graphnewton_reg.pdf, id=83, 1079.03125pt x 469.755pt>
 File: graphnewton_reg.pdf Graphic file (type pdf)
 
 <use graphnewton_reg.pdf>
-Package pdftex.def Info: graphnewton_reg.pdf used on input line 277.
+Package pdftex.def Info: graphnewton_reg.pdf used on input line 279.
 (pdftex.def)             Requested size: 426.79135pt x 185.80565pt.
  [15 <./graphnewton.pdf> <./graphnewton_reg.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 286--296
+Underfull \hbox (badness 10000) in paragraph at lines 288--298
 
  []
 
@@ -801,110 +801,110 @@ Overfull \hbox (22.76013pt too wide) in paragraph at lines 10--11
  []
 
 )
-Overfull \hbox (34.76015pt too wide) in paragraph at lines 303--306
+Overfull \hbox (34.76015pt too wide) in paragraph at lines 305--308
 [][] 
  []
 
 <graphsecante.pdf, id=89, 1079.03125pt x 469.755pt>
 File: graphsecante.pdf Graphic file (type pdf)
  <use graphsecante.pdf>
-Package pdftex.def Info: graphsecante.pdf used on input line 311.
+Package pdftex.def Info: graphsecante.pdf used on input line 313.
 (pdftex.def)             Requested size: 426.79135pt x 185.80565pt.
 
 <graphsecante_reg.pdf, id=90, 1079.03125pt x 469.755pt>
 File: graphsecante_reg.pdf Graphic file (type pdf)
 
 <use graphsecante_reg.pdf>
-Package pdftex.def Info: graphsecante_reg.pdf used on input line 316.
+Package pdftex.def Info: graphsecante_reg.pdf used on input line 318.
 (pdftex.def)             Requested size: 426.79135pt x 185.80565pt.
  [16] [17 <./graphsecante.pdf> <./graphsecante_reg.pdf>]
 
-LaTeX Warning: Command \j invalid in math mode on input line 332.
+LaTeX Warning: Command \j invalid in math mode on input line 334.
 
 
-Overfull \hbox (0.51495pt too wide) in paragraph at lines 328--341
+Overfull \hbox (0.51495pt too wide) in paragraph at lines 330--343
 []\OT1/cmr/m/n/10 Pour com-pren-dre cette m^^Sethode, il ap-para^^^Pt ju-di-cie
 ux de revenir sur la no-tion de diff^^Serentiabilit^^Se. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--341
+Underfull \hbox (badness 10000) in paragraph at lines 330--343
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--386
+Underfull \hbox (badness 10000) in paragraph at lines 366--388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 364--386
+Underfull \hbox (badness 10000) in paragraph at lines 366--388
 
  []
 
 [18] (./GPS_1.sce) [19] (./GPS_2.sce)
-Overfull \hbox (39.05977pt too wide) in paragraph at lines 443--447
+Overfull \hbox (39.05977pt too wide) in paragraph at lines 445--449
 \OT1/cmr/m/n/10 La Ja-co-bi-enne a ^^Set^^Se cal-cul^^See pour ap-pli-quer la d
 euxi^^Reme m^^Sethode, on a donc : $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm
 /m/it/10 X\OT1/cmr/m/n/10 ) = []$
  []
 
 [20] (./GPS_3.sce) [21]
-Underfull \hbox (badness 10000) in paragraph at lines 473--475
+Underfull \hbox (badness 10000) in paragraph at lines 475--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--475
+Underfull \hbox (badness 10000) in paragraph at lines 475--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 473--475
+Underfull \hbox (badness 10000) in paragraph at lines 475--477
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--498
+Underfull \hbox (badness 10000) in paragraph at lines 481--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 479--498
+Underfull \hbox (badness 10000) in paragraph at lines 481--500
 
  []
 
 
-LaTeX Warning: Command \j invalid in math mode on input line 501.
+LaTeX Warning: Command \j invalid in math mode on input line 503.
 
 [22] (./cinematique_bis.sce) (./dessine_bras.sce) [23]
 <graphcinematique.pdf, id=119, 536.0025pt x 757.83125pt>
 File: graphcinematique.pdf Graphic file (type pdf)
 
 <use graphcinematique.pdf>
-Package pdftex.def Info: graphcinematique.pdf used on input line 536.
+Package pdftex.def Info: graphcinematique.pdf used on input line 538.
 (pdftex.def)             Requested size: 204.85802pt x 289.63246pt.
 
 <graphcinematique_2.pdf, id=120, 630.355pt x 785.93625pt>
 File: graphcinematique_2.pdf Graphic file (type pdf)
 
 <use graphcinematique_2.pdf>
-Package pdftex.def Info: graphcinematique_2.pdf used on input line 540.
+Package pdftex.def Info: graphcinematique_2.pdf used on input line 542.
 (pdftex.def)             Requested size: 204.85802pt x 255.41426pt.
  [24 <./graphcinematique.pdf> <./graphcinematique_2.pdf>]
 Chapitre 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 547--549
+Underfull \hbox (badness 10000) in paragraph at lines 549--551
 
  []
 
 <fractales_intro.jpg, id=127, 616.704pt x 462.528pt>
 File: fractales_intro.jpg Graphic file (type jpg)
  <use fractales_intro.jpg>
-Package pdftex.def Info: fractales_intro.jpg used on input line 553.
+Package pdftex.def Info: fractales_intro.jpg used on input line 555.
 (pdftex.def)             Requested size: 362.77525pt x 272.08458pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--558
+Underfull \hbox (badness 10000) in paragraph at lines 559--560
 
  []
 
@@ -914,36 +914,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 557--558
 File: cantor.png Graphic file (type png)
 
 <use cantor.png>
-Package pdftex.def Info: cantor.png used on input line 571.
+Package pdftex.def Info: cantor.png used on input line 573.
 (pdftex.def)             Requested size: 298.75264pt x 48.39804pt.
  <mr_cantor.jpg, id=133, 220.825pt x 289.08pt>
 File: mr_cantor.jpg Graphic file (type jpg)
 
 <use mr_cantor.jpg>
-Package pdftex.def Info: mr_cantor.jpg used on input line 578.
+Package pdftex.def Info: mr_cantor.jpg used on input line 580.
 (pdftex.def)             Requested size: 86.93681pt x 113.81102pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 586.
+(Font)              using `OT1/cmr/bx/n' instead on input line 588.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--603
+Underfull \hbox (badness 10000) in paragraph at lines 600--605
 
  []
 
 [26 <./cantor.png> <./mr_cantor.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 625--627
+Underfull \hbox (badness 10000) in paragraph at lines 627--629
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 625--627
+Underfull \hbox (badness 10000) in paragraph at lines 627--629
 
  []
 
 (./cantor_recursif.sce)
-Overfull \hbox (1.46004pt too wide) in paragraph at lines 632--636
+Overfull \hbox (1.46004pt too wide) in paragraph at lines 634--638
 [][]
  []
 
@@ -951,30 +951,30 @@ Overfull \hbox (1.46004pt too wide) in paragraph at lines 632--636
 File: cantor_recursif.pdf Graphic file (type pdf)
 
 <use cantor_recursif.pdf>
-Package pdftex.def Info: cantor_recursif.pdf used on input line 642.
+Package pdftex.def Info: cantor_recursif.pdf used on input line 644.
 (pdftex.def)             Requested size: 341.43437pt x 215.11232pt.
  [27]
-Underfull \hbox (badness 10000) in paragraph at lines 648--651
+Underfull \hbox (badness 10000) in paragraph at lines 650--653
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--663
+Underfull \hbox (badness 10000) in paragraph at lines 662--665
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--663
+Underfull \hbox (badness 10000) in paragraph at lines 662--665
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--665
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
 
  []
 
 [28 <./cantor_recursif.pdf>] (./cantor_iteratif.sce)
-Underfull \hbox (badness 10000) in paragraph at lines 681--689
+Underfull \hbox (badness 10000) in paragraph at lines 683--691
 
  []
 
@@ -982,50 +982,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 681--689
 File: cantor_iteratif.pdf Graphic file (type pdf)
 
 <use cantor_iteratif.pdf>
-Package pdftex.def Info: cantor_iteratif.pdf used on input line 694.
+Package pdftex.def Info: cantor_iteratif.pdf used on input line 696.
 (pdftex.def)             Requested size: 426.79135pt x 146.09195pt.
  <sierpinski.png, id=149, 695.59875pt x 602.25pt>
 File: sierpinski.png Graphic file (type png)
 
 <use sierpinski.png>
-Package pdftex.def Info: sierpinski.png used on input line 707.
+Package pdftex.def Info: sierpinski.png used on input line 709.
 (pdftex.def)             Requested size: 164.31485pt x 142.26378pt.
  <mr_sierpinski.jpg, id=150, 51.78401pt x 79.28835pt>
 File: mr_sierpinski.jpg Graphic file (type jpg)
 
 <use mr_sierpinski.jpg>
-Package pdftex.def Info: mr_sierpinski.jpg used on input line 714.
+Package pdftex.def Info: mr_sierpinski.jpg used on input line 716.
 (pdftex.def)             Requested size: 74.33736pt x 113.81102pt.
  [29 <./cantor_iteratif.pdf>]
 <sierpinski0.png, id=155, 150.5625pt x 133.49875pt>
 File: sierpinski0.png Graphic file (type png)
  <use sierpinski0.png>
-Package pdftex.def Info: sierpinski0.png used on input line 731.
+Package pdftex.def Info: sierpinski0.png used on input line 733.
 (pdftex.def)             Requested size: 77.01788pt x 68.28644pt.
 
 <sierpinski1.png, id=156, 277.035pt x 251.94125pt>
 File: sierpinski1.png Graphic file (type png)
  <use sierpinski1.png>
-Package pdftex.def Info: sierpinski1.png used on input line 731.
+Package pdftex.def Info: sierpinski1.png used on input line 733.
 (pdftex.def)             Requested size: 78.21602pt x 71.13188pt.
 
 <sierpinskik.png, id=157, 274.02374pt x 243.91125pt>
 File: sierpinskik.png Graphic file (type png)
  <use sierpinskik.png>
-Package pdftex.def Info: sierpinskik.png used on input line 731.
+Package pdftex.def Info: sierpinskik.png used on input line 733.
 (pdftex.def)             Requested size: 79.91223pt x 71.13188pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 729--737
+Underfull \hbox (badness 10000) in paragraph at lines 731--739
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 729--737
+Underfull \hbox (badness 10000) in paragraph at lines 731--739
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 729--737
+Underfull \hbox (badness 10000) in paragraph at lines 731--739
 
  []
 
@@ -1036,20 +1036,20 @@ sierpinski1.png (PNG copy)> <./sierpinskik.png (PNG copy)>]
 File: sierpinski_recursif.pdf Graphic file (type pdf)
 
 <use sierpinski_recursif.pdf>
-Package pdftex.def Info: sierpinski_recursif.pdf used on input line 752.
+Package pdftex.def Info: sierpinski_recursif.pdf used on input line 754.
 (pdftex.def)             Requested size: 320.0935pt x 241.38063pt.
  [31 <./sierpinski_recursif.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 776--784
+Underfull \hbox (badness 10000) in paragraph at lines 778--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 776--784
+Underfull \hbox (badness 10000) in paragraph at lines 778--786
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 776--784
+Underfull \hbox (badness 10000) in paragraph at lines 778--786
 
  []
 
@@ -1058,23 +1058,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 776--784
 File: sierpinski_iteratif.pdf Graphic file (type pdf)
 
 <use sierpinski_iteratif.pdf>
-Package pdftex.def Info: sierpinski_iteratif.pdf used on input line 798.
+Package pdftex.def Info: sierpinski_iteratif.pdf used on input line 800.
 (pdftex.def)             Requested size: 320.0935pt x 241.38063pt.
  <tapis.png, id=172, 517.935pt x 504.88625pt>
 File: tapis.png Graphic file (type png)
 
 <use tapis.png>
-Package pdftex.def Info: tapis.png used on input line 807.
+Package pdftex.def Info: tapis.png used on input line 809.
 (pdftex.def)             Requested size: 199.16928pt x 194.15453pt.
  (./tapis_sierpinski_recursif.sce) [33 <./sierpinski_iteratif.pdf> <./tapis.png
 >] <tapis_recursif.pdf, id=178, 836.12375pt x 471.7625pt>
 File: tapis_recursif.pdf Graphic file (type pdf)
 
 <use tapis_recursif.pdf>
-Package pdftex.def Info: tapis_recursif.pdf used on input line 825.
+Package pdftex.def Info: tapis_recursif.pdf used on input line 827.
 (pdftex.def)             Requested size: 320.0935pt x 180.61052pt.
  [34 <./tapis_recursif.pdf>]
-Overfull \hbox (9.06956pt too wide) detected at line 873
+Overfull \hbox (9.06956pt too wide) detected at line 875
 []
  []
 
@@ -1083,130 +1083,130 @@ Overfull \hbox (9.06956pt too wide) detected at line 873
 File: tapis_iteratif.pdf Graphic file (type pdf)
 
 <use tapis_iteratif.pdf>
-Package pdftex.def Info: tapis_iteratif.pdf used on input line 887.
+Package pdftex.def Info: tapis_iteratif.pdf used on input line 889.
 (pdftex.def)             Requested size: 320.0935pt x 241.90536pt.
  [35] <koch.jpg, id=187, 302.63063pt x 349.305pt>
 File: koch.jpg Graphic file (type jpg)
 
 <use koch.jpg>
-Package pdftex.def Info: koch.jpg used on input line 900.
+Package pdftex.def Info: koch.jpg used on input line 902.
 (pdftex.def)             Requested size: 170.71652pt x 197.04854pt.
  <mr_koch.png, id=188, 262.73157pt x 353.06906pt>
 File: mr_koch.png Graphic file (type png)
 
 <use mr_koch.png>
-Package pdftex.def Info: mr_koch.png used on input line 907.
+Package pdftex.def Info: mr_koch.png used on input line 909.
 (pdftex.def)             Requested size: 84.68918pt x 113.81102pt.
 
-Underfull \hbox (badness 3179) in paragraph at lines 908--908
+Underfull \hbox (badness 3179) in paragraph at lines 910--910
 []\OT1/cmr/m/n/10 Figure 2.14: Von
  []
 
 [36 <./tapis_iteratif.pdf> <./koch.jpg> <./mr_koch.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 924--925
+Underfull \hbox (badness 10000) in paragraph at lines 926--927
 
  []
 
 <koch_l0.png, id=194, 102.3825pt x 97.86563pt>
 File: koch_l0.png Graphic file (type png)
  <use koch_l0.png>
-Package pdftex.def Info: koch_l0.png used on input line 932.
+Package pdftex.def Info: koch_l0.png used on input line 934.
 (pdftex.def)             Requested size: 59.53186pt x 56.9055pt.
 
 <koch_l1.png, id=195, 108.405pt x 122.70844pt>
 File: koch_l1.png Graphic file (type png)
  <use koch_l1.png>
-Package pdftex.def Info: koch_l1.png used on input line 932.
+Package pdftex.def Info: koch_l1.png used on input line 934.
 (pdftex.def)             Requested size: 50.27216pt x 56.9055pt.
 
 <koch_k.png, id=196, 104.64093pt x 122.70844pt>
 File: koch_k.png Graphic file (type png)
  <use koch_k.png>
-Package pdftex.def Info: koch_k.png used on input line 932.
+Package pdftex.def Info: koch_k.png used on input line 934.
 (pdftex.def)             Requested size: 48.52658pt x 56.9055pt.
 
 <koch_a0.png, id=197, 344.78813pt x 293.59688pt>
 File: koch_a0.png Graphic file (type png)
  <use koch_a0.png>
-Package pdftex.def Info: koch_a0.png used on input line 937.
+Package pdftex.def Info: koch_a0.png used on input line 939.
 (pdftex.def)             Requested size: 66.82567pt x 56.9055pt.
 
 <koch_a1.png, id=198, 402.75468pt x 425.33907pt>
 File: koch_a1.png Graphic file (type png)
  <use koch_a1.png>
-Package pdftex.def Info: koch_a1.png used on input line 937.
+Package pdftex.def Info: koch_a1.png used on input line 939.
 (pdftex.def)             Requested size: 53.88403pt x 56.9055pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 928--951
+Underfull \hbox (badness 10000) in paragraph at lines 930--953
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 928--951
+Underfull \hbox (badness 10000) in paragraph at lines 930--953
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 928--951
+Underfull \hbox (badness 10000) in paragraph at lines 930--953
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 928--951
+Underfull \hbox (badness 10000) in paragraph at lines 930--953
 
  []
 
 <koch_0.png, id=199, 618.05907pt x 543.53062pt>
 File: koch_0.png Graphic file (type png)
  <use koch_0.png>
-Package pdftex.def Info: koch_0.png used on input line 955.
+Package pdftex.def Info: koch_0.png used on input line 957.
 (pdftex.def)             Requested size: 77.64384pt x 68.28644pt.
 
 <koch_1.png, id=200, 405.01312pt x 395.97937pt>
 File: koch_1.png Graphic file (type png)
  <use koch_1.png>
-Package pdftex.def Info: koch_1.png used on input line 955.
+Package pdftex.def Info: koch_1.png used on input line 957.
 (pdftex.def)             Requested size: 72.75089pt x 71.13188pt.
 File: koch_k.png Graphic file (type png)
 
 <use koch_k.png>
-Package pdftex.def Info: koch_k.png used on input line 955.
+Package pdftex.def Info: koch_k.png used on input line 957.
 (pdftex.def)             Requested size: 60.65984pt x 71.13188pt.
  <koch_courbe.png, id=201, 623.32875pt x 180.675pt>
 File: koch_courbe.png Graphic file (type png)
 
 <use koch_courbe.png>
-Package pdftex.def Info: koch_courbe.png used on input line 965.
+Package pdftex.def Info: koch_courbe.png used on input line 967.
 (pdftex.def)             Requested size: 426.79135pt x 123.70923pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 953--966
+Underfull \hbox (badness 10000) in paragraph at lines 955--968
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 953--966
+Underfull \hbox (badness 10000) in paragraph at lines 955--968
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 953--966
+Underfull \hbox (badness 10000) in paragraph at lines 955--968
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 953--966
+Underfull \hbox (badness 10000) in paragraph at lines 955--968
 
  []
 
 [37 <./koch_l0.png (PNG copy)> <./koch_l1.png (PNG copy)> <./koch_k.png (PNG co
 py)> <./koch_a0.png (PNG copy)> <./koch_a1.png (PNG copy)> <./koch_0.png (PNG c
 opy)> <./koch_1.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 968--969
+Underfull \hbox (badness 10000) in paragraph at lines 970--971
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 968--969
+Underfull \hbox (badness 10000) in paragraph at lines 970--971
 
  []
 
@@ -1214,31 +1214,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 968--969
 <koch_recursif.pdf, id=209, 1079.03125pt x 469.755pt>
 File: koch_recursif.pdf Graphic file (type pdf)
  <use koch_recursif.pdf>
-Package pdftex.def Info: koch_recursif.pdf used on input line 984.
+Package pdftex.def Info: koch_recursif.pdf used on input line 986.
 (pdftex.def)             Requested size: 426.79135pt x 185.80565pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1012--1020
+Underfull \hbox (badness 10000) in paragraph at lines 1014--1022
 
  []
 
 
-Overfull \hbox (1.09836pt too wide) in paragraph at lines 1012--1020
+Overfull \hbox (1.09836pt too wide) in paragraph at lines 1014--1022
 \OT1/cmr/m/n/10 nou-veau, la dis-per-sion des points doit ^etre uni-forme, on u
 tilise donc des con-di-tions d'^^Sequiprobabilit^^Se. 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1012--1020
+Underfull \hbox (badness 10000) in paragraph at lines 1014--1022
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1012--1020
+Underfull \hbox (badness 10000) in paragraph at lines 1014--1022
 
  []
 
 (./koch_iteratif.sce)
-Overfull \hbox (1.46004pt too wide) in paragraph at lines 1024--1028
+Overfull \hbox (1.46004pt too wide) in paragraph at lines 1026--1030
 [][]
  []
 
@@ -1246,16 +1246,16 @@ Overfull \hbox (1.46004pt too wide) in paragraph at lines 1024--1028
 <koch_iteratif.pdf, id=214, 612.2875pt x 359.3425pt>
 File: koch_iteratif.pdf Graphic file (type pdf)
  <use koch_iteratif.pdf>
-Package pdftex.def Info: koch_iteratif.pdf used on input line 1034.
+Package pdftex.def Info: koch_iteratif.pdf used on input line 1036.
 (pdftex.def)             Requested size: 426.79135pt x 250.4743pt.
 
 [40 <./koch_iteratif.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1043--1045
+Underfull \hbox (badness 10000) in paragraph at lines 1045--1047
 
  []
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 1043--1045
+Underfull \hbox (badness 1320) in paragraph at lines 1045--1047
 \OT1/cmr/m/n/10 On a pr^^Sec^^Sedemment vu trois ap-pli-ca-tions de la m^^Setho
 de des
  []
@@ -1263,107 +1263,107 @@ de des
 <mr_barnsley.jpg, id=220, 481.8pt x 642.4pt>
 File: mr_barnsley.jpg Graphic file (type jpg)
  <use mr_barnsley.jpg>
-Package pdftex.def Info: mr_barnsley.jpg used on input line 1050.
+Package pdftex.def Info: mr_barnsley.jpg used on input line 1052.
 (pdftex.def)             Requested size: 85.35284pt x 113.81102pt.
 
 <barnsley.jpg, id=221, 361.35pt x 353.82187pt>
 File: barnsley.jpg Graphic file (type jpg)
  <use barnsley.jpg>
-Package pdftex.def Info: barnsley.jpg used on input line 1058.
+Package pdftex.def Info: barnsley.jpg used on input line 1060.
 (pdftex.def)             Requested size: 156.49014pt x 153.231pt.
  [41 <./mr_barnsley.jpg> <./barnsley.jpg>] (./fougere.sce)
 <graphfougere.pdf, id=225, 304.13625pt x 461.725pt>
 File: graphfougere.pdf Graphic file (type pdf)
  <use graphfougere.pdf>
-Package pdftex.def Info: graphfougere.pdf used on input line 1096.
+Package pdftex.def Info: graphfougere.pdf used on input line 1098.
 (pdftex.def)             Requested size: 149.933pt x 227.62204pt.
 
 <graphfougere_2.pdf, id=226, 304.13625pt x 461.725pt>
 File: graphfougere_2.pdf Graphic file (type pdf)
  <use graphfougere_2.pdf>
-Package pdftex.def Info: graphfougere_2.pdf used on input line 1100.
+Package pdftex.def Info: graphfougere_2.pdf used on input line 1102.
 (pdftex.def)             Requested size: 149.933pt x 227.62204pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1110--1112
+Underfull \hbox (badness 10000) in paragraph at lines 1112--1114
 
  []
 
 <mr_julia.jpg, id=227, 246.9225pt x 327.2225pt>
 File: mr_julia.jpg Graphic file (type jpg)
  <use mr_julia.jpg>
-Package pdftex.def Info: mr_julia.jpg used on input line 1117.
+Package pdftex.def Info: mr_julia.jpg used on input line 1119.
 (pdftex.def)             Requested size: 85.8816pt x 113.81102pt.
 
-Underfull \hbox (badness 1320) in paragraph at lines 1118--1118
+Underfull \hbox (badness 1320) in paragraph at lines 1120--1120
 []\OT1/cmr/m/n/10 Figure 2.21: Ju-lia
  []
 
 <julia.jpg, id=228, 3011.25pt x 2006.99812pt>
 File: julia.jpg Graphic file (type jpg)
  <use julia.jpg>
-Package pdftex.def Info: julia.jpg used on input line 1127.
+Package pdftex.def Info: julia.jpg used on input line 1129.
 (pdftex.def)             Requested size: 398.33858pt x 265.48193pt.
  [42 <./graphfougere.pdf> <./graphfougere_2.pdf>] (./julia.sce) [43 <./mr_julia
 .jpg> <./julia.jpg>] <julia1.png, id=238, 612.2875pt x 461.725pt>
 File: julia1.png Graphic file (type png)
  <use julia1.png>
-Package pdftex.def Info: julia1.png used on input line 1158.
+Package pdftex.def Info: julia1.png used on input line 1160.
 (pdftex.def)             Requested size: 245.247pt x 184.9429pt.
 
 <julia2.png, id=239, 612.2875pt x 461.725pt>
 File: julia2.png Graphic file (type png)
  <use julia2.png>
-Package pdftex.def Info: julia2.png used on input line 1159.
+Package pdftex.def Info: julia2.png used on input line 1161.
 (pdftex.def)             Requested size: 245.247pt x 184.9429pt.
 
-Overfull \hbox (36.1169pt too wide) in paragraph at lines 1158--1160
+Overfull \hbox (36.1169pt too wide) in paragraph at lines 1160--1162
  [][] 
  []
 
 
-Overfull \hbox (36.1169pt too wide) in paragraph at lines 1158--1160
+Overfull \hbox (36.1169pt too wide) in paragraph at lines 1160--1162
  [] 
  []
 
 <julia3.png, id=240, 612.2875pt x 461.725pt>
 File: julia3.png Graphic file (type png)
  <use julia3.png>
-Package pdftex.def Info: julia3.png used on input line 1163.
+Package pdftex.def Info: julia3.png used on input line 1165.
 (pdftex.def)             Requested size: 245.247pt x 184.9429pt.
 
 <julia4.png, id=241, 612.2875pt x 461.725pt>
 File: julia4.png Graphic file (type png)
  <use julia4.png>
-Package pdftex.def Info: julia4.png used on input line 1164.
+Package pdftex.def Info: julia4.png used on input line 1166.
 (pdftex.def)             Requested size: 245.247pt x 184.9429pt.
 
-Overfull \hbox (36.1169pt too wide) in paragraph at lines 1163--1165
+Overfull \hbox (36.1169pt too wide) in paragraph at lines 1165--1167
  [][] 
  []
 
 
-Overfull \hbox (36.1169pt too wide) in paragraph at lines 1163--1165
+Overfull \hbox (36.1169pt too wide) in paragraph at lines 1165--1167
  [] 
  []
 
 <mandelbrot.png, id=242, 504.88625pt x 428.60126pt>
 File: mandelbrot.png Graphic file (type png)
  <use mandelbrot.png>
-Package pdftex.def Info: mandelbrot.png used on input line 1181.
+Package pdftex.def Info: mandelbrot.png used on input line 1183.
 (pdftex.def)             Requested size: 170.71652pt x 144.92462pt.
 
 <mr_mandelbrot.jpg, id=243, 794.97pt x 988.69376pt>
 File: mr_mandelbrot.jpg Graphic file (type jpg)
  <use mr_mandelbrot.jpg>
-Package pdftex.def Info: mr_mandelbrot.jpg used on input line 1188.
+Package pdftex.def Info: mr_mandelbrot.jpg used on input line 1190.
 (pdftex.def)             Requested size: 91.5106pt x 113.81102pt.
 
-Overfull \hbox (1.88156pt too wide) in paragraph at lines 1188--1189
+Overfull \hbox (1.88156pt too wide) in paragraph at lines 1190--1191
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1173--1192
+Underfull \hbox (badness 10000) in paragraph at lines 1175--1194
 
  []
 
@@ -1372,65 +1372,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 1173--1192
 File: mandelbrot1.png Graphic file (type png)
 
 <use mandelbrot1.png>
-Package pdftex.def Info: mandelbrot1.png used on input line 1211.
+Package pdftex.def Info: mandelbrot1.png used on input line 1213.
 (pdftex.def)             Requested size: 301.84534pt x 227.62204pt.
  [45 <./mandelbrot.png> <./mr_mandelbrot.jpg>]
 <julia1_cfM.png, id=256, 612.2875pt x 422.57875pt>
 File: julia1_cfM.png Graphic file (type png)
  <use julia1_cfM.png>
-Package pdftex.def Info: julia1_cfM.png used on input line 1221.
+Package pdftex.def Info: julia1_cfM.png used on input line 1223.
 (pdftex.def)             Requested size: 226.74837pt x 156.49014pt.
 
 <julia2_cfM.png, id=257, 612.2875pt x 461.725pt>
 File: julia2_cfM.png Graphic file (type png)
  <use julia2_cfM.png>
-Package pdftex.def Info: julia2_cfM.png used on input line 1222.
+Package pdftex.def Info: julia2_cfM.png used on input line 1224.
 (pdftex.def)             Requested size: 207.521pt x 156.49014pt.
 
-Overfull \hbox (17.61827pt too wide) in paragraph at lines 1221--1223
+Overfull \hbox (17.61827pt too wide) in paragraph at lines 1223--1225
  [][] 
  []
 
 <julia3_cfM.png, id=258, 612.2875pt x 461.725pt>
 File: julia3_cfM.png Graphic file (type png)
  <use julia3_cfM.png>
-Package pdftex.def Info: julia3_cfM.png used on input line 1226.
+Package pdftex.def Info: julia3_cfM.png used on input line 1228.
 (pdftex.def)             Requested size: 207.521pt x 156.49014pt.
 
 <julia4_cfM.png, id=259, 612.2875pt x 462.72874pt>
 File: julia4_cfM.png Graphic file (type png)
  <use julia4_cfM.png>
-Package pdftex.def Info: julia4_cfM.png used on input line 1227.
+Package pdftex.def Info: julia4_cfM.png used on input line 1229.
 (pdftex.def)             Requested size: 207.07256pt x 156.49014pt.
 
 [46 <./mandelbrot1.png> <./julia1_cfM.png> <./julia2_cfM.png> <./julia3_cfM.png
 > <./julia4_cfM.png>]
 Chapitre 3.
 
-Overfull \hbox (5.43158pt too wide) in paragraph at lines 1234--1235
+Overfull \hbox (5.43158pt too wide) in paragraph at lines 1236--1237
 []\OT1/cmr/m/n/10 Dans de tr^^Res nom-breux do-maines comme la m^^Secanique, la
  bi-olo-gie, la chimie ou en-core l'^^Seconomie,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1234--1235
+Underfull \hbox (badness 10000) in paragraph at lines 1236--1237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1284--1286
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1295--1299
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1301
 
  []
 
 [47
 
 ]
-Overfull \hbox (19.27151pt too wide) in paragraph at lines 1301--1301
+Overfull \hbox (19.27151pt too wide) in paragraph at lines 1303--1303
 []\OT1/cmr/bx/n/14.4 Id^^See, sta-bilit^^Se, con-sis-tance et or-dre d'un sch^^
 Sema num^^Serique 
  []
@@ -1438,121 +1438,121 @@ Sema num^^Serique
 [48] <rectangle.png, id=275, 614.295pt x 529.22719pt>
 File: rectangle.png Graphic file (type png)
  <use rectangle.png>
-Package pdftex.def Info: rectangle.png used on input line 1361.
+Package pdftex.def Info: rectangle.png used on input line 1363.
 (pdftex.def)             Requested size: 174.98601pt x 150.75055pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1366--1370
+Underfull \hbox (badness 10000) in paragraph at lines 1368--1372
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1385--1386
+Underfull \hbox (badness 10000) in paragraph at lines 1387--1388
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1387--1390
+Underfull \hbox (badness 10000) in paragraph at lines 1389--1392
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1391--1393
+Underfull \hbox (badness 10000) in paragraph at lines 1393--1395
 
  []
 
 
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1416.
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1418.
 
 
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1416.
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1418.
 
 [49 <./rectangle.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 1428--1433
+Underfull \hbox (badness 10000) in paragraph at lines 1430--1435
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1428--1433
+Underfull \hbox (badness 10000) in paragraph at lines 1430--1435
 
  []
 
 (./euler.sce) <euler.pdf, id=279, 612.2875pt x 463.7325pt>
 File: euler.pdf Graphic file (type pdf)
  <use euler.pdf>
-Package pdftex.def Info: euler.pdf used on input line 1447.
+Package pdftex.def Info: euler.pdf used on input line 1449.
 (pdftex.def)             Requested size: 426.79135pt x 323.23778pt.
 
 [50] <rectangle_milieu.png, id=283, 791.20593pt x 557.83406pt>
 File: rectangle_milieu.png Graphic file (type png)
 
 <use rectangle_milieu.png>
-Package pdftex.def Info: rectangle_milieu.png used on input line 1455.
+Package pdftex.def Info: rectangle_milieu.png used on input line 1457.
 (pdftex.def)             Requested size: 174.98601pt x 123.37076pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1460--1464
+Underfull \hbox (badness 10000) in paragraph at lines 1462--1466
 
  []
 
 
-Underfull \hbox (badness 5652) in paragraph at lines 1460--1464
+Underfull \hbox (badness 5652) in paragraph at lines 1462--1466
 \OT1/cmr/m/n/10 On ap-proche $[][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/
 m/it/10 t; y\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ))\OML/cmm/m/it/
 10 dt$ \OT1/cmr/m/n/10 par \OT1/cmr/bx/sc/10 l'aire du
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1480--1482
+Underfull \hbox (badness 10000) in paragraph at lines 1482--1484
 
  []
 
 [51 <./euler.pdf> <./rectangle_milieu.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 1492--1494
+Underfull \hbox (badness 10000) in paragraph at lines 1494--1496
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1495--1498
+Underfull \hbox (badness 10000) in paragraph at lines 1497--1500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1508--1510
+Underfull \hbox (badness 10000) in paragraph at lines 1510--1512
 
  []
 
 
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1515.
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1517.
 
 
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1515.
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1517.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1513--1517
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1513--1517
+Underfull \hbox (badness 10000) in paragraph at lines 1515--1519
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1519--1520
+Underfull \hbox (badness 10000) in paragraph at lines 1515--1519
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1526--1528
+Underfull \hbox (badness 10000) in paragraph at lines 1521--1522
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1526--1528
+Underfull \hbox (badness 10000) in paragraph at lines 1528--1530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1528--1530
 
  []
 
 (./pointmilieu.sce)
-Overfull \hbox (7.01006pt too wide) in paragraph at lines 1532--1536
+Overfull \hbox (7.01006pt too wide) in paragraph at lines 1534--1538
 [][] 
  []
 
@@ -1560,72 +1560,72 @@ Overfull \hbox (7.01006pt too wide) in paragraph at lines 1532--1536
 File: point-milieu.pdf Graphic file (type pdf)
 
 <use point-milieu.pdf>
-Package pdftex.def Info: point-milieu.pdf used on input line 1541.
+Package pdftex.def Info: point-milieu.pdf used on input line 1543.
 (pdftex.def)             Requested size: 426.79135pt x 323.23778pt.
  <trapeze.png, id=292, 696.35156pt x 542.025pt>
 File: trapeze.png Graphic file (type png)
 
 <use trapeze.png>
-Package pdftex.def Info: trapeze.png used on input line 1549.
+Package pdftex.def Info: trapeze.png used on input line 1551.
 (pdftex.def)             Requested size: 153.64514pt x 119.59323pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1561
+Underfull \hbox (badness 10000) in paragraph at lines 1556--1563
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1561
+Underfull \hbox (badness 10000) in paragraph at lines 1556--1563
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1554--1561
+Underfull \hbox (badness 10000) in paragraph at lines 1556--1563
 
  []
 
 [53 <./point-milieu.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1571--1573
+Underfull \hbox (badness 10000) in paragraph at lines 1573--1575
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1581--1583
+Underfull \hbox (badness 10000) in paragraph at lines 1583--1585
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1584--1587
+Underfull \hbox (badness 10000) in paragraph at lines 1586--1589
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1588--1589
+Underfull \hbox (badness 10000) in paragraph at lines 1590--1591
 
  []
 
 
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1596.
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1598.
 
 
-LaTeX Warning: Command \textcircled invalid in math mode on input line 1596.
+LaTeX Warning: Command \textcircled invalid in math mode on input line 1598.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1595--1598
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1595--1598
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1600
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1600--1601
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1600
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1602--1603
 
  []
 
 [54 <./trapeze.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 1607--1608
+Underfull \hbox (badness 10000) in paragraph at lines 1609--1610
 
  []
 
@@ -1633,15 +1633,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1607--1608
 File: euler_cauchy.pdf Graphic file (type pdf)
 
 <use euler_cauchy.pdf>
-Package pdftex.def Info: euler_cauchy.pdf used on input line 1622.
+Package pdftex.def Info: euler_cauchy.pdf used on input line 1624.
 (pdftex.def)             Requested size: 426.79135pt x 323.23778pt.
  [55]
-Underfull \hbox (badness 10000) in paragraph at lines 1628--1629
+Underfull \hbox (badness 10000) in paragraph at lines 1630--1631
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1646--1647
+Underfull \hbox (badness 10000) in paragraph at lines 1648--1649
 
  []
 
@@ -1649,16 +1649,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 1646--1647
 <runge_kutta.pdf, id=309, 612.2875pt x 463.7325pt>
 File: runge_kutta.pdf Graphic file (type pdf)
  <use runge_kutta.pdf>
-Package pdftex.def Info: runge_kutta.pdf used on input line 1667.
+Package pdftex.def Info: runge_kutta.pdf used on input line 1669.
 (pdftex.def)             Requested size: 426.79135pt x 323.23778pt.
 
 [57]
-Underfull \hbox (badness 10000) in paragraph at lines 1672--1681
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1683
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1672--1681
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1683
 
  []
 
@@ -1670,268 +1670,274 @@ Overfull \vbox (6.91415pt too high) has occurred while \output is active []
 File: ordre.pdf Graphic file (type pdf)
 
 <use ordre.pdf>
-Package pdftex.def Info: ordre.pdf used on input line 1701.
+Package pdftex.def Info: ordre.pdf used on input line 1703.
 (pdftex.def)             Requested size: 426.79135pt x 246.33649pt.
- [60] [61 <./ordre.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 1723--1725
+ [60]
+Underfull \hbox (badness 10000) in paragraph at lines 1720--1722
 
  []
 
-<pendule.jpg, id=329, 188.20313pt x 366.61969pt>
+<pendule.jpg, id=325, 188.20313pt x 366.61969pt>
 File: pendule.jpg Graphic file (type jpg)
  <use pendule.jpg>
-Package pdftex.def Info: pendule.jpg used on input line 1747.
+Package pdftex.def Info: pendule.jpg used on input line 1744.
 (pdftex.def)             Requested size: 85.35826pt x 166.28076pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1759--1761
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1759--1761
+ [61 <./ordre.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1756--1758
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1762--1763
+Underfull \hbox (badness 10000) in paragraph at lines 1756--1758
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1762--1763
+Underfull \hbox (badness 10000) in paragraph at lines 1759--1760
 
  []
 
-[62 <./pendule.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 1777--1778
+
+Underfull \hbox (badness 10000) in paragraph at lines 1759--1760
 
  []
 
-(./pendule.sce) <graph_pendule.pdf, id=333, 612.2875pt x 461.725pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1774--1775
+
+ []
+
+(./pendule.sce) [62 <./pendule.jpg>] (./pendule_ode.sce)
+<graph_pendule.pdf, id=333, 612.2875pt x 461.725pt>
 File: graph_pendule.pdf Graphic file (type pdf)
-
-<use graph_pendule.pdf>
-Package pdftex.def Info: graph_pendule.pdf used on input line 1791.
+ <use graph_pendule.pdf>
+Package pdftex.def Info: graph_pendule.pdf used on input line 1797.
 (pdftex.def)             Requested size: 426.79135pt x 321.8385pt.
- [63]
-Underfull \hbox (badness 10000) in paragraph at lines 1797--1798
+
+[63]
+Underfull \hbox (badness 10000) in paragraph at lines 1800--1801
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1809--1811
+Underfull \hbox (badness 10000) in paragraph at lines 1803--1804
 
  []
 
-(./proie-predateur.sce) [64 <./graph_pendule.pdf>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1815--1817
+
+ []
+
+[64 <./graph_pendule.pdf>] (./proie-predateur.sce)
 <proie-predateur.pdf, id=341, 612.2875pt x 461.725pt>
 File: proie-predateur.pdf Graphic file (type pdf)
 
 <use proie-predateur.pdf>
-Package pdftex.def Info: proie-predateur.pdf used on input line 1833.
+Package pdftex.def Info: proie-predateur.pdf used on input line 1839.
 (pdftex.def)             Requested size: 426.79135pt x 321.8385pt.
- [65]
-Underfull \hbox (badness 10000) in paragraph at lines 1863--1866
+ [65] (./proie_predateur_ode.sce) [66 <./proie-predateur.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1878--1881
 
  []
 
-[66 <./proie-predateur.pdf>] (./celeste.sce)
-<celeste.pdf, id=350, 606.265pt x 596.2275pt>
+(./celeste.sce) [67] <celeste.pdf, id=353, 606.265pt x 596.2275pt>
 File: celeste.pdf Graphic file (type pdf)
- <use celeste.pdf>
-Package pdftex.def Info: celeste.pdf used on input line 1882.
+
+<use celeste.pdf>
+Package pdftex.def Info: celeste.pdf used on input line 1897.
 (pdftex.def)             Requested size: 426.79135pt x 419.7309pt.
- [67] [68 <./celeste.pdf>]
+ [68] [69 <./celeste.pdf>]
 Chapitre 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1888--1889
+Underfull \hbox (badness 10000) in paragraph at lines 1903--1904
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1888--1889
+Underfull \hbox (badness 10000) in paragraph at lines 1903--1904
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1890--1891
+Underfull \hbox (badness 10000) in paragraph at lines 1905--1906
 
  []
 
-<lena.png, id=358, 513.92pt x 513.92pt>
+<lena.png, id=361, 513.92pt x 513.92pt>
 File: lena.png Graphic file (type png)
  <use lena.png>
-Package pdftex.def Info: lena.png used on input line 1896.
+Package pdftex.def Info: lena.png used on input line 1911.
 (pdftex.def)             Requested size: 128.0387pt x 128.04054pt.
 
-<config1.png, id=359, 412.54124pt x 210.7875pt>
+<config1.png, id=362, 412.54124pt x 210.7875pt>
 File: config1.png Graphic file (type png)
  <use config1.png>
-Package pdftex.def Info: config1.png used on input line 1905.
+Package pdftex.def Info: config1.png used on input line 1920.
 (pdftex.def)             Requested size: 256.07741pt x 130.8445pt.
- [69
+ [70
 
  <./lena.png> <./config1.png (PNG copy)>]
-Overfull \hbox (1.90369pt too wide) in paragraph at lines 1921--1923
+Overfull \hbox (1.90369pt too wide) in paragraph at lines 1936--1938
 \OT1/cmr/m/n/10 Ce th^^Seor^^Reme, tr^^Res pra-tique, ne peut toute-fois s'appl
 iquer que sur des ma-tri-ces carr^^Sees et sym^^Setriques.
  []
 
-[70]
-Underfull \hbox (badness 10000) in paragraph at lines 1966--1969
+[71]
+Underfull \hbox (badness 10000) in paragraph at lines 1981--1984
 
  []
 
 
-Underfull \hbox (badness 1275) in paragraph at lines 1975--1975
+Underfull \hbox (badness 1275) in paragraph at lines 1990--1990
 []\OT1/cmr/m/n/10 Figure 4.3: Im-age
  []
 
 File: lena.png Graphic file (type png)
 <use lena.png>
-Package pdftex.def Info: lena.png used on input line 1976.
+Package pdftex.def Info: lena.png used on input line 1991.
 (pdftex.def)             Requested size: 128.0374pt x 128.0327pt.
 
-Overfull \hbox (38.40836pt too wide) in paragraph at lines 1976--1978
+Overfull \hbox (38.40836pt too wide) in paragraph at lines 1991--1993
  [][] 
  []
 
-(./lena_originale.sce) <lena_originale.png, id=368, 612.2875pt x 461.725pt>
+(./lena_originale.sce) <lena_originale.png, id=371, 612.2875pt x 461.725pt>
 File: lena_originale.png Graphic file (type png)
 
 <use lena_originale.png>
-Package pdftex.def Info: lena_originale.png used on input line 1992.
+Package pdftex.def Info: lena_originale.png used on input line 2007.
 (pdftex.def)             Requested size: 270.30118pt x 203.82893pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1999--2001
+Underfull \hbox (badness 10000) in paragraph at lines 2014--2016
 
  []
 
-[71 <./lena_originale.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2007--2009
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2016--2017
+[72 <./lena_originale.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2022--2024
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2018--2019
+Underfull \hbox (badness 10000) in paragraph at lines 2031--2032
 
  []
 
-(./lena.sce) <valeur_propre.pdf, id=373, 891.33pt x 355.3275pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 2033--2034
+
+ []
+
+(./lena.sce) <valeur_propre.pdf, id=377, 891.33pt x 355.3275pt>
 File: valeur_propre.pdf Graphic file (type pdf)
 
 <use valeur_propre.pdf>
-Package pdftex.def Info: valeur_propre.pdf used on input line 2033.
+Package pdftex.def Info: valeur_propre.pdf used on input line 2048.
 (pdftex.def)             Requested size: 426.79135pt x 170.13777pt.
- [72] <lena_pg1.png, id=378, 612.2875pt x 461.725pt>
+ [73] <lena_pg1.png, id=381, 612.2875pt x 461.725pt>
 File: lena_pg1.png Graphic file (type png)
 
 <use lena_pg1.png>
-Package pdftex.def Info: lena_pg1.png used on input line 2040.
+Package pdftex.def Info: lena_pg1.png used on input line 2055.
 (pdftex.def)             Requested size: 426.79135pt x 321.8385pt.
- (./lena_bis.sce) [73 <./valeur_propre.pdf> <./lena_pg1.png>] <lena_pg2.png, id
-=384, 688.5725pt x 236.885pt>
+ (./lena_bis.sce) [74 <./valeur_propre.pdf> <./lena_pg1.png>] <lena_pg2.png, id
+=387, 688.5725pt x 236.885pt>
 File: lena_pg2.png Graphic file (type png)
  <use lena_pg2.png>
-Package pdftex.def Info: lena_pg2.png used on input line 2057.
+Package pdftex.def Info: lena_pg2.png used on input line 2072.
 (pdftex.def)             Requested size: 426.79135pt x 146.82741pt.
 File: config1.png Graphic file (type png)
 
 <use config1.png>
-Package pdftex.def Info: config1.png used on input line 2076.
+Package pdftex.def Info: config1.png used on input line 2091.
 (pdftex.def)             Requested size: 170.71652pt x 87.22752pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2064--2080
+Underfull \hbox (badness 10000) in paragraph at lines 2079--2095
 
  []
 
-[74 <./lena_pg2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2081--2082
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2081--2082
+[75 <./lena_pg2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2097
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2090--2102
+Underfull \hbox (badness 10000) in paragraph at lines 2096--2097
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2090--2102
+Underfull \hbox (badness 10000) in paragraph at lines 2105--2117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2109--2112
+Underfull \hbox (badness 10000) in paragraph at lines 2105--2117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2109--2112
+Underfull \hbox (badness 10000) in paragraph at lines 2124--2127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2116
+Underfull \hbox (badness 10000) in paragraph at lines 2124--2127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2116
+Underfull \hbox (badness 10000) in paragraph at lines 2128--2131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2116
+Underfull \hbox (badness 10000) in paragraph at lines 2128--2131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2113--2116
-
- []
-
-[75]
-Underfull \hbox (badness 10000) in paragraph at lines 2124--2125
+Underfull \hbox (badness 10000) in paragraph at lines 2128--2131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2124--2125
+Underfull \hbox (badness 10000) in paragraph at lines 2128--2131
+
+ []
+
+[76]
+Underfull \hbox (badness 10000) in paragraph at lines 2139--2140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2126--2130
+Underfull \hbox (badness 10000) in paragraph at lines 2139--2140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2126--2130
+Underfull \hbox (badness 10000) in paragraph at lines 2141--2145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2138--2140
+Underfull \hbox (badness 10000) in paragraph at lines 2141--2145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2138--2140
+Underfull \hbox (badness 10000) in paragraph at lines 2153--2155
 
  []
 
 
-Overfull \hbox (8.8743pt too wide) in paragraph at lines 2141--2158
+Underfull \hbox (badness 10000) in paragraph at lines 2153--2155
+
+ []
+
+
+Overfull \hbox (8.8743pt too wide) in paragraph at lines 2156--2173
 \OT1/cmr/m/n/10 Et donc : $\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 = \OML/cmm/m/it
 /10 Ax[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 A[]x[] \OT1/cmr/m/n/10 = [] \OML/cm
 m/m/it/10 []^^U[]v[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^U[][]v[] \OT1/cmr/m
@@ -1940,372 +1946,375 @@ m/m/it/10 []^^U[]v[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 ^^U[][]v[] \OT1/cmr/m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2141--2158
+Underfull \hbox (badness 10000) in paragraph at lines 2156--2173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2141--2158
+Underfull \hbox (badness 10000) in paragraph at lines 2156--2173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2141--2158
+Underfull \hbox (badness 10000) in paragraph at lines 2156--2173
 
  []
 
-[76]
-Underfull \hbox (badness 10000) in paragraph at lines 2160--2161
+[77]
+Underfull \hbox (badness 10000) in paragraph at lines 2175--2176
 
  []
 
-<config2.png, id=395, 358.33875pt x 319.1925pt>
+<config2.png, id=398, 358.33875pt x 319.1925pt>
 File: config2.png Graphic file (type png)
  <use config2.png>
-Package pdftex.def Info: config2.png used on input line 2167.
+Package pdftex.def Info: config2.png used on input line 2182.
 (pdftex.def)             Requested size: 204.85802pt x 182.48222pt.
 
-<config3.png, id=396, 241.65282pt x 135.50626pt>
+<config3.png, id=399, 241.65282pt x 135.50626pt>
 File: config3.png Graphic file (type png)
  <use config3.png>
-Package pdftex.def Info: config3.png used on input line 2171.
+Package pdftex.def Info: config3.png used on input line 2186.
 (pdftex.def)             Requested size: 204.85802pt x 114.87897pt.
 
-<config4.png, id=397, 350.81062pt x 237.88875pt>
+<config4.png, id=400, 350.81062pt x 237.88875pt>
 File: config4.png Graphic file (type png)
  <use config4.png>
-Package pdftex.def Info: config4.png used on input line 2178.
+Package pdftex.def Info: config4.png used on input line 2193.
 (pdftex.def)             Requested size: 204.85802pt x 138.91933pt.
 
-<config5.png, id=398, 326.72063pt x 298.11375pt>
+<config5.png, id=401, 326.72063pt x 298.11375pt>
 File: config5.png Graphic file (type png)
  <use config5.png>
-Package pdftex.def Info: config5.png used on input line 2182.
+Package pdftex.def Info: config5.png used on input line 2197.
 (pdftex.def)             Requested size: 204.85802pt x 186.92108pt.
 
 (./pagerank.sce)
-Overfull \hbox (7.01006pt too wide) in paragraph at lines 2190--2194
+Overfull \hbox (7.01006pt too wide) in paragraph at lines 2205--2209
 [][] 
  []
 
-[77 <./config2.png (PNG copy)> <./config3.png (PNG copy)> <./config4.png (PNG c
+[78 <./config2.png (PNG copy)> <./config3.png (PNG copy)> <./config4.png (PNG c
 opy)> <./config5.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 2195--2196
+Underfull \hbox (badness 10000) in paragraph at lines 2210--2211
 
  []
 
-<diag_config1.png, id=402, 423.5825pt x 360.34625pt>
+<diag_config1.png, id=406, 423.5825pt x 360.34625pt>
 File: diag_config1.png Graphic file (type png)
  <use diag_config1.png>
-Package pdftex.def Info: diag_config1.png used on input line 2208.
+Package pdftex.def Info: diag_config1.png used on input line 2223.
 (pdftex.def)             Requested size: 128.0374pt x 108.91847pt.
 
-<diag_config2.png, id=403, 303.1325pt x 294.09875pt>
+<diag_config2.png, id=407, 303.1325pt x 294.09875pt>
 File: diag_config2.png Graphic file (type png)
  <use diag_config2.png>
-Package pdftex.def Info: diag_config2.png used on input line 2229.
+Package pdftex.def Info: diag_config2.png used on input line 2244.
 (pdftex.def)             Requested size: 128.0374pt x 124.22069pt.
 
-[78 <./diag_config1.png>] <diag_config3.png, id=409, 295.1025pt x 293.095pt>
+[79 <./diag_config1.png>] <diag_config3.png, id=412, 295.1025pt x 293.095pt>
 File: diag_config3.png Graphic file (type png)
 
 <use diag_config3.png>
-Package pdftex.def Info: diag_config3.png used on input line 2247.
+Package pdftex.def Info: diag_config3.png used on input line 2262.
 (pdftex.def)             Requested size: 128.0374pt x 127.16881pt.
- <diag_config4.png, id=410, 280.04625pt x 271.0125pt>
+ <diag_config4.png, id=413, 280.04625pt x 271.0125pt>
 File: diag_config4.png Graphic file (type png)
 
 <use diag_config4.png>
-Package pdftex.def Info: diag_config4.png used on input line 2264.
+Package pdftex.def Info: diag_config4.png used on input line 2279.
 (pdftex.def)             Requested size: 128.0374pt x 123.91049pt.
- <diag_config5.png, id=411, 318.18875pt x 300.12125pt>
+ <diag_config5.png, id=414, 318.18875pt x 300.12125pt>
 File: diag_config5.png Graphic file (type png)
 
 <use diag_config5.png>
-Package pdftex.def Info: diag_config5.png used on input line 2292.
+Package pdftex.def Info: diag_config5.png used on input line 2307.
 (pdftex.def)             Requested size: 170.71652pt x 161.01894pt.
- [79 <./diag_config2.png> <./diag_config3.png> <./diag_config4.png> <./diag_con
+ [80 <./diag_config2.png> <./diag_config3.png> <./diag_config4.png> <./diag_con
 fig5.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2299--2300
+Underfull \hbox (badness 10000) in paragraph at lines 2314--2315
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2299--2300
+Underfull \hbox (badness 10000) in paragraph at lines 2314--2315
 
  []
 
-<italie.png, id=419, 386.19281pt x 436.63126pt>
+<italie.png, id=422, 386.19281pt x 436.63126pt>
 File: italie.png Graphic file (type png)
  <use italie.png>
-Package pdftex.def Info: italie.png used on input line 2304.
+Package pdftex.def Info: italie.png used on input line 2319.
 (pdftex.def)             Requested size: 369.88582pt x 418.19519pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2307--2308
+Underfull \hbox (badness 10000) in paragraph at lines 2322--2323
 
  []
 
-(./villes_italiennes.sce) [80 <./italie.png (PNG copy)>]
-<diag_italiennes.png, id=423, 344.28625pt x 311.1625pt>
+(./villes_italiennes.sce) [81 <./italie.png (PNG copy)>]
+<diag_italiennes.png, id=426, 344.28625pt x 311.1625pt>
 File: diag_italiennes.png Graphic file (type png)
 
 <use diag_italiennes.png>
-Package pdftex.def Info: diag_italiennes.png used on input line 2344.
+Package pdftex.def Info: diag_italiennes.png used on input line 2359.
 (pdftex.def)             Requested size: 170.71652pt x 154.28943pt.
- [81 <./diag_italiennes.png>]
+ [82 <./diag_italiennes.png>]
 Chapitre 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2351--2352
+Underfull \hbox (badness 10000) in paragraph at lines 2366--2367
 
  []
 
-<donnes_brutes.pdf, id=428, 612.2875pt x 461.725pt>
+<donnes_brutes.pdf, id=431, 612.2875pt x 461.725pt>
 File: donnes_brutes.pdf Graphic file (type pdf)
  <use donnes_brutes.pdf>
-Package pdftex.def Info: donnes_brutes.pdf used on input line 2357.
+Package pdftex.def Info: donnes_brutes.pdf used on input line 2372.
 (pdftex.def)             Requested size: 192.0548pt x 144.82416pt.
 
-Underfull \hbox (badness 2050) in paragraph at lines 2364--2364
+Underfull \hbox (badness 2050) in paragraph at lines 2379--2379
 []\OT1/cmr/m/n/10 Figure 5.2: Un deuxi^^Reme en-sem-ble de
  []
 
-<donnes_brutes2.pdf, id=429, 612.2875pt x 461.725pt>
+<donnes_brutes2.pdf, id=432, 612.2875pt x 461.725pt>
 File: donnes_brutes2.pdf Graphic file (type pdf)
  <use donnes_brutes2.pdf>
-Package pdftex.def Info: donnes_brutes2.pdf used on input line 2366.
+Package pdftex.def Info: donnes_brutes2.pdf used on input line 2381.
 (pdftex.def)             Requested size: 192.0548pt x 144.82416pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2353--2369
+Underfull \hbox (badness 10000) in paragraph at lines 2368--2384
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2353--2369
+Underfull \hbox (badness 10000) in paragraph at lines 2368--2384
 
  []
 
-[82
+[83
 
  <./donnes_brutes.pdf> <./donnes_brutes2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2387--2389
+Underfull \hbox (badness 10000) in paragraph at lines 2402--2404
 
  []
 
-[83]
-Underfull \hbox (badness 10000) in paragraph at lines 2452--2454
+[84]
+Underfull \hbox (badness 10000) in paragraph at lines 2467--2469
 
  []
 
 (./recuperation_des_donnes.sce)
 File: donnes_brutes.pdf Graphic file (type pdf)
  <use donnes_brutes.pdf>
-Package pdftex.def Info: donnes_brutes.pdf used on input line 2484.
+Package pdftex.def Info: donnes_brutes.pdf used on input line 2499.
 (pdftex.def)             Requested size: 284.52756pt x 214.55899pt.
- [84] (./trace_poly.sce)
-Overfull \hbox (6.11008pt too wide) in paragraph at lines 33--2492
+ [85] (./trace_poly.sce)
+Overfull \hbox (6.11008pt too wide) in paragraph at lines 33--2507
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][] 
  []
 
 
-Overfull \hbox (18.11009pt too wide) in paragraph at lines 2491--2495
+Overfull \hbox (18.11009pt too wide) in paragraph at lines 2506--2510
 [][] 
  []
 
-<graph_diff_poly.png, id=444, 601.24625pt x 570.13pt>
+<graph_diff_poly.png, id=447, 601.24625pt x 570.13pt>
 File: graph_diff_poly.png Graphic file (type png)
 
 <use graph_diff_poly.png>
-Package pdftex.def Info: graph_diff_poly.png used on input line 2500.
+Package pdftex.def Info: graph_diff_poly.png used on input line 2515.
 (pdftex.def)             Requested size: 426.79135pt x 404.71684pt.
- [85]
-<erreur_poly.pdf, id=448, 612.2875pt x 333.245pt>
+ [86]
+<erreur_poly.pdf, id=451, 612.2875pt x 333.245pt>
 File: erreur_poly.pdf Graphic file (type pdf)
  <use erreur_poly.pdf>
-Package pdftex.def Info: erreur_poly.pdf used on input line 2507.
+Package pdftex.def Info: erreur_poly.pdf used on input line 2522.
 (pdftex.def)             Requested size: 341.43306pt x 185.82776pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2511--2513
+Underfull \hbox (badness 10000) in paragraph at lines 2526--2528
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2511--2513
+Underfull \hbox (badness 10000) in paragraph at lines 2526--2528
 
  []
 
-[86 <./graph_diff_poly.png> <./erreur_poly.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2517--2520
+[87 <./graph_diff_poly.png> <./erreur_poly.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2532--2535
 
  []
 
-(./validation.sce) <validation_poly.png, id=454, 612.2875pt x 809.0225pt>
+(./validation.sce) <validation_poly.png, id=457, 612.2875pt x 809.0225pt>
 File: validation_poly.png Graphic file (type png)
 
 <use validation_poly.png>
-Package pdftex.def Info: validation_poly.png used on input line 2532.
+Package pdftex.def Info: validation_poly.png used on input line 2547.
 (pdftex.def)             Requested size: 426.79135pt x 563.91704pt.
- [87]
-<erreur_validation.pdf, id=458, 618.31pt x 402.50375pt>
+ [88]
+<erreur_validation.pdf, id=461, 618.31pt x 402.50375pt>
 File: erreur_validation.pdf Graphic file (type pdf)
 
 <use erreur_validation.pdf>
-Package pdftex.def Info: erreur_validation.pdf used on input line 2541.
+Package pdftex.def Info: erreur_validation.pdf used on input line 2556.
 (pdftex.def)             Requested size: 341.43306pt x 222.26828pt.
- [88 <./validation_poly.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2560--2562
+ [89 <./validation_poly.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2575--2577
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2560--2562
+Underfull \hbox (badness 10000) in paragraph at lines 2575--2577
 
  []
 
-[89 <./erreur_validation.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2573--2578
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2580--2582
+[90 <./erreur_validation.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 2588--2593
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2583--2586
+Underfull \hbox (badness 10000) in paragraph at lines 2595--2597
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2587--2589
+Underfull \hbox (badness 10000) in paragraph at lines 2598--2601
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2607--2609
+Underfull \hbox (badness 10000) in paragraph at lines 2602--2604
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2611--2613
+Underfull \hbox (badness 10000) in paragraph at lines 2622--2624
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2616--2617
+Underfull \hbox (badness 10000) in paragraph at lines 2626--2628
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2621--2623
+Underfull \hbox (badness 10000) in paragraph at lines 2631--2632
 
  []
 
-[90] (./gradient.sce) [91]
-Underfull \hbox (badness 10000) in paragraph at lines 2655--2656
+
+Underfull \hbox (badness 10000) in paragraph at lines 2636--2638
 
  []
 
-(./gradient_optimal.sce) [92] <gradient.png, id=477, 409.53pt x 424.58624pt>
+[91] (./gradient.sce) [92]
+Underfull \hbox (badness 10000) in paragraph at lines 2670--2671
+
+ []
+
+(./gradient_optimal.sce) [93] <gradient.png, id=480, 409.53pt x 424.58624pt>
 File: gradient.png Graphic file (type png)
 
 <use gradient.png>
-Package pdftex.def Info: gradient.png used on input line 2670.
+Package pdftex.def Info: gradient.png used on input line 2685.
 (pdftex.def)             Requested size: 256.0748pt x 265.5018pt.
- <gradient2.png, id=478, 409.53pt x 424.58624pt>
+ <gradient2.png, id=481, 409.53pt x 424.58624pt>
 File: gradient2.png Graphic file (type png)
 
 <use gradient2.png>
-Package pdftex.def Info: gradient2.png used on input line 2677.
+Package pdftex.def Info: gradient2.png used on input line 2692.
 (pdftex.def)             Requested size: 256.0748pt x 265.5018pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2681--2682
+Underfull \hbox (badness 10000) in paragraph at lines 2696--2697
 
  []
 
-(./pasOptimal.sce) [93 <./gradient.png> <./gradient2.png>] [94]
-Underfull \hbox (badness 10000) in paragraph at lines 2699--2703
+(./pasOptimal.sce) [94 <./gradient.png> <./gradient2.png>] [95]
+Underfull \hbox (badness 10000) in paragraph at lines 2714--2718
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2705--2708
+Underfull \hbox (badness 10000) in paragraph at lines 2720--2723
 
  []
 
-(./banana_gradient.sce) <banana_1.png, id=487, 612.2875pt x 461.725pt>
+(./banana_gradient.sce) <banana_1.png, id=490, 612.2875pt x 461.725pt>
 File: banana_1.png Graphic file (type png)
 
 <use banana_1.png>
-Package pdftex.def Info: banana_1.png used on input line 2720.
+Package pdftex.def Info: banana_1.png used on input line 2735.
 (pdftex.def)             Requested size: 369.88582pt x 278.93234pt.
- [95]
-Underfull \hbox (badness 10000) in paragraph at lines 2724--2725
+ [96]
+Underfull \hbox (badness 10000) in paragraph at lines 2739--2740
 
  []
 
-[96 <./banana_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2761--2762
+[97 <./banana_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2776--2777
 
  []
 
 
-Overfull \hbox (1.70943pt too wide) in paragraph at lines 2771--2773
+Overfull \hbox (1.70943pt too wide) in paragraph at lines 2785--2787
 \OT1/cmr/m/n/10 On ap-plique donc la m^^Sethode de Levenberg-Marquardt ^^Ra la 
 fonc-tion de Rosen-brock en impl^^Sementant
  []
 
 (./banana_levenberg.sce)
-Overfull \hbox (6.11008pt too wide) in paragraph at lines 34--2777
+Overfull \hbox (6.11008pt too wide) in paragraph at lines 34--2791
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (18.11009pt too wide) in paragraph at lines 2776--2780
+Overfull \hbox (18.11009pt too wide) in paragraph at lines 2790--2794
 [][] 
  []
 
-<banana_2.png, id=496, 612.2875pt x 461.725pt>
+<banana_2.png, id=499, 612.2875pt x 461.725pt>
 File: banana_2.png Graphic file (type png)
  <use banana_2.png>
-Package pdftex.def Info: banana_2.png used on input line 2785.
+Package pdftex.def Info: banana_2.png used on input line 2799.
 (pdftex.def)             Requested size: 369.88582pt x 278.93234pt.
- [97] [98 <./banana_2.png>]
+ [98] [99 <./banana_2.png>]
 File: donnes_brutes2.pdf Graphic file (type pdf)
  <use donnes_brutes2.pdf>
-Package pdftex.def Info: donnes_brutes2.pdf used on input line 2798.
+Package pdftex.def Info: donnes_brutes2.pdf used on input line 2822.
 (pdftex.def)             Requested size: 284.52756pt x 214.55899pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2811--2813
+Underfull \hbox (badness 10000) in paragraph at lines 2835--2837
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2825--2827
+Underfull \hbox (badness 10000) in paragraph at lines 2849--2851
 
  []
 
-(./PMC_non_lineaire.sce) [99]
-<PMC_non_lineaire.pdf, id=507, 959.585pt x 511.9125pt>
+(./PMC_non_lineaire.sce) [100]
+Overfull \vbox (8.8586pt too high) has occurred while \output is active []
+
+
+[101] <PMC_non_lineaire.pdf, id=513, 959.585pt x 511.9125pt>
 File: PMC_non_lineaire.pdf Graphic file (type pdf)
 
 <use PMC_non_lineaire.pdf>
-Package pdftex.def Info: PMC_non_lineaire.pdf used on input line 2848.
+Package pdftex.def Info: PMC_non_lineaire.pdf used on input line 2872.
 (pdftex.def)             Requested size: 426.79135pt x 227.67928pt.
- [100] [101 <./PMC_non_lineaire.pdf>]
+ [102 <./PMC_non_lineaire.pdf>]
 Chapitre 6.
-[102
+[103
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2932--2934
+Underfull \hbox (badness 10000) in paragraph at lines 2956--2958
 
  []
 
 
-Overfull \hbox (13.89445pt too wide) in paragraph at lines 2946--2948
+Overfull \hbox (13.89445pt too wide) in paragraph at lines 2970--2972
 \OT1/cmr/m/n/10 Si on n^^Seglige les ter-mes de la s^^Serie pour $\OML/cmm/m/it
 /10 n \OMS/cmsy/m/n/10 ^^U \OT1/cmr/m/n/10 2$, on peut donc ap-procher $\OML/cm
 m/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R; t\OT1/cmr/m/n/10 )$ par $\OML
@@ -2315,87 +2324,87 @@ m/m/it/10 u\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^R; t\OT1/cmr/m/n/10 )$ par $\OML
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2959--2963
+Underfull \hbox (badness 10000) in paragraph at lines 2983--2987
 
  []
 
-[103]
-Underfull \hbox (badness 10000) in paragraph at lines 2970--2973
+[104]
+Underfull \hbox (badness 10000) in paragraph at lines 2994--2997
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3005--3010
+Underfull \hbox (badness 10000) in paragraph at lines 3029--3034
 
  []
 
-(./gibbs1.sce) [104] <gibbs.png, id=526, 612.2875pt x 461.725pt>
+(./gibbs1.sce) [105] <gibbs.png, id=529, 612.2875pt x 461.725pt>
 File: gibbs.png Graphic file (type png)
 
 <use gibbs.png>
-Package pdftex.def Info: gibbs.png used on input line 3037.
+Package pdftex.def Info: gibbs.png used on input line 3061.
 (pdftex.def)             Requested size: 426.79135pt x 321.8385pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3041--3042
+Underfull \hbox (badness 10000) in paragraph at lines 3065--3066
 
  []
 
-[105 <./gibbs.png>] (./gibbs2.sci)
-<gibbs2.png, id=531, 685.56125pt x 274.02374pt>
+[106 <./gibbs.png>] (./gibbs2.sci)
+<gibbs2.png, id=534, 685.56125pt x 274.02374pt>
 File: gibbs2.png Graphic file (type png)
  <use gibbs2.png>
-Package pdftex.def Info: gibbs2.png used on input line 3061.
+Package pdftex.def Info: gibbs2.png used on input line 3085.
 (pdftex.def)             Requested size: 426.79135pt x 170.59541pt.
- [106 <./gibbs2.png>] (./fourier.sce)
-Overfull \hbox (7.01006pt too wide) in paragraph at lines 3083--3087
+ [107 <./gibbs2.png>] (./fourier.sce)
+Overfull \hbox (7.01006pt too wide) in paragraph at lines 3107--3111
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3074--3087
+Underfull \hbox (badness 10000) in paragraph at lines 3098--3111
 
  []
 
-<fourier.png, id=536, 697.60625pt x 366.36874pt>
+<fourier.png, id=539, 697.60625pt x 366.36874pt>
 File: fourier.png Graphic file (type png)
  <use fourier.png>
-Package pdftex.def Info: fourier.png used on input line 3092.
+Package pdftex.def Info: fourier.png used on input line 3116.
 (pdftex.def)             Requested size: 426.79135pt x 224.14426pt.
- [107]
-Underfull \hbox (badness 10000) in paragraph at lines 3126--3127
+ [108]
+Underfull \hbox (badness 10000) in paragraph at lines 3150--3151
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3126--3127
+Underfull \hbox (badness 10000) in paragraph at lines 3150--3151
 
  []
 
-(./chaleur1.sce) [108 <./fourier.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 3142--3144
+(./chaleur1.sce) [109 <./fourier.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 3166--3168
 
  []
 
-<chaleur1.png, id=545, 612.2875pt x 461.725pt>
+<chaleur1.png, id=548, 612.2875pt x 461.725pt>
 File: chaleur1.png Graphic file (type png)
  <use chaleur1.png>
-Package pdftex.def Info: chaleur1.png used on input line 3148.
+Package pdftex.def Info: chaleur1.png used on input line 3172.
 (pdftex.def)             Requested size: 369.88582pt x 278.93234pt.
 
-(./chaleur2.sce) [109 <./chaleur1.png>]
-<chaleur2.png, id=550, 612.2875pt x 461.725pt>
+(./chaleur2.sce) [110 <./chaleur1.png>]
+<chaleur2.png, id=553, 612.2875pt x 461.725pt>
 File: chaleur2.png Graphic file (type png)
  <use chaleur2.png>
-Package pdftex.def Info: chaleur2.png used on input line 3164.
+Package pdftex.def Info: chaleur2.png used on input line 3188.
 (pdftex.def)             Requested size: 369.88582pt x 278.93234pt.
- [110 <./chaleur2.png>] (./chaleur3.sce) <chaleur3.png, id=555, 536.0025pt x 42
+ [111 <./chaleur2.png>] (./chaleur3.sce) <chaleur3.png, id=558, 536.0025pt x 42
 2.57875pt>
 File: chaleur3.png Graphic file (type png)
 
 <use chaleur3.png>
-Package pdftex.def Info: chaleur3.png used on input line 3181.
+Package pdftex.def Info: chaleur3.png used on input line 3205.
 (pdftex.def)             Requested size: 256.0748pt x 201.88118pt.
- [111 <./chaleur3.png>] (./Rapport.aux)
+ [112 <./chaleur3.png>] (./Rapport.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2404,10 +2413,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7772 strings out of 493029
- 101937 string characters out of 6136235
- 295808 words of memory out of 5000000
- 10942 multiletter control sequences out of 15000+600000
+ 7781 strings out of 493029
+ 102098 string characters out of 6136235
+ 299527 words of memory out of 5000000
+ 10945 multiletter control sequences out of 15000+600000
  21628 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,17n,43p,945b,2698s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2438,10 +2447,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on Rapport.pdf (112 pages, 17017198 bytes).
+Output written on Rapport.pdf (113 pages, 17018175 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 371 compressed objects within 4 object streams
+ 658 PDF objects out of 1000 (max. 8388607)
+ 373 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  506 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -27,28 +27,30 @@
 \contentsline {table}{\numberline {3.4}{\ignorespaces Sch\IeC {\'e}ma de Runge-Kutta}}{57}
 \contentsline {table}{\numberline {3.5}{\ignorespaces Ordre des sch\IeC {\'e}mas}}{59}
 \contentsline {table}{\numberline {3.6}{\ignorespaces R\IeC {\'e}solution du probl\IeC {\`e}me du pendule}}{63}
-\contentsline {table}{\numberline {3.7}{\ignorespaces R\IeC {\'e}solution du probl\IeC {\`e}me proies / pr\IeC {\'e}dateurs}}{65}
-\contentsline {table}{\numberline {3.8}{\ignorespaces R\IeC {\'e}solution du mod\IeC {\`e}le de m\IeC {\'e}canique c\IeC {\'e}leste}}{67}
+\contentsline {table}{\numberline {3.7}{\ignorespaces R\IeC {\'e}solution du probl\IeC {\`e}me du pendule (avec ode)}}{63}
+\contentsline {table}{\numberline {3.8}{\ignorespaces R\IeC {\'e}solution du probl\IeC {\`e}me proies / pr\IeC {\'e}dateurs}}{65}
+\contentsline {table}{\numberline {3.9}{\ignorespaces R\IeC {\'e}solution du probl\IeC {\`e}me proies / pr\IeC {\'e}dateurs (avec ode)}}{66}
+\contentsline {table}{\numberline {3.10}{\ignorespaces R\IeC {\'e}solution du mod\IeC {\`e}le de m\IeC {\'e}canique c\IeC {\'e}leste}}{68}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Lena : R\IeC {\'e}cup\IeC {\'e}ration et affichage de l'image originale}}{71}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Lena : Compression de l'image}}{72}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Lena : Bruitage puis d\IeC {\'e}bruitage de l'image}}{74}
-\contentsline {table}{\numberline {4.4}{\ignorespaces D\IeC {\'e}termination du PageRank d'un ensemble de page internet}}{78}
-\contentsline {table}{\numberline {4.5}{\ignorespaces D\IeC {\'e}termination de l'importance d'un ville dans un r\IeC {\'e}seau ferroviaire}}{81}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Lena : R\IeC {\'e}cup\IeC {\'e}ration et affichage de l'image originale}}{72}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Lena : Compression de l'image}}{73}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Lena : Bruitage puis d\IeC {\'e}bruitage de l'image}}{75}
+\contentsline {table}{\numberline {4.4}{\ignorespaces D\IeC {\'e}termination du PageRank d'un ensemble de page internet}}{79}
+\contentsline {table}{\numberline {4.5}{\ignorespaces D\IeC {\'e}termination de l'importance d'un ville dans un r\IeC {\'e}seau ferroviaire}}{82}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces R\IeC {\'e}cup\IeC {\'e}ration des donn\IeC {\'e}es (moindres carr\IeC {\'e}s lin\IeC {\'e}aires)}}{84}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Approximation par diff\IeC {\'e}rents polyn\IeC {\^o}mes}}{85}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Approximation par diff\IeC {\'e}rents polyn\IeC {\^o}mes et m\IeC {\'e}thode de validation}}{87}
-\contentsline {table}{\numberline {5.4}{\ignorespaces M\IeC {\'e}thode du gradient (\IeC {\`a} pas fixe)}}{91}
-\contentsline {table}{\numberline {5.5}{\ignorespaces M\IeC {\'e}thode du gradient (\IeC {\`a} pas optimal)}}{92}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Fonction de calcul de $\rho $ optimal}}{94}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Fonction de Rosenbrock : m\IeC {\'e}thode du gradient (pas optimal)}}{95}
-\contentsline {table}{\numberline {5.8}{\ignorespaces Fonction de Rosenbrock : m\IeC {\'e}thode de Levenberg-Marquardt}}{97}
-\contentsline {table}{\numberline {5.9}{\ignorespaces Application concr\IeC {\`e}te : log-trick et Levenberg-Marquardt}}{100}
+\contentsline {table}{\numberline {5.1}{\ignorespaces R\IeC {\'e}cup\IeC {\'e}ration des donn\IeC {\'e}es (moindres carr\IeC {\'e}s lin\IeC {\'e}aires)}}{85}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Approximation par diff\IeC {\'e}rents polyn\IeC {\^o}mes}}{86}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Approximation par diff\IeC {\'e}rents polyn\IeC {\^o}mes et m\IeC {\'e}thode de validation}}{88}
+\contentsline {table}{\numberline {5.4}{\ignorespaces M\IeC {\'e}thode du gradient (\IeC {\`a} pas fixe)}}{92}
+\contentsline {table}{\numberline {5.5}{\ignorespaces M\IeC {\'e}thode du gradient (\IeC {\`a} pas optimal)}}{93}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Fonction de calcul de $\rho $ optimal}}{95}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Fonction de Rosenbrock : m\IeC {\'e}thode du gradient (pas optimal)}}{96}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Fonction de Rosenbrock : m\IeC {\'e}thode de Levenberg-Marquardt}}{98}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Application concr\IeC {\`e}te : log-trick et Levenberg-Marquardt}}{101}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Somme partielle d'une s\IeC {\'e}rie de Fourier pour diff\IeC {\'e}rentes valeurs de $n$}}{105}
-\contentsline {table}{\numberline {6.2}{\ignorespaces S\IeC {\'e}rie de Fourier d'une fonction totalement continue}}{106}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Sommes partielles des s\IeC {\'e}ries de Fourier des diff\IeC {\'e}rentes fonctions}}{107}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Probl\IeC {\`e}me de la chaleur : visualisation dynamique en 1D}}{109}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Probl\IeC {\`e}me de la chaleur : visualisation statique en 2D}}{110}
-\contentsline {table}{\numberline {6.6}{\ignorespaces Probl\IeC {\`e}me de la chaleur : visualisation dynamique en 2D}}{111}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Somme partielle d'une s\IeC {\'e}rie de Fourier pour diff\IeC {\'e}rentes valeurs de $n$}}{106}
+\contentsline {table}{\numberline {6.2}{\ignorespaces S\IeC {\'e}rie de Fourier d'une fonction totalement continue}}{107}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Sommes partielles des s\IeC {\'e}ries de Fourier des diff\IeC {\'e}rentes fonctions}}{108}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Probl\IeC {\`e}me de la chaleur : visualisation dynamique en 1D}}{110}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Probl\IeC {\`e}me de la chaleur : visualisation statique en 2D}}{111}
+\contentsline {table}{\numberline {6.6}{\ignorespaces Probl\IeC {\`e}me de la chaleur : visualisation dynamique en 2D}}{112}

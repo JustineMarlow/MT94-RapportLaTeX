@@ -45,36 +45,36 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Sch\IeC {\'e}ma du pendule consid\IeC {\'e}r\IeC {\'e}}}{62}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Superposition des solutions approch\IeC {\'e}es pour diff\IeC {\'e}rentes valeurs de $\theta _0$}}{64}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces \IeC {\'E}volution des proportions proies-pr\IeC {\'e}dateurs}}{66}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces M\IeC {\'e}canique c\IeC {\'e}leste : trajectoires des corps}}{68}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces M\IeC {\'e}canique c\IeC {\'e}leste : trajectoires des corps}}{69}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Cas d'\IeC {\'e}cole de la compression d'image}}{69}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Exemple de configuration de \textit {PageRank}}}{69}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Image originale Lena}}{71}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Image originale Lena en niveaux de gris (obtenue gr\IeC {\^a}ce \IeC {\`a} la matrice)}}{71}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Valeurs propres de $\Sigma $}}{73}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Diff\IeC {\'e}rentes compressions de l'image et erreur associ\IeC {\'e}e}}{73}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces R\IeC {\'e}sultat du d\IeC {\'e}bruitage}}{74}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces PageRank : configuration 1}}{75}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces PageRank : configurations 2 \IeC {\`a} 5}}{77}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces R\IeC {\'e}seau ferroviaire de villes italiennes}}{80}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Cas d'\IeC {\'e}cole de la compression d'image}}{70}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Exemple de configuration de \textit {PageRank}}}{70}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Image originale Lena}}{72}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Image originale Lena en niveaux de gris (obtenue gr\IeC {\^a}ce \IeC {\`a} la matrice)}}{72}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Valeurs propres de $\Sigma $}}{74}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Diff\IeC {\'e}rentes compressions de l'image et erreur associ\IeC {\'e}e}}{74}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces R\IeC {\'e}sultat du d\IeC {\'e}bruitage}}{75}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces PageRank : configuration 1}}{76}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces PageRank : configurations 2 \IeC {\`a} 5}}{78}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces R\IeC {\'e}seau ferroviaire de villes italiennes}}{81}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Un premier ensemble de donn\IeC {\'e}es $(x_i,y_i)$}}{82}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Un deuxi\IeC {\`e}me ensemble de donn\IeC {\'e}es $(x_i,y_i)$}}{82}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Ensemble de donn\IeC {\'e}es (moindres carr\IeC {\'e}s lin\IeC {\'e}aires)}}{85}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Affichage des diff\IeC {\'e}rentes approximations}}{86}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces \IeC {\'E}volution de l'erreur en fonction du degr\IeC {\'e} du polyn\IeC {\^o}me}}{86}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Affichage des diff\IeC {\'e}rentes approximations sur T et V}}{88}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces \IeC {\'E}volution de l'erreur sur T et sur V en fonction du degr\IeC {\'e} du polyn\IeC {\^o}me}}{89}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Affichage de la m\IeC {\'e}thode du gradient \IeC {\`a} pas fixe}}{93}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Affichage de la m\IeC {\'e}thode du gradient \IeC {\`a} pas optimal}}{93}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Affichage de la m\IeC {\'e}thode du gradient \IeC {\`a} pas optimal (fonction de Rosenbrock)}}{96}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Affichage de la m\IeC {\'e}thode de Levenberg-Marquardt (fonction de Rosenbrock)}}{98}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Ensemble de donn\IeC {\'e}es (moindres carr\IeC {\'e}s non lin\IeC {\'e}aires)}}{99}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Affichage des m\IeC {\'e}thodes du log-trick et de Levenberg-Marquardt}}{101}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Un premier ensemble de donn\IeC {\'e}es $(x_i,y_i)$}}{83}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Un deuxi\IeC {\`e}me ensemble de donn\IeC {\'e}es $(x_i,y_i)$}}{83}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Ensemble de donn\IeC {\'e}es (moindres carr\IeC {\'e}s lin\IeC {\'e}aires)}}{86}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Affichage des diff\IeC {\'e}rentes approximations}}{87}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces \IeC {\'E}volution de l'erreur en fonction du degr\IeC {\'e} du polyn\IeC {\^o}me}}{87}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Affichage des diff\IeC {\'e}rentes approximations sur T et V}}{89}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces \IeC {\'E}volution de l'erreur sur T et sur V en fonction du degr\IeC {\'e} du polyn\IeC {\^o}me}}{90}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Affichage de la m\IeC {\'e}thode du gradient \IeC {\`a} pas fixe}}{94}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Affichage de la m\IeC {\'e}thode du gradient \IeC {\`a} pas optimal}}{94}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Affichage de la m\IeC {\'e}thode du gradient \IeC {\`a} pas optimal (fonction de Rosenbrock)}}{97}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Affichage de la m\IeC {\'e}thode de Levenberg-Marquardt (fonction de Rosenbrock)}}{99}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Ensemble de donn\IeC {\'e}es (moindres carr\IeC {\'e}s non lin\IeC {\'e}aires)}}{100}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Affichage des m\IeC {\'e}thodes du log-trick et de Levenberg-Marquardt}}{102}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Effet Gibbs pour diff\IeC {\'e}rentes valeurs de $n$}}{105}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Absence de ph\IeC {\'e}nom\IeC {\`e}ne Gibbs}}{106}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Repr\IeC {\'e}sentation des sommes partielles}}{108}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Probl\IeC {\`e}me de la chaleur : Visualisation de $u(\theta )$ pour des valeurs de $t$ croissantes}}{109}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Probl\IeC {\`e}me de la chaleur : Visualisation de $u(\theta ,t)$}}{110}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Probl\IeC {\`e}me de la chaleur : Visualisation de $u(\theta )$ sur un anneau pour des valeurs de $t$ croissantes}}{111}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Effet Gibbs pour diff\IeC {\'e}rentes valeurs de $n$}}{106}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Absence de ph\IeC {\'e}nom\IeC {\`e}ne Gibbs}}{107}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Repr\IeC {\'e}sentation des sommes partielles}}{109}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Probl\IeC {\`e}me de la chaleur : Visualisation de $u(\theta )$ pour des valeurs de $t$ croissantes}}{110}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Probl\IeC {\`e}me de la chaleur : Visualisation de $u(\theta ,t)$}}{111}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Probl\IeC {\`e}me de la chaleur : Visualisation de $u(\theta )$ sur un anneau pour des valeurs de $t$ croissantes}}{112}
